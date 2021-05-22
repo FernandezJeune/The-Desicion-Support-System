@@ -1,28 +1,11 @@
-body {
-  background-color: lightblue;
-}
-
-h1 {
-  color: navy;
-  margin-left: 20px;
-}
-
-nav {
-  float: left;
-  width: 30%;
-  height: 300px;
-  background: #ccc;
-  padding: 20px;
-}
-
-/* Style the list inside the menu */
-nav ul {
+ul {
   list-style-type: none;
+  margin: 0;
   padding: 0;
 }
 
-section::after {
-	content: "";
-	display: table;
-	clear:both;
+li a {
+  display: block;
+  width: 60px;
+  background-color: #dddddd;
 }
