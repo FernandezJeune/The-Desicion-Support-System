@@ -5,67 +5,73 @@ body {
 .leftcolumn{
   padding: 1%;
 }
-
+/*Left Column White Space*/
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   width: 14%;
   background-color: #f6f6f6;
-  position: fixed;
+  position: absolute;
   height: 100%;
   overflow: auto;
 }
 
+/*Icons*/
 li img{
-  width: 13%;
-  height: 13%;
+  width: 12%;
+  height: 12%;
   float: left;
   padding-left: 12%;
-  padding-top: 3%;
+  padding-top: 2%;
 }
 
+/*Text*/
 li a {
   display: block;
   color: #000;
-  padding: 10px;
-  margin-left: 75px;
+  padding: 3%;
+  margin-left: 30%;
   text-align: justify;
   text-decoration: none;
 }
 
+/*Clicked Animation*/
 li a.active {
   background-color: #4CAF50;
   color: white;
 }
 
+/*Hover Animation*/
 li a:hover {
   background-color: lightgreen;
   color: black;
 }
 
+/*Title*/
 h1 {
-  font-size: 25px;
+  font-size: 200%;
   color: green;
-  padding-top: 40px;
-  padding-right: 40px;
-  padding-bottom: 45px;
-  padding-left: 15px;
+  padding-top: 14%;
+  padding-right: 14%;
+  padding-bottom: 15%;
+  padding-left: 5%;
 }
 
+/*Logo*/
 h1 img{
-  width: 70px;
-  height: 70px;
+  width: 40%;
+  height: 40%;
   float: left;
-  padding-right: 15px;
-  padding-left: 5px;
+  padding-right: 6%;
+  padding-left: 3%;
 
 }
 
 .boxleft{
   width: 55%;
   height: 44%;
-  border: 5px;
+  border: 2%;
   float:right;
   box-shadow: 2px 6px 15px rgba(0,0,0,0.1);
   background-color: #f1f1f1;
