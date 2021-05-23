@@ -1,0 +1,95 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    min-height: 100vh;
+    background: #52734d;
+}
+
+.LeftSide
+{
+    position: fixed;
+    width: 20%;
+    height: 100%;
+    background: #feffde;
+}
+
+.LeftSide .Logo img
+{
+    display: block;
+    padding-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+
+}
+
+.LeftSide .Menu ul
+{
+    position: absolute;
+    padding-top: 60%;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.LeftSide .Menu ul li
+{
+    position: relative;
+    width: 100%;
+    list-style: none;
+}
+
+.LeftSide .Menu ul li:hover
+{
+    background: #52734d;
+}
+
+.LeftSide .Menu ul li a
+{
+    position: relative;
+    padding: 3%;
+    width: 100%;
+    display: block;
+    display: flex;
+    text-decoration: none;
+    color: #52734d;
+}
+
+.LeftSide .Menu ul li a:hover
+{
+    position: relative;
+    padding: 3%;
+    width: 100%;
+    display: block;
+    display: flex;
+    text-decoration: none;
+    color: #feffde;
+}
+
+.LeftSide .Menu ul li a img
+{
+    position: relative;
+    display: block;
+    width: 15%;
+    height: 15%;
+    line-height: 15%;
+    text-align: center;
+}
+
+.LeftSide .Menu ul li a .title
+{
+    position: relative;
+    display: block;
+    padding: 7%;
+    height: 15%;
+    font-size: 120%;
+    line-height: 15%;
+    text-align: center;
+    white-space: nowrap;
+}
