@@ -1,7 +1,7 @@
 *
 {
     margin: 0;
-    padding: 0.3%;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -101,7 +101,7 @@ body
   width: 50%;
   height: 44%;
   position: absolute;
-  top: 0.3%;
+  top: 1%;
   left: 21.4%;
   font-size: 70%;
   text-align: left;
@@ -118,6 +118,7 @@ body
   position: absolute;
   top: 8%;
   left: 21.4%;
+  border-radius: 30px 30px 30px 30px;
 }
 
 .AreaOfFarmland
@@ -131,6 +132,7 @@ body
   position: absolute;
   top: 8%;
   right: 1%;
+  border-radius: 30px 30px 30px 30px;
 }
 
 .Weather
@@ -144,6 +146,7 @@ body
   position: absolute;
   bottom: 3%;
   left: 21.4%;
+  border-radius: 30px 30px 30px 30px;
 }
 
 .Forum
@@ -157,4 +160,5 @@ body
   position: absolute;
   bottom: 3%;
   right: 1%;
+  border-radius: 30px 30px 30px 30px;
 }
