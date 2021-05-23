@@ -17,7 +17,7 @@ ul {
   overflow: auto;
 }
 
-/*Icons*/
+/*Icons (Home, Crops, Season, Etc)*/
 li img{
   width: 12%;
   height: 12%;
@@ -26,7 +26,7 @@ li img{
   padding-top: 2%;
 }
 
-/*Text*/
+/*Text (Home,Crops,Season, etc)*/
 li a {
   display: block;
   color: #000;
