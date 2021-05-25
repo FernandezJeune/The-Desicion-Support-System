@@ -106,3 +106,32 @@ body
   font-size: 70%;
   text-align: left;
 }
+
+.YieldPattern
+{
+  width: 50%;
+  height: 90%;
+  float:right;
+  box-shadow: 2px 6px 15px rgba(0,0,0,0.1);
+  background-color: white;
+  text-align: center;
+  position: absolute;
+  top: 7%;
+  left: 21.4%;
+  border-radius: 30px 30px 30px 30px;
+}
+
+.Month
+{
+  width: 26%;
+  height: 90%;
+  float:right;
+  box-shadow: 2px 6px 15px rgba(0,0,0,0.1);
+  background-color: #91c788;
+  color: white;
+  text-align: center;
+  position: absolute;
+  top: 7%;
+  right: 1%;
+  border-radius: 30px 30px 30px 30px;
+}
