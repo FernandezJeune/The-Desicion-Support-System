@@ -135,3 +135,52 @@ body
   right: 1%;
   border-radius: 30px 30px 30px 30px;
 }
+
+.Month .MonthMenu
+{
+    padding-top: 20px;
+
+}
+
+.Month .MonthMenu ul
+{
+    position: absolute;
+    padding-top: 20px;
+    width: 100%;
+    height: 85%;
+    overflow-y: auto;
+}
+
+.Month .MonthMenu ul li
+{
+    position: relative;
+    width: 100%;
+    list-style: none;
+}
+
+.Month .MonthMenu ul li:hover
+{
+    background: lightgreen;
+}
+
+.Month .MonthMenu ul li a
+{
+    position: relative;
+    padding: 3%;
+    width: 100%;
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+
+.Month .MonthMenu ul li a .Mlist
+{
+    position: relative;
+    display: block;
+    padding: 7%;
+    height: 15%;
+    font-size: 120%;
+    line-height: 15%;
+    text-align: center;
+    white-space: nowrap;
+}
