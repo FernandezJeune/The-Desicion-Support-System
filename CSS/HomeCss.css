@@ -97,7 +97,7 @@ body
     display: block;
     padding: 7%;
     height: 15%;
-    font-size: 120%;
+    font-size: 1vw;
     line-height: 15%;
     text-align: center;
     white-space: nowrap;
@@ -110,7 +110,7 @@ body
   position: absolute;
   top: 1%;
   left: 21.4%;
-  font-size: 70%;
+  font-size: 0.5vw;
   text-align: left;
 }
 
@@ -148,8 +148,7 @@ body
   height: 44%;
   float:right;
   box-shadow: 2px 6px 15px rgba(0,0,0,0.1);
-  background-color: #00000db0;
-  padding: 2em;
+  background-color: #808080;
   justify-content: center;
   align-items: center;
   position: absolute;
@@ -161,6 +160,9 @@ body
 
 .WeatherSection .card
 {
+  padding:2em;
+  width: 100%;
+  max-width: 520px;
 }
 
 .WeatherSection .card .search
@@ -173,13 +175,13 @@ body
 
 .WeatherSection .card h1.temp
 { 
-  font-size: 300%;
+  font-size: 2vw;
 }
 
 .WeatherSection .card h2.city
 {
-  margin-top: 20px;
-  font-size: 170%;
+  margin-top: 15px;
+  font-size: 1.5vw;
 }
 
 .WeatherSection .card button 
