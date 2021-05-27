@@ -18,7 +18,7 @@ for(var i = 0; i < items.length; i++){
             document.getElementById("Info").innerHTML="<h1>January info</h1>";
         }
         if(index == 1  ){
-            document.getElementById("Info").innerHTML="<h1>February</h1>";
+            document.getElementById("Info").innerHTML="<h1>February info . . . . </h1>";
         }
         if(index == 2  ){
             document.getElementById("Info").innerHTML="<h1>March</h1>";
