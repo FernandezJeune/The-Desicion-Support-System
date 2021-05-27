@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="CSS/HomeCss.css">
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <script src="JS/script.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -76,11 +77,21 @@
         <p>AREA OF FARMLAND</p>
     </div>
 
-    <div class='Weather'>
-        <a class="weatherwidget-io" href="https://forecast7.com/en/16d40120d60/baguio/" data-label_1="BAGUIO CITY" data-label_2="WEATHER" >BAGUIO CITY WEATHER</a>
-        <script>
-        !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
-        </script>
+    <div class='WeatherCard'>
+        <div class="search">
+            <input type="text" class="search-bar" placeholder="Search">
+            <button>
+                <img src="ICONS/Search Icon.png" width="16em" height="16em">
+            </button>
+        </div>
+        <div class="weather">
+            <h2 class="city">Weather in Baguio City</h2>
+            <h1 class="temp">51°</h1>
+            <img src="" alt="" class="" />
+            <div class="description">Cloudy</div>
+            <div class="humidity">Humidity: 60%</div>
+            <div class="wind">Wind Speed: 6.2 km/h</div>
+        </div>
     </div>
 
     <div class='Forum'>
