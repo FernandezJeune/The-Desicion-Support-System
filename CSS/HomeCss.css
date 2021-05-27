@@ -172,9 +172,7 @@ body
 }
 
 .WeatherSection .card h1.temp
-{
-  margin-top: 20px;
-  margin-bottom: 20px; 
+{ 
   font-size: 300%;
 }
 
@@ -192,6 +190,13 @@ body
     height: 35px;
     width: 37px;
     outline: none;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+
+}
+
+button:hover{
+  background: lightgray;
 }
 
 .WeatherSection .card input.search-bar 
@@ -206,6 +211,18 @@ body
     font-size: 120%;
     width: calc(100% - 5px);
 }
+
+.flex
+{
+  display:flex;
+  align-items: center;
+}
+
+.description 
+{
+    text-transform: capitalize;
+}
+
 
 .Forum
 {
