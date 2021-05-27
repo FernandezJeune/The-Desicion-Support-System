@@ -142,7 +142,7 @@ body
   border-radius: 30px 30px 30px 30px;
 }
 
-.Weather
+.WeatherSection
 {
   width: 27%;
   height: 44%;
@@ -159,12 +159,11 @@ body
   color:white;
 }
 
-.Weather .card
+.WeatherSection .card
 {
-  padding: 2%;
 }
 
-.Weather .card .search
+.WeatherSection .card .search
 {
   display: flex;
   align-items: center;
@@ -172,20 +171,20 @@ body
 
 }
 
-.Weather .card h1.temp
+.WeatherSection .card h1.temp
 {
   margin-top: 20px;
-  margin-bottom: 30px; 
+  margin-bottom: 20px; 
   font-size: 300%;
 }
 
-.Weather .card h2.city
+.WeatherSection .card h2.city
 {
   margin-top: 20px;
-  font-size: 200%;
+  font-size: 170%;
 }
 
-.Weather .card button 
+.WeatherSection .card button 
 {
     margin: .5em;
     border-radius: 50%;
@@ -195,7 +194,7 @@ body
     outline: none;
 }
 
-input.search-bar 
+.WeatherSection .card input.search-bar 
 {
     border: none;
     outline: none;
