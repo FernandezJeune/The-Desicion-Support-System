@@ -9,6 +9,7 @@ body
 {
     min-height: 100vh;
     background: lightgray;
+
 }
 
 .LeftSide
@@ -141,18 +142,65 @@ body
   border-radius: 30px 30px 30px 30px;
 }
 
-.Weather
+.WeatherCard
 {
   width: 27%;
   height: 44%;
   float:right;
   box-shadow: 2px 6px 15px rgba(0,0,0,0.1);
-  background-color: white;
-  text-align: center;
+  background-color: #00000db0;
+  padding: 2em;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   bottom: 3%;
   left: 21.4%;
-  border-radius: 30px 30px 30px 30px;
+  border-radius: 30px;
+  color:white;
+}
+
+.search
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+h1.temp
+{
+  margin-top: 20px;
+  margin-bottom: 30px; 
+  font-size: 300%;
+}
+
+h2.city
+{
+  margin-top: 20px;
+  font-size: 200%;
+}
+
+button 
+{
+    margin: .5em;
+    border-radius: 50%;
+    border: none;
+    height: 35px;
+    width: 37px;
+    outline: none;
+}
+
+input.search-bar 
+{
+    border: none;
+    outline: none;
+    padding: 0.3em;
+    border-radius: 24px;
+    background: lightgray;
+    color: black;
+    font-family: inherit;
+    font-size: 120%;
+    width: calc(100% - 5px);
 }
 
 .Forum
@@ -168,3 +216,4 @@ body
   right: 1%;
   border-radius: 30px 30px 30px 30px;
 }
+
