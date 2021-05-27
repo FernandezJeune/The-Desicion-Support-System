@@ -142,7 +142,7 @@ body
   border-radius: 30px 30px 30px 30px;
 }
 
-.WeatherCard
+.Weather
 {
   width: 27%;
   height: 44%;
@@ -159,7 +159,12 @@ body
   color:white;
 }
 
-.search
+.card
+{
+  padding: 2%;
+}
+
+.Weather .card .search
 {
   display: flex;
   align-items: center;
@@ -167,20 +172,20 @@ body
 
 }
 
-h1.temp
+.Weather .card h1.temp
 {
   margin-top: 20px;
   margin-bottom: 30px; 
   font-size: 300%;
 }
 
-h2.city
+.Weather .card h2.city
 {
   margin-top: 20px;
   font-size: 200%;
 }
 
-button 
+.Weather .card button 
 {
     margin: .5em;
     border-radius: 50%;
