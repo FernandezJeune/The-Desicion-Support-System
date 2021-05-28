@@ -142,6 +142,7 @@ body
   border-radius: 30px 30px 30px 30px;
 }
 
+/*Weather Widget Box*/
 .WeatherSection
 {
   width: 27%;
@@ -158,6 +159,7 @@ body
   color:white;
 }
 
+/*Weather Widget Inside Box*/
 .WeatherSection .card
 {
   padding:2em;
@@ -165,6 +167,7 @@ body
   max-width: 520px;
 }
 
+/*Weather Text Alignment*/
 .WeatherSection .card .search
 {
   display: flex;
@@ -173,34 +176,60 @@ body
 
 }
 
+/*Weather temp size*/
 .WeatherSection .card h1.temp
 { 
   font-size: 2vw;
 }
 
+/*Weather city name size*/
 .WeatherSection .card h2.city
 {
   margin-top: 15px;
   font-size: 1.5vw;
 }
 
+/*Weather search button size*/
 .WeatherSection .card button 
 {
     margin: .5em;
     border-radius: 50%;
     border: none;
-    height: 35px;
-    width: 37px;
+    height: 3.5vh;
+    width: 3.5vh;
     outline: none;
     cursor: pointer;
     transition: 0.2s ease-in-out;
 
 }
 
-button:hover{
+/*Weather search button animation*/
+button:hover
+{
   background: lightgray;
 }
 
+/*Weather description, humidity and wind size*/
+.WeatherSection .card .description,.humidity,.wind
+{
+  font-size: 1vw;
+}
+
+/*Weather icon image*/
+.WeatherSection .card .flex img
+{
+  width: 20%;
+  height: 20%;
+}
+
+/*Weather search image*/
+.WeatherSection .card .search img
+{
+  height:50%; 
+  width:50%;
+}
+
+/*Weather search bar*/
 .WeatherSection .card input.search-bar 
 {
     border: none;
@@ -210,16 +239,18 @@ button:hover{
     background: lightgray;
     color: black;
     font-family: inherit;
-    font-size: 120%;
+    font-size: 1vw;
     width: calc(100% - 5px);
 }
 
+/*Weather text & image alignment of description and icon*/
 .flex
 {
   display:flex;
   align-items: center;
 }
 
+/*Weather Descrption First Letter All Caps*/
 .description 
 {
     text-transform: capitalize;
