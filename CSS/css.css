@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+
+    --HeaderBG: #faf6e9;
+
+    --LogoFont: poppins;
+    --LogoTxtColor: #494949;
+
+    --NavigationFont: poppins;
+    --NavigationTxtColor:#494949;
+    --NavigationTxtHoverColor:#ece8d9;
+
+    --BannerBG: #fffdf6; 
+    --BannerTxtColor: #494949; 
+
+    --ContentBG: gray; 
+}
+
+body{
+    text-align: center;
+}
+
+.Items{
+    width: 1170px;
+    margin: 0 auto;
+}
+
+header{
+    height: 100px;
+    background: var(--HeaderBG);
+    width: 100%;
+    z-index: 12;
+    position: fixed;
+}
+
+
+.Logo{
+    width: 30%;
+    float: left;
+    line-height: 100px;
+}
+.Logo a{
+    text-decoration: none;
+    font-size: 30px;
+    font-family: var(--LogoFont);
+    color: var(--LogoTxtColor);
+    letter-spacing: 5px;
+}
+
+nav{
+    float: right;
+    line-height: 100px;
+}
+nav a{
+    text-decoration: none;
+    font-family: var(--NavigationFont);
+    letter-spacing: 4px;
+    font-size: 20px;
+    margin: 10px;
+    color: var(--NavigationTxtColor);
+}
+nav a:hover{
+    color: var(--NavigationTxtHoverColor)
+}
+
+.Banner{
+    width: 100%;
+	height: 500px;
+	position: fixed;
+	top: 100px;
+	background: var(--BannerBG);
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center center;
+
+}
+.Banner h2 {
+	padding-top: 8%;
+	font-size: 70px;
+	font-family: poppins;
+	text-transform: uppercase;
+	color: var(--BannerTxtColor);
+}
+.Banner p {
+	font-family: poppins;
+    font-size: 25px;
+}
+
+.Contents {
+	width: 100%;
+	position: relative;
+	top: 450px;
+	background: var(--ContentBG);
+	height: 1500px;
+}
+.Contents h2 {
+	font-family: poppins;
+	letter-spacing: 4px;
+	padding-top: 30px;
+	font-size: 40px;
+	margin: 0;
+}
+.Contents p {
+	padding: 2% 0px;
+	font-family: poppins;
+	line-height: 30px;
+}
