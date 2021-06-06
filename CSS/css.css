@@ -84,13 +84,12 @@ nav .MMlist:hover::after {
 .Banner{
     width: 100%;
 	height: 500px;
-	position: fixed;
-	top: 100px;
+	position: absolute;
+	top: 3%;
 	background: var(--BannerBG);
 	-webkit-background-size: cover;
 	background-size: cover;
 	background-position: center center;
-
 }
 .Banner h2 {
 	padding-top: 8%;
@@ -113,18 +112,6 @@ nav .MMlist:hover::after {
 .Contents .Weather{
 	background: var(--WeatherBG);
 }
-.Contents .Weather h2 {
-	font-family: poppins;
-	letter-spacing: 4px;
-	padding-top: 30px;
-	font-size: 40px;
-	margin: 0;
-}
-.Contents .Weather p {
-	padding: 2% 0px;
-	font-family: poppins;
-	line-height: 30px;
-}
 
 .Contents .Chart{
     background: var(--ChartBG);
@@ -135,6 +122,11 @@ nav .MMlist:hover::after {
 	padding-top: 30px;
 	font-size: 40px;
 	margin: 0;
+}
+.Contents .Chart p {
+	padding: 2% 0px;
+	font-family: poppins;
+	line-height: 30px;
 }
 
 .Contents .AreaOfFarmland{
@@ -147,7 +139,11 @@ nav .MMlist:hover::after {
 	font-size: 40px;
 	margin: 0;
 }
-
+.Contents .AreaOfFarmland p {
+	padding: 2% 0px;
+	font-family: poppins;
+	line-height: 30px;
+}
 
 .Contents .Announcements{
     background: var(--AnnouncementsBG);
@@ -158,4 +154,9 @@ nav .MMlist:hover::after {
 	padding-top: 30px;
 	font-size: 40px;
 	margin: 0;
+}
+.Contents .Announcements p {
+	padding: 2% 0px;
+	font-family: poppins;
+	line-height: 30px;
 }
