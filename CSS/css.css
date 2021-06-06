@@ -14,7 +14,10 @@
     --BannerBG: #fffdf6; 
     --BannerTxtColor: #494949; 
 
-    --ContentBG: gray; 
+    --WeatherBG: #ece8d9; 
+    --ChartBG: #fffdf6; 
+    --AreaOfFarmlandBG: #ece8d9;
+    --AnnouncementsBG: #fffdf6;
 }
 
 body{
@@ -52,17 +55,31 @@ nav{
     float: right;
     line-height: 100px;
 }
-nav a{
+nav li{
+    list-style-type: none;
+    display: inline-block;
+}
+nav li a{
     text-decoration: none;
     font-family: var(--NavigationFont);
     letter-spacing: 4px;
     font-size: 20px;
-    margin: 10px;
+    margin: 15px;
     color: var(--NavigationTxtColor);
 }
-nav a:hover{
-    color: var(--NavigationTxtHoverColor)
+nav .MMlist::after {
+    content:'';
+    display: block;
+    width: 0;
+    height: 3px;
+    background: #494949;
+    transition: width .3s;
 }
+nav .MMlist:hover::after {
+    width: 100%;
+    transition: width .3s;
+}
+
 
 .Banner{
     width: 100%;
@@ -91,18 +108,54 @@ nav a:hover{
 	width: 100%;
 	position: relative;
 	top: 450px;
-	background: var(--ContentBG);
 	height: 1500px;
 }
-.Contents h2 {
+.Contents .Weather{
+	background: var(--WeatherBG);
+}
+.Contents .Weather h2 {
 	font-family: poppins;
 	letter-spacing: 4px;
 	padding-top: 30px;
 	font-size: 40px;
 	margin: 0;
 }
-.Contents p {
+.Contents .Weather p {
 	padding: 2% 0px;
 	font-family: poppins;
 	line-height: 30px;
+}
+
+.Contents .Chart{
+    background: var(--ChartBG);
+}
+.Contents .Chart h2 {
+	font-family: poppins;
+	letter-spacing: 4px;
+	padding-top: 30px;
+	font-size: 40px;
+	margin: 0;
+}
+
+.Contents .AreaOfFarmland{
+    background: var(--AreaOfFarmlandBG);
+}
+.Contents .AreaOfFarmland h2 {
+	font-family: poppins;
+	letter-spacing: 4px;
+	padding-top: 30px;
+	font-size: 40px;
+	margin: 0;
+}
+
+
+.Contents .Announcements{
+    background: var(--AnnouncementsBG);
+}
+.Contents .Announcements h2 {
+	font-family: poppins;
+	letter-spacing: 4px;
+	padding-top: 30px;
+	font-size: 40px;
+	margin: 0;
 }
