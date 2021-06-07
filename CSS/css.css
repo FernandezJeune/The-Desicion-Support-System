@@ -221,22 +221,8 @@ nav .MMlist:hover::after {
     transition: width .3s;
 }
 
-.Contents .HighlandCrops{
-    background: var(--HighlandCropsBG);
-}
-.Contents .HighlandCrops h2 {
-	font-family: poppins;
-	letter-spacing: 4px;
-	padding-top: 30px;
-	font-size: 40px;
-	margin: 0;
-}
-
-
-
 .Contents .VegtableInfo{
-    background: black;
-    height: 10%;
+    background: var(--HighlandCropsBG);
 }
 .Contents .VegtableInfo h1 {
 	font-family: poppins;
