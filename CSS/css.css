@@ -6,10 +6,8 @@
 
     --LogoFont: poppins;
     --LogoTxtColor: #494949;
-
     --NavigationFont: poppins;
     --NavigationTxtColor:#494949;
-    --NavigationTxtHoverColor:#ece8d9;
 
     --BannerBG: #fffdf6; 
     --BannerTxtColor: #494949; 
@@ -18,6 +16,12 @@
     --ChartBG: #fffdf6; 
     --AreaOfFarmlandBG: #ece8d9;
     --AnnouncementsBG: #fffdf6;
+
+    --HighlandCropsBG: #ece8d9;
+    --VegsMenuFont: poppins;
+    --VegsMenuTxtColor:#494949;
+    --SeasonsContentBG: #fffdf6;
+
 }
 
 body{
@@ -159,4 +163,85 @@ nav .MMlist:hover::after {
 	padding: 2% 0px;
 	font-family: poppins;
 	line-height: 30px;
+}
+
+
+
+.Contents .HighlandCrops{
+    background: var(--HighlandCropsBG);
+}
+.Contents .HighlandCrops h2 {
+	font-family: poppins;
+	letter-spacing: 4px;
+	padding-top: 30px;
+	font-size: 40px;
+	margin: 0;
+}
+.Contents .HighlandCrops .VegsMenu{
+    margin-top:30px;
+}
+.Contents .HighlandCrops .VegsMenu ul
+{
+    display: block;
+}
+.Contents .HighlandCrops .VegsMenu ul li
+{
+    list-style-type: none;
+    display: inline-block;
+}
+.Contents .HighlandCrops .VegsMenu ul li a
+{
+    text-decoration: none;
+    font-family: var(--VegsMenuFont);
+    letter-spacing: 4px;
+    font-size: 20px;
+    margin: 15px;
+    color: var(--VegsMenuTxtColor);
+}
+.Contents .HighlandCrops .VegsMenu ul li a .VegsList
+{
+    position: relative;
+    display: block;
+    padding: 7%;
+    height: 15%;
+    line-height: 15%;
+    text-align: center;
+    white-space: nowrap;
+}
+.Contents .HighlandCrops .VegsMenu ul li a ::after {
+    content:'';
+    display: block;
+    width: 0;
+    height: 3px;
+    background: #494949;
+    transition: width .3s;
+}
+.Contents .HighlandCrops .VegsMenu ul li a :hover::after {
+    width: 100%;
+    transition: width .3s;
+}
+
+.Contents .HighlandCrops{
+    background: var(--HighlandCropsBG);
+}
+.Contents .HighlandCrops h2 {
+	font-family: poppins;
+	letter-spacing: 4px;
+	padding-top: 30px;
+	font-size: 40px;
+	margin: 0;
+}
+
+
+
+.Contents .VegtableInfo{
+    background: black;
+    height: 10%;
+}
+.Contents .VegtableInfo h1 {
+	font-family: poppins;
+	letter-spacing: 4px;
+	padding-top: 30px;
+	font-size: 40px;
+	margin: 0;
 }
