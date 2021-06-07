@@ -107,6 +107,8 @@ nav .MMlist:hover::after {
     font-size: 25px;
 }
 
+
+<!--Weather-->
 .Contents {
 	width: 100%;
 	position: relative;
@@ -117,6 +119,8 @@ nav .MMlist:hover::after {
 	background: var(--WeatherBG);
 }
 
+
+<!--Chart-->
 .Contents .Chart{
     background: var(--ChartBG);
 }
@@ -133,6 +137,8 @@ nav .MMlist:hover::after {
 	line-height: 30px;
 }
 
+
+<!--Area of Farmland-->
 .Contents .AreaOfFarmland{
     background: var(--AreaOfFarmlandBG);
 }
@@ -149,6 +155,8 @@ nav .MMlist:hover::after {
 	line-height: 30px;
 }
 
+
+<!--Announcements-->
 .Contents .Announcements{
     background: var(--AnnouncementsBG);
 }
@@ -166,7 +174,7 @@ nav .MMlist:hover::after {
 }
 
 
-
+<!--HighlandCrops-->
 .Contents .HighlandCrops{
     background: var(--HighlandCropsBG);
 }
