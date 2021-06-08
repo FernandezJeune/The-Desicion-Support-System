@@ -162,9 +162,9 @@ nav .MMlist:hover::after {
 .card h2.city{
     font-size: 5vh;
     float: right;
-    right: 20%;
-    top: 1%;
-    position: absolute;
+    right: 300px;
+    bottom: 40px;
+    position: relative;
 }
 .card .description{
     font-size: 5vh;
