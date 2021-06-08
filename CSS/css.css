@@ -125,6 +125,19 @@ nav .MMlist:hover::after {
     top: 1em;
     text-indent: 2em;
 }
+.WeatherSection .card button{
+    border-radius: 50%;
+    border: none;
+    height: 4vh;
+    width: 4vh;
+    background-color: white;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+.WeatherSection .card button:hover{
+  background: lightgray;
+}
+
 .WeatherSection .card input.search-bar {
     border: none;
     outline: none;
