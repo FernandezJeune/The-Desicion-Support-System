@@ -113,87 +113,81 @@ nav .MMlist:hover::after {
 	width: 100%;
 	position: relative;
 	top: 400px;
-	height: 1500px;
-}   
-.WeatherSection .card{
-  padding:2em;
-  width: 100%;
-  max-width: 520px;
+	height: 1500px; 
 }
-/*Weather Text Alignment*/
-.WeatherSection .card .search{
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.Contents .WeatherSection{
+	background: var(--WeatherSectionBG);
+    font-family: poppins;
 }
-
-/*Weather temp size*/
-.WeatherSection .card h1.temp{ 
-  font-size: 2vw;
+.card .search{
+    text-align: left;
+    top: 1em;
+    text-indent: 2em;
+    padding-top: 0.6em;
 }
-
-/*Weather city name size*/
-.WeatherSection .card h2.city{
-  margin-top: 15px;
-  font-size: 1.5vw;
-}
-
-/*Weather search button size*/
 .WeatherSection .card button{
-    margin: .5em;
     border-radius: 50%;
     border: none;
-    height: 3.5vh;
-    width: 3.5vh;
-    outline: none;
+    height: 3.5em;
+    width: 3.5em;
+    background-color: white;
     cursor: pointer;
     transition: 0.2s ease-in-out;
 }
-
-/*Weather search button animation*/
-button:hover{
+.WeatherSection .card button:hover{
   background: lightgray;
 }
 
-/*Weather description, humidity and wind size*/
-.WeatherSection .card .description,.humidity,.wind{
-  font-size: 1vw;
-}
-
-/*Weather icon image*/
-.WeatherSection .card .flex img{
-  width: 20%;
-  height: 20%;
-}
-
-/*Weather search image*/
-.WeatherSection .card .search img{
-  height:50%; 
-  width:50%;
-}
-
-/*Weather search bar*/
 .WeatherSection .card input.search-bar {
     border: none;
     outline: none;
     padding: 0.3em;
     border-radius: 24px;
-    background: lightgray;
+    background: white;
     color: black;
     font-family: inherit;
     font-size: 1vw;
-    width: calc(100% - 5px);
+    width: 25%;
 }
-
-/*Weather text & image alignment of description and icon*/
-.flex{
-  display:flex;
-  align-items: center;
+.card h1.temp{ 
+    text-align: left;
+    font-size: 30px;
+    text-indent: 3em;
 }
-
-/*Weather Descrption First Letter All Caps*/
-.description {
-    text-transform: capitalize;
+.card h1.temp1{ 
+    text-align: left;
+    font-size: 100px;
+    text-indent: 2em;
+}
+.card h2.city{
+    font-size: 5vh;
+    float: right;
+    right: 20%;
+    top: 1%;
+    position: absolute;
+}
+.card .description{
+    font-size: 5vh;
+    float: right;
+    right: 30%;
+    top: 6.5%;
+    position: absolute;
+}
+.card .humidity{
+    text-align: left;
+    font-size: 2.5vh;
+    float: right;
+    right: 40.5%;
+    top: 12.5%;
+    position: absolute;
+}
+.card .wind{
+    text-align: left;
+    font-size: 2.5vh;
+    float: right;
+    right: 36%;
+    top: 15%;
+    position: absolute;
 }
 
 
