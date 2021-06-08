@@ -12,7 +12,7 @@
     --BannerBG: #fffdf6; 
     --BannerTxtColor: #494949; 
 
-    --WeatherBG: #ece8d9; 
+    --WeatherSectionBG: #ece8d9; 
     --ChartBG: #fffdf6; 
     --AreaOfFarmlandBG: #ece8d9;
     --AnnouncementsBG: #fffdf6;
@@ -108,19 +108,46 @@ nav .MMlist:hover::after {
 }
 
 
-<!--Weather-->
+/*Weather*/
 .Contents {
 	width: 100%;
 	position: relative;
 	top: 450px;
 	height: 1500px;
+}   
+.Contents .WeatherSection{
+	background: var(--WeatherSectionBG);
+    font-family: poppins;
 }
-.Contents .Weather{
-	background: var(--WeatherBG);
+.card .search{
+    position: relative;
+    text-align: left;
+    top: 1em;
+    text-indent: 2em;
+}
+.WeatherSection .card input.search-bar {
+    border: none;
+    outline: none;
+    padding: 0.3em;
+    border-radius: 24px;
+    background: lightgray;
+    color: black;
+    font-family: inherit;
+    font-size: 1vw;
+    width: 25%;
+}
+.card h1.temp{ 
+    text-align: left;
+    font-size: 30px;
+    text-indent: 3em;
+}
+.card h1.temp1{ 
+    text-align: left;
+    font-size: 50px;
+    text-indent: 5em;
 }
 
-
-<!--Chart-->
+/*Chart*/
 .Contents .Chart{
     background: var(--ChartBG);
 }
@@ -138,7 +165,7 @@ nav .MMlist:hover::after {
 }
 
 
-<!--Area of Farmland-->
+/*Area of Farmland*/
 .Contents .AreaOfFarmland{
     background: var(--AreaOfFarmlandBG);
 }
@@ -156,7 +183,7 @@ nav .MMlist:hover::after {
 }
 
 
-<!--Announcements-->
+/*Announcements*/
 .Contents .Announcements{
     background: var(--AnnouncementsBG);
 }
@@ -174,7 +201,7 @@ nav .MMlist:hover::after {
 }
 
 
-<!--HighlandCrops-->
+/*Highland Crops*/
 .Contents .HighlandCrops{
     background: var(--HighlandCropsBG);
 }
