@@ -112,32 +112,67 @@ nav .MMlist:hover::after {
 .Contents {
 	width: 100%;
 	position: relative;
-	top: 450px;
+	top: 400px;
 	height: 1500px;
 }   
-.Contents .WeatherSection{
-	background: var(--WeatherSectionBG);
-    font-family: poppins;
+.WeatherSection .card{
+  padding:2em;
+  width: 100%;
+  max-width: 520px;
 }
-.card .search{
-    position: relative;
-    text-align: left;
-    top: 1em;
-    text-indent: 2em;
+/*Weather Text Alignment*/
+.WeatherSection .card .search{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+/*Weather temp size*/
+.WeatherSection .card h1.temp{ 
+  font-size: 2vw;
+}
+
+/*Weather city name size*/
+.WeatherSection .card h2.city{
+  margin-top: 15px;
+  font-size: 1.5vw;
+}
+
+/*Weather search button size*/
 .WeatherSection .card button{
+    margin: .5em;
     border-radius: 50%;
     border: none;
-    height: 4vh;
-    width: 4vh;
-    background-color: white;
+    height: 3.5vh;
+    width: 3.5vh;
+    outline: none;
     cursor: pointer;
     transition: 0.2s ease-in-out;
 }
-.WeatherSection .card button:hover{
+
+/*Weather search button animation*/
+button:hover{
   background: lightgray;
 }
 
+/*Weather description, humidity and wind size*/
+.WeatherSection .card .description,.humidity,.wind{
+  font-size: 1vw;
+}
+
+/*Weather icon image*/
+.WeatherSection .card .flex img{
+  width: 20%;
+  height: 20%;
+}
+
+/*Weather search image*/
+.WeatherSection .card .search img{
+  height:50%; 
+  width:50%;
+}
+
+/*Weather search bar*/
 .WeatherSection .card input.search-bar {
     border: none;
     outline: none;
@@ -147,18 +182,20 @@ nav .MMlist:hover::after {
     color: black;
     font-family: inherit;
     font-size: 1vw;
-    width: 25%;
+    width: calc(100% - 5px);
 }
-.card h1.temp{ 
-    text-align: left;
-    font-size: 30px;
-    text-indent: 3em;
+
+/*Weather text & image alignment of description and icon*/
+.flex{
+  display:flex;
+  align-items: center;
 }
-.card h1.temp1{ 
-    text-align: left;
-    font-size: 50px;
-    text-indent: 5em;
+
+/*Weather Descrption First Letter All Caps*/
+.description {
+    text-transform: capitalize;
 }
+
 
 /*Chart*/
 .Contents .Chart{
