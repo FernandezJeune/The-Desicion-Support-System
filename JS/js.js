@@ -15,7 +15,7 @@ for(var i = 0; i < items.length; i++){
 
 
         if(index == 0  ){
-            document.getElementById("VegtableInfo").innerHTML="<h1>Cabbage info . . . . </h1>";
+            document.getElementsByClassName("VegtableInfo").innerHTML="<h1>Cabbage is a leafy green, red, or white biennial plant grown as an annual vegetable crop for its dense-leaved heads. It is descended from the wild cabbage, and belongs to the cole crops or brassicas, meaning it is closely related to broccoli and cauliflower; Brussels sprouts; and Savoy cabbage.</h1>";
         }
         if(index == 1  ){
             document.getElementById("VegtableInfo").innerHTML="<h1>Potato info . . . . </h1>";
