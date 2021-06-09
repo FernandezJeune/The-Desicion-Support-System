@@ -12,7 +12,7 @@
     --BannerBG: #fffdf6; 
     --BannerTxtColor: #494949; 
 
-    --WeatherSectionBG: #ece8d9; 
+    --WeatherBG: #ece8d9; 
     --ChartBG: #fffdf6; 
     --AreaOfFarmlandBG: #ece8d9;
     --AnnouncementsBG: #fffdf6;
@@ -21,6 +21,8 @@
     --VegsMenuFont: poppins;
     --VegsMenuTxtColor:#494949;
     --SeasonsContentBG: #fffdf6;
+    --MonthsMenuFont: poppins;
+    --MonthsMenuTxtColor:#494949;
 
 }
 
@@ -107,91 +109,16 @@ nav .MMlist:hover::after {
     font-size: 25px;
 }
 
-
-/*Weather*/
 .Contents {
 	width: 100%;
 	position: relative;
-	top: 400px;
-	height: 1500px; 
+	top: 450px;
+	height: 1500px;
 }
-.Contents .WeatherSection{
-	background: var(--WeatherSectionBG);
-    font-family: poppins;
-}
-.card .search{
-    text-align: left;
-    top: 1em;
-    text-indent: 2em;
-    padding-top: 0.6em;
-}
-.WeatherSection .card button{
-    border-radius: 50%;
-    border: none;
-    height: 3.5em;
-    width: 3.5em;
-    background-color: white;
-    cursor: pointer;
-    transition: 0.2s ease-in-out;
-}
-.WeatherSection .card button:hover{
-  background: lightgray;
+.Contents .Weather{
+	background: var(--WeatherBG);
 }
 
-.WeatherSection .card input.search-bar {
-    border: none;
-    outline: none;
-    padding: 0.3em;
-    border-radius: 24px;
-    background: white;
-    color: black;
-    font-family: inherit;
-    font-size: 1vw;
-    width: 25%;
-}
-.card h1.temp{ 
-    text-align: left;
-    font-size: 30px;
-    text-indent: 3em;
-}
-.card h1.temp1{ 
-    text-align: left;
-    font-size: 100px;
-    text-indent: 2em;
-}
-.card h2.city{
-    font-size: 5vh;
-    float: right;
-    right: 300px;
-    bottom: 40px;
-    position: relative;
-}
-.card .description{
-    font-size: 5vh;
-    float: right;
-    right: 30%;
-    top: 6.5%;
-    position: absolute;
-}
-.card .humidity{
-    text-align: left;
-    font-size: 2.5vh;
-    float: right;
-    right: 40.5%;
-    top: 12.5%;
-    position: absolute;
-}
-.card .wind{
-    text-align: left;
-    font-size: 2.5vh;
-    float: right;
-    right: 36%;
-    top: 15%;
-    position: absolute;
-}
-
-
-/*Chart*/
 .Contents .Chart{
     background: var(--ChartBG);
 }
@@ -208,8 +135,6 @@ nav .MMlist:hover::after {
 	line-height: 30px;
 }
 
-
-/*Area of Farmland*/
 .Contents .AreaOfFarmland{
     background: var(--AreaOfFarmlandBG);
 }
@@ -226,8 +151,6 @@ nav .MMlist:hover::after {
 	line-height: 30px;
 }
 
-
-/*Announcements*/
 .Contents .Announcements{
     background: var(--AnnouncementsBG);
 }
@@ -245,7 +168,7 @@ nav .MMlist:hover::after {
 }
 
 
-/*Highland Crops*/
+
 .Contents .HighlandCrops{
     background: var(--HighlandCropsBG);
 }
@@ -306,7 +229,76 @@ nav .MMlist:hover::after {
 .Contents .VegtableInfo h1 {
 	font-family: poppins;
 	letter-spacing: 4px;
+	padding-top: 20px;
+	font-size: 20px;
+	margin: 0;
+    float: center;
+}
+
+
+
+.Contents .Months{
+    background: var(--SeasonsContentBG);
+}
+.Contents .Months h2 {
+	font-family: poppins;
+	letter-spacing: 4px;
 	padding-top: 30px;
 	font-size: 40px;
 	margin: 0;
+}
+.Contents .Months .MonthsMenu{
+    margin-top:30px;
+}
+.Contents .Months .MonthsMenu ul
+{
+    display: block;
+}
+.Contents .Months .MonthsMenu ul li
+{
+    list-style-type: none;
+    display: inline-block;
+}
+.Contents .Months .MonthsMenu ul li a
+{
+    text-decoration: none;
+    font-family: var(--MonthsMenuFont);
+    letter-spacing: 4px;
+    font-size: 20px;
+    margin: 15px;
+    color: var(--MonthsMenuTxtColor);
+}
+.Contents .Months .MonthsMenu ul li a .MonthsList
+{
+    position: relative;
+    display: block;
+    padding: 7%;
+    height: 15%;
+    line-height: 15%;
+    text-align: center;
+    white-space: nowrap;
+}
+.Contents .Months .MonthsMenu ul li a ::after {
+    content:'';
+    display: block;
+    width: 0;
+    height: 3px;
+    background: #494949;
+    transition: width .3s;
+}
+.Contents .Months .MonthsMenu ul li a :hover::after {
+    width: 100%;
+    transition: width .3s;
+}
+
+.Contents .MonthInfo{
+    background: var(--SeasonsContentBG);
+}
+.Contents .MonthInfo h1 {
+	font-family: poppins;
+	letter-spacing: 4px;
+	padding-top: 20px;
+	font-size: 20px;
+	margin: 0;
+    float: center;
 }

@@ -19,9 +19,9 @@
                 </div>
                 <nav>
                     <ul>
-                        <li><a href="#" class="MMlist">Home</a></li>
-                        <li><a href="#" class="MMlist">Crops</a></li>
-                        <li><a href="#" class="MMlist">Seasons</a></li>
+                        <li><a href="#HomeID" class="MMlist">Home</a></li>
+                        <li><a href="#CropsID" class="MMlist">Crops</a></li>
+                        <li><a href="#SeasonsID" class="MMlist">Seasons</a></li>
                         <li><a href="#" class="MMlist">Municipalities</a></li>
                         <li><a href="#" class="MMlist">GIS</a></li>
                         <li><a href="#" class="MMlist">Datasets</a></li>
@@ -31,7 +31,7 @@
         </header>
     </div>
 
-    <div class="Banner">
+    <div class="Banner" id="HomeID">
         <h2>PROJECT ANI</h2>
         <p>Agri Natin Ito : A Decision Support System to Predict Crop Trends in Benguet using Data Mining and Machine Learning</p>
     </div>
@@ -77,10 +77,9 @@
         </div>
 
 
-        <div class="CropsContent">
+        <div class="CropsContent" id="CropsID">
             <div class="HighlandCrops">
                 <h2>Highland Crops</h2>
-
 
                 <div class='VegsMenu'>
                     <ul id="VegsList">
@@ -98,20 +97,33 @@
                 </div>
             </div>
 
-            <div class="VegtableInfo">
-
-            </div>
-
+            <div id="VegtableInfoID" class="VegtableInfo"></div>
         </div>
 
-        <div class="SeasonsContent">
+        <div class="SeasonsContent" id="SeasonsID">
             <div class="Months">
                 <h2>Months</h2>
+
+                <div class='MonthsMenu'>
+                    <ul id="MonthsList">
+                        <li><a href="#MonthsList"><span class="Mlist">January</span></a></li>
+                        <li><a href="#MonthsList"><span class="Mlist">February</span></a></li>
+                        <li><a href="#MonthsList"><span class="Mlist">March</span></a></li>
+                        <li><a href="#MonthsList"><span class="Mlist">April</span></a></li>
+                        <li><a href="#MonthsList"><span class="Mlist">May</span></a></li>
+                        <li><a href="#MonthsList"><span class="Mlist">June</span></a></li>
+                        <li><a href="#MonthsList"><span class="Mlist">July</span></a></li>
+                        <li><a href="#MonthsList"><span class="Mlist">August</span></a></li>
+                        <li><a href="#MonthsList"><span class="Mlist">September</span></a></li>
+                        <li><a href="#MonthsList"><span class="Mlist">October</span></a></li>
+                        <li><a href="#MonthsList"><span class="Mlist">November</span></a></li>
+                        <li><a href="#MonthsList"><span class="Mlist">December</span></a></li>
+                    </ul>
+                </div>
             </div>
 
-            <div class="MonthInfo">
-
-            </div>
+            <div id="MonthsInfoID" class="MonthInfo"></div>
+        </div>
 
         </div>
     </div>
@@ -119,7 +131,7 @@
 
 
 
-    <script src="JS/js.js"></script>
+    <script src="JS/Crops.js"></script>
 </body>
 <script src="JS/js.js"></script>
 </html>
