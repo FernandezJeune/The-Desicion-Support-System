@@ -80,6 +80,7 @@ nav .MMlist::after {
     height: 3px;
     background: #494949;
     transition: width .3s;
+    margin-left: 15%;
 }
 nav .MMlist:hover::after {
     width: 80%;
@@ -218,6 +219,7 @@ nav .MMlist:hover::after {
     height: 3px;
     background: #494949;
     transition: width .3s;
+    margin-left: 15%;
 }
 .Contents .HighlandCrops .VegsMenu ul li a :hover::after {
     width: 80%;
@@ -286,6 +288,7 @@ nav .MMlist:hover::after {
     height: 3px;
     background: #494949;
     transition: width .3s;
+    margin-left: 15%;
 }
 .Contents .Months .MonthsMenu ul li a :hover::after {
     width: 80%;
