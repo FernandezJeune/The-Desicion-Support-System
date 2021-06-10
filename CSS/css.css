@@ -119,10 +119,23 @@ nav .MMlist:hover::after {
 }
 
 /*Weather*/
-.Contents .Weather{
+.Contents .WeatherSection{
 	background: var(--WeatherBG);
 }
 
+.Contents .WeatherSection{
+    font-family: poppins;
+	letter-spacing: 2px;
+	padding-top: 15px;
+    padding-left: 80px;
+    padding-bottom: 15px;
+	font-size: 20px;
+	margin: 0;
+    text-align: left;
+}
+
+
+/*Chart*/
 .Contents .Chart{
     background: var(--ChartBG);
 }
