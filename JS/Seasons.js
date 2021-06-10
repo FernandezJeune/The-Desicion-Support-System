@@ -1,5 +1,5 @@
 var items = document.querySelectorAll("#MonthsList li"),
-     tab = [], index;
+     tab = [], sindex;
 
 // add values to the array
 for(var i = 0; i < items.length; i++){
