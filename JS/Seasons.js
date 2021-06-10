@@ -2,13 +2,13 @@ var items = document.querySelectorAll("#MonthsList li"),
      tab = [], sindex;
 
 // add values to the array
-for(var i = 0; i < items.length; i++){
-    tab.push(items[i].innerHTML);
+for(var j = 0; j < items.length; j++){
+    tab.push(items[j].innerHTML);
 }
 
 // get selected element index
-for(var i = 0; i < items.length; i++){
-    items[i].onclick = function(){
+for(var j = 0; j < items.length; j++){
+    items[j].onclick = function(){
 
         index = tab.indexOf(this.innerHTML);
         console.log(" Index = " + index);
