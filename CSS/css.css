@@ -46,11 +46,11 @@ header{
 
 .Logo{
     width: 30%;
-    float: left;
+    text-align: left;
+    float: left;    
     line-height: 100px;
 }
-.Logo a{
-    text-decoration: none;
+.Logo a{    
     font-size: 30px;
     font-family: var(--LogoFont);
     color: var(--LogoTxtColor);
@@ -117,10 +117,59 @@ nav .MMlist:hover::after {
 	top: 450px;
 	height: 1500px;
 }
-.Contents .Weather{
+
+/*Weather*/
+.Contents .WeatherSection{
 	background: var(--WeatherBG);
 }
+.WeatherSection .flex{
+    align-items: center;
+    display: flex;
+}
+.Contents .WeatherSection{
+    font-family: poppins;
+	letter-spacing: 2px;
+	padding-top: 15px;
+    padding-left: 200px;
+    padding-bottom: 15px;
+	font-size: 20px;
+	margin: 0;
+    text-align: left;
+}
+.WeatherSection .card input.search-bar{
+    border: none;
+    outline: none;
+    padding: 0.3em;
+    border-radius: 24px;
+    color: black;
+    font-family: inherit;
+    font-size: 20px;
+    width: 30%;
+}
+.WeatherSection .card button {
+    margin: .5em;
+    border-radius: 50%;
+    border: none;
+    height: 43px;
+    width: 43px;
+    outline: none;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+button:hover{
+    background: lightgray;
+  }
+.WeatherSection .card .search img{
+  height:50%; 
+  width:50%;
+}
+.description {
+    text-transform: capitalize;
+}
 
+
+
+/*Chart*/
 .Contents .Chart{
     background: var(--ChartBG);
 }
@@ -133,10 +182,11 @@ nav .MMlist:hover::after {
 }
 .Contents .Chart p {
 	padding: 2% 0px;
-	font-family: poppins;
+	font-family: poppins;   
 	line-height: 30px;
 }
 
+/*Area of Farmland*/
 .Contents .AreaOfFarmland{
     background: var(--AreaOfFarmlandBG);
 }
@@ -153,6 +203,8 @@ nav .MMlist:hover::after {
 	line-height: 30px;
 }
 
+
+/*Announcement*/
 .Contents .Announcements{
     background: var(--AnnouncementsBG);
 }
@@ -170,7 +222,7 @@ nav .MMlist:hover::after {
 }
 
 
-
+/*Highland Crops*/
 .Contents .HighlandCrops{
     background: var(--HighlandCropsBG);
 }
@@ -239,7 +291,7 @@ nav .MMlist:hover::after {
 }
 
 
-
+/*Season*/
 .Contents .Months{
     background: var(--SeasonsContentBG);
 }
