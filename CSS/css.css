@@ -14,8 +14,9 @@
 
     --WeatherBG: url('../Images/Sample.png'); 
     --ChartBG: #fffdf6; 
-    --AreaOfFarmlandBG: #ece8d9;
-    --AnnouncementsBG: #fffdf6;
+    --MunicipalitiesBG: #ece8d9;
+    --GISBG: #fffdf6;
+    --DatasetsBG: #ece8d9;
 
     --HighlandCropsBG: #ece8d9;
     --VegsMenuFont: poppins;
@@ -23,6 +24,7 @@
     --SeasonsContentBG: #fffdf6;
     --MonthsMenuFont: poppins;
     --MonthsMenuTxtColor:#494949;
+
 }
 
 body{
@@ -31,6 +33,9 @@ body{
 .Items{
     width: 1170px;
     margin: 0 auto;
+    display: grid;
+    grid-template-columns: 50% Auto;
+    width: 100%;
 }
 header{
     height: 100px;
@@ -41,21 +46,20 @@ header{
 }
 .Logo{
     width: 30%;
-    text-align: left;
+    text-align: right;
     line-height: 100px;
-    float: left;
+    margin-left: 120px;
 }
 .Logo a{    
     font-size: 30px;
     font-family: var(--LogoFont);
     color: var(--LogoTxtColor);
-    letter-spacing: 5px;
 }
 
 nav{
     margin-top: 30px;
-    float: right;
     text-align: right;
+    margin-right: 100px;
 }
 nav li{
     list-style-type: none;
@@ -118,7 +122,6 @@ nav .MMlist:hover::after {
 .Contents .WeatherSection{
 	background: var(--WeatherBG);
     height: 400px;
-    width: 100%;
 }
 .WeatherSection .flex{
     align-items: center;
@@ -143,6 +146,11 @@ nav .MMlist:hover::after {
     font-family: inherit;
     font-size: 20px;
     width: 30%;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+input.search-bar:hover{
+    background: lightgray;
 }
 .WeatherSection .card button {
     margin: .5em;
@@ -356,4 +364,55 @@ button:hover{
 	font-size: 20px;
 	margin: 0;
     float: center;
+}
+
+/*Municipalities*/
+.Contents .Municipalities{
+    background: var(--MunicipalitiesBG);
+}
+.Contents .Municipalities h2{
+	font-family: poppins;
+	letter-spacing: 4px;
+	padding-top: 30px;
+	font-size: 40px;
+	margin: 0;
+}
+.Contents .Municipalities p{
+	padding: 2% 0px;
+	font-family: poppins;   
+	line-height: 30px;
+}
+
+/*GIS*/
+.Contents .GIS{
+    background: var(--GISBG);
+}
+.Contents .GIS h2 {
+	font-family: poppins;
+	letter-spacing: 4px;
+	padding-top: 30px;
+	font-size: 40px;
+	margin: 0;
+}
+.Contents .GIS p {
+	padding: 2% 0px;
+	font-family: poppins;   
+	line-height: 30px;
+}
+
+/*Datasets*/
+.Contents .Datasets{
+    background: var(--DatasetsBG);
+}
+.Contents .Datasets h2 {
+	font-family: poppins;
+	letter-spacing: 4px;
+	padding-top: 30px;
+	font-size: 40px;
+	margin: 0;
+}
+.Contents .Datasets p {
+	padding: 2% 0px;
+	font-family: poppins;   
+	line-height: 30px;
 }
