@@ -36,6 +36,7 @@ body{
     display: grid;
     grid-template-columns: 50% Auto;
     width: 100%;
+    background: black;
 }
 header{
     height: 100px;
@@ -46,8 +47,9 @@ header{
 }
 .Logo{
     width: 30%;
-    text-align: right;
+    text-align: left;
     line-height: 100px;
+    letter-spacing: 5px;
     margin-left: 120px;
 }
 .Logo a{    
@@ -184,13 +186,13 @@ button:hover{
 	letter-spacing: 4px;
 	padding-top: 30px;
 	font-size: 40px;
-	margin: 0;
 }
 .Contents .Chart p {
 	padding: 2% 0px;
 	font-family: poppins;   
 	line-height: 30px;
 }
+
 
 /*Area of Farmland*/
 .Contents .AreaOfFarmland{
@@ -413,6 +415,6 @@ button:hover{
 }
 .Contents .Datasets p {
 	padding: 2% 0px;
-	font-family: poppins;   
+	font-family: poppins;
 	line-height: 30px;
 }
