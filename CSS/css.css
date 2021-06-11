@@ -120,7 +120,7 @@ nav .MMlist:hover::after {
 
 /*Weather*/
 .Contents .WeatherSection{
-	background: var(--WeatherBG);
+    background-image: url("Sample.png");
 }
 .WeatherSection .flex{
     align-items: center;
@@ -135,7 +135,6 @@ nav .MMlist:hover::after {
 	font-size: 20px;
 	margin: 0;
     text-align: left;
-    background-image: url("Sample.png");
 
 }
 .WeatherSection .card input.search-bar{
