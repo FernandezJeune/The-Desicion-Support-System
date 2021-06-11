@@ -121,6 +121,8 @@ nav .MMlist:hover::after {
 /*Weather*/
 .Contents .WeatherSection{
 	background: var(--WeatherBG);
+    height: 400px;
+    width: 100%;
 }
 .WeatherSection .flex{
     align-items: center;
