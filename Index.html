@@ -7,10 +7,21 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 	<link href="CSS/css.css" rel="stylesheet">
+    <!--Season Javascript-->
     <script src="JS/Seasons.js" defer></script>
+    <!--Crops Javascript-->
     <script src="JS/Crops.js" defer></script>
+    <!--Weather Javascript-->
     <script src="JS/script.js" defer></script>
+    <!--Donut Chart-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
     <title>Project ANI</title>
+<style>
+    .item1 { grid-area: title; }
+    .item2 { grid-area: chart; }
+    .item3 { grid-area: description; }
+
+</style>
 </head>
 <body>
     <div class="Menu">
@@ -62,8 +73,42 @@
             </div>
 
             <div class="Chart">
-                <h2>Chart</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero aliquid iste repudiandae non repellendus, tempora modi nulla praesentium eos debitis, minus optio nobis vel impedit hic! Pariatur aliquam sequi voluptas.</p>
+                <div class="grid-container">
+                    <div class="item1"><h2>Summary of Ration(Crops)</h2></div>
+                    <div class="item2">description</div>  
+                    <div class="item3">
+                        <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+
+                        <script>
+                        var xValues = ["Potato", "Chinese Cabbage", "Cabbage", "Lettuce", "Carrots"];
+                        var yValues = [55, 49, 44, 24, 15];
+                        var barColors = [
+                          "#b91d47",
+                          "#00aba9",
+                          "#2b5797",
+                          "#e8c3b9",
+                          "#1e7145"
+                        ];
+                        
+                        new Chart("myChart", {
+                          type: "doughnut",
+                          data: {
+                            labels: xValues,
+                            datasets: [{
+                              backgroundColor: barColors,
+                              data: yValues
+                            }]
+                          },
+                          options: {
+                            title: {
+                              display: true,
+                              text: "Top 10 Highland Crops"
+                            }
+                          }
+                        });
+                        </script>
+                    </div>
+                  </div>
             </div>
         </div>
 
