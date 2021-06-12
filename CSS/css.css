@@ -36,7 +36,6 @@ body{
     display: grid;
     grid-template-columns: 50% Auto;
     width: 100%;
-    background: black;
 }
 header{
     height: 100px;
