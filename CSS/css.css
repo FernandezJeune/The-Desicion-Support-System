@@ -195,15 +195,10 @@ button:hover{
 .Chart .grid-container {
     display: grid;
     grid-template-areas:
-      'title title title title'
-      'chart chart description description';
+      'title title title title '
+      'description description chart chart';
     grid-gap: 10px; 
-    padding: 10px;
-}
-.grid-container > div {
-    text-align: center;
-    padding: 20px 0;
-    font-size: 30px;
+    padding: 10px;  
 }
 
 
