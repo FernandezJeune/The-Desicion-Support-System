@@ -32,9 +32,6 @@ body{
 }
 .Items{
     width: 1170px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 50% Auto;
     width: 100%;
 }
 header{
@@ -46,10 +43,9 @@ header{
 }
 .Logo{
     width: 30%;
-    text-align: left;
+    float: left;
     line-height: 100px;
     letter-spacing: 5px;
-    margin-left: 120px;
 }
 .Logo a{    
     font-size: 30px;
@@ -59,7 +55,7 @@ header{
 
 nav{
     margin-top: 30px;
-    text-align: right;
+    float: right;
     margin-right: 100px;
 }
 nav li{
