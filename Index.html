@@ -17,13 +17,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
     <title>Project ANI</title>
 <style>
+    /*Chart Grids*/
     .item1 { grid-area: title; }
     .item2 { grid-area: description; }
     .item3 { grid-area: chart; }
-     #map{
-         height: 500px;
-         width: 100%;
-     }
 </style>
 </head>
 <body>
@@ -54,6 +51,7 @@
 
     <div class="Contents">
         <div class="HomeContents">
+            <!--Weather Widget-->
             <div class="WeatherSection">
                 <div class="card">
                     <div class="search">
@@ -75,11 +73,14 @@
                 </div>
             </div>
 
+            <!--Chart-->
             <div class="Chart">
+                <!--Grid-->
                 <div class="grid-container">
                     <div class="item1"><h2>Ratio of Crops(Crops)</h2></div>
                     <div class="item2"></div>  
                     <div class="item3">
+                        <!--Donut Chart-->
                         <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
 
                         <script>
@@ -165,8 +166,9 @@
         </div>
         <div class="Municipalities">
             <h2>Municipalities</h2>
+            <!--Google map Location-->
             <div class="map-wrapper">
-            <iframe class="googlemap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12874.095960023275!2d120.58756668150106!3d16.399839369352506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3391a16879def13f%3A0x8edef534be3a75c0!2sBaguio%2C%20Benguet!5e0!3m2!1sen!2sph!4v1623908317700!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <iframe class ="googlemap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12874.095960023275!2d120.58756668150106!3d16.399839369352506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3391a16879def13f%3A0x8edef534be3a75c0!2sBaguio%2C%20Benguet!5e0!3m2!1sen!2sph!4v1623908317700!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
         </div>
 
