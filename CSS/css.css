@@ -260,9 +260,11 @@ button:hover{
 .Contents .VegtableInfo h1 {
 	font-family: poppins;
 	letter-spacing: 4px;
-	padding-top: 20px;
+	padding-top: 15px;
 	font-size: 20px;
-	margin: 0;
+    text-align: left;
+    text-indent: 50px;
+	margin-left: 100px;
 }
 
 
