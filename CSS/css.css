@@ -85,7 +85,13 @@ nav .MMlist:hover::after {
     transition: width .3s;
     margin-left: 15%;
 }
-
+nav select {
+    display: none;
+}
+@media (max-width: 960px) {
+    nav ul     { display: none; }
+    nav select { display: inline-block; }
+}
 
 .Banner{
     width: 100%;

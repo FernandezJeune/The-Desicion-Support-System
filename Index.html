@@ -22,6 +22,33 @@
     .item2 { grid-area: description; }
     .item3 { grid-area: chart; }
 </style>
+         <!--JQuery for the dropdown-->
+         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+         <script>
+          $(function() {    
+           // Create the dropdown base
+           $("<select />").appendTo("nav");
+           
+           // Create default option "Go to..."
+           $("<option />", {
+              "selected": "selected",
+              "value"   : "",
+              "text"    : "Go to..."
+           }).appendTo("nav select");
+           
+           // Populate dropdown with menu items
+           $("nav a").each(function() {
+            var el = $(this);
+            $("<option />", {
+                "value"   : el.attr("href"),
+                "text"    : el.text()
+            }).appendTo("nav select");
+           });
+           $("nav select").change(function() {
+             window.location = $(this).find("option:selected").val();
+           });
+          });
+         </script>
 </head>
 <body>
     <div class="Menu">
@@ -184,6 +211,7 @@
         <div class="Datasets">
             <h2>Datasets</h2>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero aliquid iste repudiandae non repellendus, tempora modi nulla praesentium eos debitis, minus optio nobis vel impedit hic! Pariatur aliquam sequi voluptas.</p>
+            <!--Search Bar Dataset-->
             <div class="search">
                 <input type="text" class="search-bar" placeholder="Enter Municipality: ">
                 <input type="text" class="search-bar" placeholder="Enter Crop: ">
@@ -191,6 +219,7 @@
                 <input type="text" class="search-bar" placeholder="Enter Yearly rain: ">
                 <input type="text" class="search-bar" placeholder="Enter Area: ">
             </div>
+            <!--On click showing prediction data-->
                 <button onclick="myFunction()">Search</button>
                 <p id="demo"></p>
                 <script>
