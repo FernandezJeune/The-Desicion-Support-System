@@ -19,6 +19,7 @@
     --DatasetsBG: #ece8d9;
 
     --HighlandCropsBG: #ece8d9;
+    --SampleCabbage: url('../Images/Cabbage.png'); 
     --VegsMenuFont: poppins;
     --VegsMenuTxtColor:#494949;
     --SeasonsContentBG: #fffdf6;
@@ -255,7 +256,7 @@ button:hover{
 }
 
 .Contents .VegtableInfo{
-    background: var(--HighlandCropsBG);
+    background: var(--SampleCabbage);
 }
 .Contents .VegtableInfo h1 {
 	font-family: poppins;
@@ -396,4 +397,8 @@ button:hover{
 	padding: 2% 0px;
 	font-family: poppins;
 	line-height: 30px;
+}
+
+.Datasets .search{
+    padding-bottom: 30px;
 }
