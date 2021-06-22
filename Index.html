@@ -111,38 +111,29 @@
                         <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
 
                         <script>
-                        var xValues = ["Cabbage", "Chinese Cabbage", "Lettuce", "Cauliflower", "Snap beans", 
-                        "Garden peas", "Sweet Pepper", "White Potato", "Carrots"];
-                        var yValues = [20,10,10,10,10,10,10,10,10];
-                        var barColors = [
-                          "#b91d47",
-                          "#00aba9",
-                          "#2b5797",
-                          "#e8c3b9",
-                          "#1e7145", 
-                          "#ff80df",
-                          "#6699ff",
-                          "#ffff4d",
-                          "#00ff00"
-                        ];
-                        
-                        new Chart("myChart", {
-                          type: "doughnut",
-                          data: {
-                            labels: xValues,
-                            datasets: [{
-                              backgroundColor: barColors,
-                              data: yValues
-                            }]
-                          },
-                          options: {
-                            title: { 
-                              display: true,
-                              text: "Top 10 Highland Crops"
-                            }
-                          }
-                        });
-                        </script>
+                             var xValues = ["Cabbage", "Chinese Cabbage", "Lettuce", "Cauliflower", "Snap beans", 
+                             "Garden peas", "Sweet Pepper", "White Potato", "Carrots"];
+                            var yValues = [55, 49, 44, 35, 24, 20, 17, 15, 13];
+                            var barColors = ["red", "green","blue","orange","brown","red", "green","blue","orange"];
+                            
+                            new Chart("myChart", {
+                              type: "bar",
+                              data: {
+                                labels: xValues,
+                                datasets: [{
+                                  backgroundColor: barColors,
+                                  data: yValues
+                                }]
+                              },
+                              options: {
+                                legend: {display: false},
+                                title: {
+                                  display: true,
+                                  text: "Top 10 HIGHLAND CROPS"
+                                }
+                              }
+                            });
+                            </script>
                     </div>
                   </div>
             </div>
