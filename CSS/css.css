@@ -40,6 +40,8 @@ body{
     color: white;
     font-family: poppins;
     font-size: 1rem;
+    width: 100%;
+    position: fixed;
 }
 .brand-title{
     font-size: 1.5rem;
@@ -109,28 +111,22 @@ body{
 /*Project ANI - Description*/
 .Banner{
     width: 100%;
-	height: 400px;
-	position: absolute;
 	background: var(--BannerBG);
     text-align: center;
 }
 .Banner h2 {
-	padding-top: 3%;
+	padding-top: 7%;
 	font-size: 70px;
 	font-family: poppins;
 	text-transform: uppercase;
 	color: var(--BannerTxtColor);
 }
 .Banner p {
+    padding-bottom: 3%;
 	font-family: poppins;
     font-size: 25px;
 }
 
-.Contents {
-	width: 100%;
-	position: relative;
-	top: 250px;
-}
 
 /*Weather*/
 .Contents .WeatherSection{
