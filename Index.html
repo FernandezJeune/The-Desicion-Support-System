@@ -15,6 +15,8 @@
     <script src="JS/script.js" defer></script>
     <!--Donut Chart-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <!--Navigation Bar-->
+    <script src="JS/navigation.js" defer></script>
     <title>Project ANI</title>
 <style>
     /*Chart Grids*/
@@ -22,54 +24,26 @@
     .item2 { grid-area: description; }
     .item3 { grid-area: chart; }
 </style>
-         <!--JQuery for the dropdown-->
-         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-         <script>
-          $(function() {    
-           // Create the dropdown base
-           $("<select />").appendTo("nav");
-           
-           // Create default option "Go to..."
-           $("<option />", {
-              "selected": "selected",
-              "value"   : "",
-              "text"    : "Go to..."
-           }).appendTo("nav select");
-           
-           // Populate dropdown with menu items
-           $("nav a").each(function() {
-            var el = $(this);
-            $("<option />", {
-                "value"   : el.attr("href"),
-                "text"    : el.text()
-            }).appendTo("nav select");
-           });
-           $("nav select").change(function() {
-             window.location = $(this).find("option:selected").val();
-           });
-          });
-         </script>
 </head>
 <body>
-    <div class="Menu">
-        <header>
-            <div class="Items">
-                <div class="Logo">
-                    <a>Project ANI</a>
-                </div>
-                <nav>
-                    <ul>
-                        <li><a href="#HomeID" class="MMlist">Home</a></li>
-                        <li><a href="#CropsID" class="MMlist">Crops</a></li>
-                        <li><a href="#SeasonsID" class="MMlist">Seasons</a></li>
-                        <li><a href="#" class="MMlist">Municipalities</a></li>
-                        <li><a href="#" class="MMlist">GIS</a></li>
-                        <li><a href="#" class="MMlist">Datasets</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
+    <nav class="navbar">
+    <div class="brand-title">Project ANI</div>
+    <a href="" class="toggle-button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </a>
+    <div class="navbar-links">
+        <ul>
+            <li><a href="#HomeID" class="MMlist">Home</a></li>
+            <li><a href="#CropsID" class="MMlist">Crops</a></li>
+            <li><a href="#SeasonsID" class="MMlist">Seasons</a></li>
+            <li><a href="#" class="MMlist">Municipalities</a></li>
+            <li><a href="#" class="MMlist">GIS</a></li>
+            <li><a href="#" class="MMlist">Datasets</a></li>
+        </ul>
     </div>
+    </nav>
 
     <div class="Banner" id="HomeID">
         <h2>PROJECT ANI</h2>
