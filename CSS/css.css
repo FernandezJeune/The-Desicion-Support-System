@@ -382,10 +382,23 @@ button:hover{
 	font-size: 40px;
 	margin: 0;
 }
-.Contents .GIS p {
+.Contents .GIS .gisInfo {
+    width: 50%;
+    float: left;
+    line-height: 100px;
+}
+.Contents .GIS .gisInfo p {
 	padding: 2% 0px;
 	font-family: poppins;   
 	line-height: 30px;
+    font-size: 20px;
+}
+.Contents .GIS .gisImage {
+	margin-top: 50px;
+    float: right;
+}
+.Contents .GIS .gisImage img{
+    display: inline-block;
 }
 
 /*Datasets*/
