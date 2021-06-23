@@ -103,6 +103,7 @@ body{
     .navbar-links.active{
         display: flex;
     }
+
 }
 
 
@@ -409,8 +410,9 @@ button:hover{
     font-size: 20px;
 }
 .Contents .GIS .gisImage {
-	margin-top: 50px;
     float: right;
+    line-height: 100px;
+    width: 50%;
 }
 .Contents .GIS .gisImage img{
     display: inline-block;
