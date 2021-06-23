@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-
+    box-sizing: border-box;
     --HeaderBG: #faf6e9;
 
     --LogoFont: poppins;
@@ -27,84 +27,95 @@
     --MonthsMenuTxtColor:#494949;
 
 }
-
 body{
-    text-align: center;
+    margin: 0;
+    padding: 0;
 }
-.Items{
-    width: 1170px;
-    width: 100%;
+/*Navigation Bar*/
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    font-family: poppins;
+    font-size: 1rem;
 }
-header{
-    height: 100px;
-    background: var(--HeaderBG);
-    width: 100%;
-    z-index: 12;
-    position: fixed;
+.brand-title{
+    font-size: 1.5rem;
+    margin: .5rem;
 }
-.Logo{
-    width: 30%;
-    float: left;
-    line-height: 100px;
-    letter-spacing: 5px;
+.navbar-links ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
 }
-.Logo a{    
-    font-size: 30px;
-    font-family: var(--LogoFont);
-    color: var(--LogoTxtColor);
+.navbar-links li{
+    list-style: none;
 }
-
-nav{
-    margin-top: 30px;
-    float: right;
-    margin-right: 100px;
-}
-nav li{
-    list-style-type: none;
-    display: inline-block;
-}
-nav li a{
+.navbar-links li a{
     text-decoration: none;
-    font-family: var(--NavigationFont);
-    letter-spacing: 4px;
-    font-size: 20px;
-    margin: 20px;
-    color: var(--NavigationTxtColor);
-}
-nav .MMlist::after {
-    content:'';
+    color: white;
+    padding: 1rem;
     display: block;
-    width: 0;
-    height: 3px;
-    background: #494949;
-    transition: width .3s;
-    margin-left: 15%;
 }
-nav .MMlist:hover::after {
-    width: 80%;
-    transition: width .3s;
-    margin-left: 15%;
+.navbar-links li:hover{
+    background-color: #555;
 }
-nav select {
+.toggle-button{
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
     display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
 }
-@media (max-width: 960px) {
-    nav ul     { display: none; }
-    nav select { display: inline-block; }
+.toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+@media (max-width: 960px){
+    .toggle-button{
+        display: flex;
+    }
+    .navbar-links{
+        display: none;
+        width: 100%;
+    }
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar-links ul{
+        width: 100%;
+        flex-direction: column;
+    }
+    .navbar-links li{
+        text-align: center;
+    }
+    .navbar-links li a{
+        padding: .5rem 1rem;
+    }
+    .navbar-links.active{
+        display: flex;
+    }
 }
 
+
+/*Project ANI - Description*/
 .Banner{
     width: 100%;
-	height: 500px;
+	height: 400px;
 	position: absolute;
-	top: 3%;
 	background: var(--BannerBG);
-	-webkit-background-size: cover;
-	background-size: cover;
-	background-position: center center;
+    text-align: center;
 }
 .Banner h2 {
-	padding-top: 8%;
+	padding-top: 3%;
 	font-size: 70px;
 	font-family: poppins;
 	text-transform: uppercase;
@@ -118,8 +129,7 @@ nav select {
 .Contents {
 	width: 100%;
 	position: relative;
-	top: 450px;
-	height: 1500px;
+	top: 250px;
 }
 
 /*Weather*/
@@ -183,6 +193,7 @@ button:hover{
 .Contents .Chart{
     background: var(--ChartBG);
     font-family: poppins;
+    text-align: center;
 }
 .Contents .Chart h2 {
 	font-family: poppins;
@@ -207,6 +218,7 @@ button:hover{
 /*Highland Crops*/
 .Contents .HighlandCrops{
     background: var(--HighlandCropsBG);
+    text-align: center;
 }
 .Contents .HighlandCrops h2 {
 	font-family: poppins;
@@ -278,6 +290,7 @@ button:hover{
 /*Season*/
 .Contents .Months{
     background: var(--SeasonsContentBG);
+    text-align: center;
 }
 .Contents .Months h2 {
 	font-family: poppins;
@@ -347,6 +360,7 @@ button:hover{
 /*Municipalities*/
 .Contents .Municipalities{
     background: var(--MunicipalitiesBG);
+    text-align: center;
 }
 .Contents .Municipalities h2{
 	font-family: poppins;
@@ -374,6 +388,7 @@ button:hover{
 /*GIS*/
 .Contents .GIS{
     background: var(--GISBG);
+    text-align: center;
 }
 .Contents .GIS h2 {
 	font-family: poppins;
@@ -404,6 +419,7 @@ button:hover{
 /*Datasets*/
 .Contents .Datasets{
     background: var(--DatasetsBG);
+    text-align: center;
 }
 .Contents .Datasets h2 {
 	font-family: poppins;
