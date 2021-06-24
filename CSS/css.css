@@ -186,8 +186,9 @@ input.search-bar:hover{
     outline: none;
     cursor: pointer;
     transition: 0.2s ease-in-out;
+    background-color: white;
 }
-button:hover{
+.WeatherSection .card button:hover{
     background: lightgray;
   }
 .WeatherSection .card .search img{
