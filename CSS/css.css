@@ -144,7 +144,6 @@ body{
 }
 
 
-
 /*Weather*/
 .Contents .WeatherSection{
 	background: var(--WeatherBG);
@@ -199,6 +198,7 @@ input.search-bar:hover{
     text-transform: capitalize;
 }
 
+
 /*Chart*/
 .Contents .Chart{
     background: var(--ChartBG);
@@ -226,6 +226,8 @@ input.search-bar:hover{
         display: flex;
     }
 }
+
+
 /*Highland Crops*/
 .Contents .HighlandCrops{
     background: var(--HighlandCropsBG);
@@ -368,6 +370,7 @@ input.search-bar:hover{
     float: center;
 }
 
+
 /*Municipalities*/
 .Contents .Municipalities{
     background: var(--MunicipalitiesBG);
@@ -395,6 +398,7 @@ input.search-bar:hover{
 .Municipalities .googlemap{
     width: 100%;
 }
+
 
 /*GIS*/
 .Contents .GIS{
@@ -427,6 +431,7 @@ input.search-bar:hover{
 .Contents .GIS .gisImage img{
     display: inline-block;
 }
+
 
 /*Datasets*/
 .Contents .Datasets{
