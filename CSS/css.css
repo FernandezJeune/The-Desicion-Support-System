@@ -34,7 +34,8 @@ body{
 /*Navigation Bar*/
 .navbar{
     display: flex;
-    position: relative;
+    position: fixed;
+    width: 100% ;
     justify-content: space-between;
     align-items: center;
     background-color: #333;
@@ -44,10 +45,18 @@ body{
 }
 .brand-title{
     font-size: 1.5rem;
+    padding-left: 5rem;
     margin: .5rem;
+    display: flex;
+    align-items: center;
+}
+.brand-title img{
+    width: 5rem;
+    height: 3.5rem;
 }
 .navbar-links{
     height: 100%;
+    padding-right: 5rem;
 }
 .navbar-links ul{
     display: flex;
@@ -89,10 +98,13 @@ body{
     }
     .toggle-button{
         display: flex;
+        margin: .7rem;
     }
     .navbar-links{
         display: none;
         width: 100%;
+        background-color:#666;
+        padding-right: 0rem;
     }
     .navbar-links ul{
         width: 100%;
@@ -107,24 +119,26 @@ body{
     .navbar-links.active{
         display: flex;
     }
+    .brand-title{
+        padding-left: 0rem;
+    }
 }
 
 
 /*Project ANI - Description*/
 .Banner{
-    width: 100%;
 	background: var(--BannerBG);
     text-align: center;
 }
 .Banner h2 {
-	padding-top: 7%;
+	padding-top: 120px;
 	font-size: 70px;
 	font-family: poppins;
 	text-transform: uppercase;
 	color: var(--BannerTxtColor);
 }
 .Banner p {
-    padding-bottom: 3%;
+    padding-bottom: 70px;
 	font-family: poppins;
     font-size: 25px;
 }
@@ -144,21 +158,19 @@ body{
     font-family: poppins;
 	letter-spacing: 2px;
 	padding-top: 50px;
-    padding-left: 200px;
+    padding-left: 150px;
     padding-bottom: 10px;
-	font-size: 20px;
-	margin: 0;
     text-align: left;
 }
 .WeatherSection .card input.search-bar{
     border: none;
     outline: none;
-    padding: 0.3em;
+    padding: 0.5rem;
     border-radius: 24px;
     color: black;
     font-family: inherit;
     font-size: 20px;
-    width: 30%;
+    width: 500px;
     cursor: pointer;
     transition: 0.2s ease-in-out;
 }
@@ -186,34 +198,33 @@ button:hover{
     text-transform: capitalize;
 }
 
-
-
 /*Chart*/
 .Contents .Chart{
     background: var(--ChartBG);
     font-family: poppins;
-    text-align: center;
+    display: flex;
+    width: 100% ;
+    justify-content:space-between ;
+    align-items: center;
 }
-.Contents .Chart h2 {
-	font-family: poppins;
-	letter-spacing: 4px;
-	padding-top: 30px;
-	font-size: 40px;
+.Contents .Chart .item2{
+    width: 50%;
+    padding-left: 150px;
 }
-.Contents .Chart p {
-	padding: 2% 0px;
-	font-family: poppins;   
-	line-height: 30px;
+.Contents .Chart .item3{
+    padding-right: 5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
-.Chart .grid-container {
-    display: grid;
-    grid-template-areas:
-      'title title title title '
-      'description description chart chart';
-    grid-gap: 10px; 
-    padding: 10px;  
+@media (max-width: 960px){
+    .item3{
+        display: none;
+        width: 100%;
+    }
+    .item3.active{
+        display: flex;
+    }
 }
-
 /*Highland Crops*/
 .Contents .HighlandCrops{
     background: var(--HighlandCropsBG);

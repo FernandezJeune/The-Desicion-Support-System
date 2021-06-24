@@ -19,15 +19,14 @@
     <script src="JS/navigation.js" defer></script>
     <title>Project ANI</title>
 <style>
-    /*Chart Grids*/
-    .item1 { grid-area: title; }
-    .item2 { grid-area: description; }
-    .item3 { grid-area: chart; }
 </style>
 </head>
 <body>
     <nav class="navbar">
-     <div class="brand-title">Project ANI</div>
+     <div class="brand-title">
+        <img src="images/SampleLogo.png">
+         Project ANI
+        </div>
      <a href="#" class="toggle-button">
         <span class="bar"></span>
         <span class="bar"></span>
@@ -77,12 +76,13 @@
             <!--Chart-->
             <div class="Chart">
                 <!--Grid-->
-                <div class="grid-container">
-                    <div class="item1"><h2>Ratio of Crops(Crops)</h2></div>
-                    <div class="item2"></div>  
+                    <div class="item2">
+                    Description
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Magna etiam tempor orci eu lobortis. Neque volutpat ac tincidunt vitae. Viverra suspendisse potenti nullam ac tortor vitae. Erat pellentesque adipiscing commodo elit. Dictum non consectetur a erat nam at lectus urna duis. Tortor posuere ac ut consequat semper viverra. Urna porttitor rhoncus dolor purus non enim praesent elementum facilisis. Augue eget arcu dictum varius duis at. Nunc sed velit dignissim sodales ut eu. Egestas maecenas pharetra convallis posuere morbi leo urna. Velit dignissim sodales ut eu sem integer vitae justo eget. Viverra nibh cras pulvinar mattis nunc sed blandit libero. Nulla aliquet enim tortor at auctor.</p>
+                    </div>  
                     <div class="item3">
-                        <!--Donut Chart-->
-                        <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+                        <!--Bar Chart-->
+                        <canvas id="myChart" style="width:650px"></canvas>
 
                         <script>
                              var xValues = ["Cabbage", "Chinese Cabbage", "Lettuce", "Cauliflower", "Snap beans", 
@@ -109,7 +109,6 @@
                             });
                             </script>
                     </div>
-                  </div>
             </div>
         </div>
 
