@@ -9,7 +9,7 @@
     --NavigationFont: poppins;
     --NavigationTxtColor:#494949;
 
-    --BannerBG: #fffdf6; 
+    --BannerBG: url('../Images/Leaf.jpg'); 
     --BannerTxtColor: #494949; 
 
     --WeatherBG: url('../Images/Sample.png'); 
@@ -128,19 +128,22 @@ body{
 /*Project ANI - Description*/
 .Banner{
 	background: var(--BannerBG);
-    text-align: center;
+    text-align: left;
+    padding-left: 100px;
 }
 .Banner h2 {
 	padding-top: 120px;
 	font-size: 70px;
 	font-family: poppins;
 	text-transform: uppercase;
-	color: var(--BannerTxtColor);
+	color: white;
+    opacity: 0.9;
 }
 .Banner p {
     padding-bottom: 70px;
 	font-family: poppins;
     font-size: 25px;
+    color: white;
 }
 
 
@@ -285,19 +288,20 @@ input.search-bar:hover{
     transition: width .3s;
     margin-left: 15%;
 }
-
-.Contents .VegtableInfo{
-    background: var(--SampleCabbage);
+.Contents .OuterBox .VegtableInfo{
+    background: black;
+    border-radius: 30px;
 }
 .Contents .VegtableInfo h1 {
 	font-family: poppins;
 	letter-spacing: 4px;
-	padding-top: 15px;
 	font-size: 20px;
     text-align: left;
     text-indent: 50px;
-	margin-left: 100px;
+	margin: 1rem;
+    color: white;
 }
+
 
 
 /*Season*/
