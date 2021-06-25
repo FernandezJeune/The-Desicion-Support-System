@@ -9,7 +9,7 @@
     --NavigationFont: poppins;
     --NavigationTxtColor:#494949;
 
-    --BannerBG: url('../Images/Leaf.jpg'); 
+    --BannerBG: url('../Images/Frog.jpg'); 
     --BannerTxtColor: #494949; 
 
     --WeatherBG: url('../Images/Sample.png'); 
@@ -127,23 +127,36 @@ body{
 
 /*Project ANI - Description*/
 .Banner{
-	background: var(--BannerBG);
+    background: var(--BannerBG);
+    display: flex;
+    width: 100% ;
+    justify-content: space-between;
+    align-items: center;
     text-align: left;
-    padding-left: 100px;
+    padding-left: 150px;
+}
+.Banner1{
+    align-items: left;
 }
 .Banner h2 {
-	padding-top: 120px;
-	font-size: 70px;
+	padding-top: 100px;
+	font-size: 100px;
 	font-family: poppins;
 	text-transform: uppercase;
 	color: white;
-    opacity: 0.9;
 }
 .Banner p {
     padding-bottom: 70px;
 	font-family: poppins;
     font-size: 25px;
     color: white;
+}
+.Banner img{
+    margin-top: 70px;
+    margin-bottom: 20px;
+    margin-right: 200px;
+    width: 500px;
+    height: 500px;
 }
 
 
