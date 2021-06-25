@@ -119,9 +119,6 @@ body{
     .navbar-links.active{
         display: flex;
     }
-    .brand-title{
-        padding-left: 0rem;
-    }
 }
 
 
@@ -129,7 +126,6 @@ body{
 .Banner{
     background: var(--BannerBG);
     display: flex;
-    width: 100% ;
     justify-content: space-between;
     align-items: center;
     text-align: left;
@@ -157,6 +153,17 @@ body{
     margin-right: 200px;
     width: 500px;
     height: 500px;
+}
+@media (max-width:1000px){
+    .brand-title{
+        padding-left: 0rem;
+    }
+    .Banner img{
+        display: none;
+    }
+    .Banner1{
+        text-align: center;
+    }
 }
 
 
