@@ -124,15 +124,13 @@ body{
 
 /*Project ANI - Description*/
 .Banner{
-    background: var(--BannerBG);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-align: left;
-    padding-left: 150px;
+    height: 77.1vh;
 }
 .Banner1{
     align-items: left;
+    position: absolute;
+    top: 10%;
+    left: 0;
 }
 .Banner h2 {
 	padding-top: 100px;
@@ -147,19 +145,24 @@ body{
     font-size: 25px;
     color: white;
 }
-.Banner img{
+.Banner video{
+    position: absolute;
+    top: 7.1%;
+    left: 0;
+    width: 100%;
+    height: 70vh;
+    object-fit: cover;
+}
+/*.Banner img{
     margin-top: 70px;
     margin-bottom: 20px;
     margin-right: 200px;
     width: 500px;
     height: 500px;
-}
+}*/
 @media (max-width:1000px){
     .brand-title{
         padding-left: 0rem;
-    }
-    .Banner img{
-        display: none;
     }
     .Banner1{
         text-align: center;
@@ -195,7 +198,7 @@ body{
     margin-left: auto;
     margin-right: auto;
     width: 80%;
-    font-size: 20px;
+    font-size: 1vw;
 }
 .WeatherSection .flex{
     align-items: center;
@@ -208,8 +211,8 @@ body{
     border-radius: 24px;
     color: black;
     font-family: inherit;
-    font-size: 20px;
-    width: 390px;
+    font-size: 1vw;
+    width: 80%;
     cursor: pointer;
     transition: 0.2s ease-in-out;
 }
@@ -221,8 +224,8 @@ input.search-bar:hover{
     margin-bottom: 3em;
     border-radius: 50%;
     border: none;
-    height: 43px;
-    width: 43px;
+    height: 2.3vw;
+    width: 2.3vw;
     outline: none;
     cursor: pointer;
     transition: 0.2s ease-in-out;
@@ -232,11 +235,16 @@ input.search-bar:hover{
     background: lightgray;
   }
   .WeatherSection .card .inside .search img{
-  height:50%; 
-  width:50%;
+  height:1vw; 
+  width:1vw;
 }
 .description {
     text-transform: capitalize;
+}
+@media (max-width: 1500px){
+    .Contents .WeatherSection{
+        padding-left: 50px;
+    }
 }
 
 
