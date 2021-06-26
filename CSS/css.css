@@ -9,10 +9,10 @@
     --NavigationFont: poppins;
     --NavigationTxtColor:#494949;
 
-    --BannerBG: url('../Images/Polygon.jpg  '); 
+    --BannerBG: url('../Images/Frog.jpg'); 
     --BannerTxtColor: #494949; 
 
-    --WeatherBG: #ece8d9; 
+    --WeatherBG: url('../Images/Sample.png'); 
     --ChartBG: #fffdf6; 
     --MunicipalitiesBG: #ece8d9;
     --GISBG: #fffdf6;
@@ -72,8 +72,8 @@ body{
     color: white;
     padding: 1rem;
 }
-.navbar-links li a:hover{
-    background-color: black;
+.navbar-links li:hover{
+    background-color: #555;
 }
 .toggle-button{
     position: absolute;
@@ -124,13 +124,15 @@ body{
 
 /*Project ANI - Description*/
 .Banner{
-    height: 600px;
+    background: var(--BannerBG);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    padding-left: 150px;
 }
 .Banner1{
     align-items: left;
-    position: absolute;
-    top: 10%;
-    left: 10%;
 }
 .Banner h2 {
 	padding-top: 100px;
@@ -145,15 +147,19 @@ body{
     font-size: 25px;
     color: white;
 }
-.Banner video{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.Banner img{
+    margin-top: 70px;
+    margin-bottom: 20px;
+    margin-right: 200px;
+    width: 500px;
+    height: 500px;
 }
-
 @media (max-width:1000px){
     .brand-title{
         padding-left: 0rem;
+    }
+    .Banner img{
+        display: none;
     }
     .Banner1{
         text-align: center;
@@ -164,38 +170,19 @@ body{
 /*Weather*/
 .Contents .WeatherSection{
 	background: var(--WeatherBG);
-    height: 450px;
-    font-family: poppins;
-	letter-spacing: 2px;
-    padding-left: 200px;
-    padding-top: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.Contents .WeatherSection .card{
-    border-radius: 30px;
-    background: #000000d0;
-    padding-top: 2em;
-    padding-left: 1em   ;
-    color: white;
-    width: 650px;
-    height: 360px;
-    
-}
-.Contents .WeatherSection .right{
-    margin-right: 150px;
-}
-/*Weather widget inside box*/
-.Contents .WeatherSection .inside{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%; 
+    height: 400px;
 }
 .WeatherSection .flex{
     align-items: center;
     display: flex;
+}
+.Contents .WeatherSection{
+    font-family: poppins;
+	letter-spacing: 2px;
+	padding-top: 50px;
+    padding-left: 150px;
+    padding-bottom: 10px;
+    text-align: left;
 }
 .WeatherSection .card input.search-bar{
     border: none;
@@ -205,7 +192,7 @@ body{
     color: black;
     font-family: inherit;
     font-size: 20px;
-    width: 400px;
+    width: 500px;
     cursor: pointer;
     transition: 0.2s ease-in-out;
 }
@@ -226,7 +213,7 @@ input.search-bar:hover{
 .WeatherSection .card button:hover{
     background: lightgray;
   }
-.WeatherSection .card .inside .search img{
+.WeatherSection .card .search img{
   height:50%; 
   width:50%;
 }
