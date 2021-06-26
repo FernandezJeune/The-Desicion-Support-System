@@ -88,7 +88,7 @@
             <!--Weather Widget-->
             <div class="WeatherSection">
                 <div class="card">
-                <div class="inside">
+                <div class="card-inside">
                     <div class="search">
                         <input type="text" class="search-bar" placeholder="Search">
                         <button>
@@ -100,7 +100,7 @@
                         <h1 class="temp" style="color:orange">Temperature:</h1>
                         <div class="flex">
                             <img src="" alt="" class="icon" />
-                            <div class="description" style="color:lightblue;">Cloudy</div>
+                            <div class="description" style="color:rgb(94, 133, 185);">Cloudy</div>
                         </div>
                         <div class="humidity">Humidity: 60%</div>
                         <div class="wind">Wind Speed: 6.2 km/h</div>
@@ -108,7 +108,7 @@
                 </div>
                 </div>
                 <div class="right">
-                    <img src="Images/City.png" width="620px" height="550px">
+                    <img src="Images/RobotWeather.png" width="550px" height="450px">
                 </div>
             </div>
 
@@ -116,18 +116,17 @@
             <div class="Chart" id="ChartID">
                 <!--Grid-->
                     <div class="item2">
-                    Description
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Magna etiam tempor orci eu lobortis. Neque volutpat ac tincidunt vitae. Viverra suspendisse potenti nullam ac tortor vitae. Erat pellentesque adipiscing commodo elit. Dictum non consectetur a erat nam at lectus urna duis. Tortor posuere ac ut consequat semper viverra. Urna porttitor rhoncus dolor purus non enim praesent elementum facilisis. Augue eget arcu dictum varius duis at. Nunc sed velit dignissim sodales ut eu. Egestas maecenas pharetra convallis posuere morbi leo urna. Velit dignissim sodales ut eu sem integer vitae justo eget. Viverra nibh cras pulvinar mattis nunc sed blandit libero. Nulla aliquet enim tortor at auctor.</p>
+                    <img src="Images/RobotChart.png" width="550px" height="450px">
                     </div>  
                     <div class="item3">
                         <!--Bar Chart-->
-                        <canvas id="myChart" style="width:650px"></canvas>
+                        <canvas id="myChart" style="width:750px"></canvas>
 
                         <script>
                              var xValues = ["Cabbage", "Chinese Cabbage", "Lettuce", "Cauliflower", "Snap beans", 
                              "Garden peas", "Sweet Pepper", "White Potato", "Carrots"];
                             var yValues = [55, 49, 44, 35, 24, 20, 17, 15, 13];
-                            var barColors = ["red", "green","blue","orange","brown","red", "green","blue","orange"];
+                            var barColors = "white";
                             
                             new Chart("myChart", {
                               type: "bar",

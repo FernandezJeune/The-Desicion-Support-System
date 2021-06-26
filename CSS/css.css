@@ -38,7 +38,7 @@ body{
     width: 100% ;
     justify-content: space-between;
     align-items: center;
-    background-color: #333;
+    background-color: rgba(8, 8, 8, 0.897);
     color: white;
     font-family: poppins;
     font-size: 1rem;
@@ -124,7 +124,7 @@ body{
 
 /*Project ANI - Description*/
 .Banner{
-    height: 77.1vh;
+    height: 77vh;
 }
 .Banner1{
     align-items: left;
@@ -146,8 +146,8 @@ body{
     color: white;
 }
 .Banner video{
-    position: absolute;
-    top: 7.1%;
+    position: relative;
+    top: 9.3%;
     left: 0;
     width: 100%;
     height: 70vh;
@@ -172,7 +172,7 @@ body{
 
 /*Weather*/
 .Contents .WeatherSection{
-	background: var(--WeatherBG);
+	background: black;
     height: 500px;
     font-family: poppins;
 	letter-spacing: 2px;
@@ -180,11 +180,14 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-top-style: dotted;
+    border-bottom-style: dotted;
+    border-width: 5px;
+    border-color: white;
 }
 .Contents .WeatherSection .card{
     border-radius: 30px;
-    background: #000000d0;
-    padding-top: 2em;
+    padding-top: 1em;
     padding-left: 1.5em;
     color: white;
     width: 630px;
@@ -193,12 +196,12 @@ body{
 .Contents .WeatherSection .right{
     margin-right: 200px;
 }
-.Contents .WeatherSection .inside{
+.Contents .WeatherSection .card-inside{
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 80%;
-    font-size: 1vw;
+    font-size: 1.1vw;
 }
 .WeatherSection .flex{
     align-items: center;
@@ -250,19 +253,21 @@ input.search-bar:hover{
 
 /*Chart*/
 .Contents .Chart{
-    background: var(--ChartBG);
+    background: rgba(0, 0, 0, 0.938);
     font-family: poppins;
     display: flex;
     width: 100% ;
     justify-content:space-between ;
     align-items: center;
+    border-bottom-style: dotted;
+    border-width: 5px;
+    border-color: white;
 }
 .Contents .Chart .item2{
-    width: 50%;
-    padding-left: 150px;
+    padding-left: 230px;
 }
 .Contents .Chart .item3{
-    padding-right: 5rem;
+    padding-right: 120px;
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
