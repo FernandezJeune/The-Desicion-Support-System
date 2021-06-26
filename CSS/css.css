@@ -12,7 +12,7 @@
     --BannerBG: url('../Images/Frog.jpg'); 
     --BannerTxtColor: #494949; 
 
-    --WeatherBG: url('../Images/Sample.png'); 
+    --WeatherBG: url('../Images/Green.png'); 
     --ChartBG: #fffdf6; 
     --MunicipalitiesBG: #ece8d9;
     --GISBG: #fffdf6;
@@ -170,19 +170,36 @@ body{
 /*Weather*/
 .Contents .WeatherSection{
 	background: var(--WeatherBG);
-    height: 400px;
+    height: 500px;
+    font-family: poppins;
+	letter-spacing: 2px;
+    padding-left: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Contents .WeatherSection .card{
+    border-radius: 30px;
+    background: #000000d0;
+    padding-top: 2em;
+    padding-left: 1.5em;
+    color: white;
+    width: 630px;
+    height: 450px;
+}
+.Contents .WeatherSection .right{
+    margin-right: 200px;
+}
+.Contents .WeatherSection .inside{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    font-size: 20px;
 }
 .WeatherSection .flex{
     align-items: center;
     display: flex;
-}
-.Contents .WeatherSection{
-    font-family: poppins;
-	letter-spacing: 2px;
-	padding-top: 50px;
-    padding-left: 150px;
-    padding-bottom: 10px;
-    text-align: left;
 }
 .WeatherSection .card input.search-bar{
     border: none;
@@ -192,7 +209,7 @@ body{
     color: black;
     font-family: inherit;
     font-size: 20px;
-    width: 500px;
+    width: 390px;
     cursor: pointer;
     transition: 0.2s ease-in-out;
 }
@@ -200,7 +217,8 @@ input.search-bar:hover{
     background: lightgray;
 }
 .WeatherSection .card button {
-    margin: .5em;
+    margin: 1em;
+    margin-bottom: 3em;
     border-radius: 50%;
     border: none;
     height: 43px;
@@ -213,7 +231,7 @@ input.search-bar:hover{
 .WeatherSection .card button:hover{
     background: lightgray;
   }
-.WeatherSection .card .search img{
+  .WeatherSection .card .inside .search img{
   height:50%; 
   width:50%;
 }
