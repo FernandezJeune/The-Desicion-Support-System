@@ -254,6 +254,7 @@ input.search-bar:hover{
 /*Chart*/
 .Contents .Chart{
     background: rgba(0, 0, 0, 0.938);
+    height: 500px;
     font-family: poppins;
     display: flex;
     width: 100% ;
