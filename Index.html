@@ -79,7 +79,7 @@
             <h2>Project ANI</h2>
             <p>Agri Natin Ito : A Decision Support System for Benguet's Crop Prediction</p>
         </div>
-        <video src="Images/Forest.mp4" muted loop autoplay></video>
+        <video src="Images/ForestSample.mp4" muted loop autoplay></video>
         </div>
     </div>
 
@@ -108,15 +108,17 @@
                 </div>
                 </div>
                 <div class="right">
-                    <img src="Images/RobotWeather.png" width="550px" height="450px">
+                    <img src="Images/Forecast.png" width="460px" height="450px">
                 </div>
             </div>
-
+            <div class="feeler-chart">
+                <h1>CHARTS & RATIO OF CROPS</h1>
+            </div>
             <!--Chart-->
             <div class="Chart" id="ChartID">
                 <!--Grid-->
                     <div class="item2">
-                    <img src="Images/RobotChart.png" width="550px" height="450px">
+                    <img src="Images/PolarChart.png" width="460px" height=  "450px">
                     </div>  
                     <div class="item3">
                         <!--Bar Chart-->
@@ -126,7 +128,8 @@
                              var xValues = ["Cabbage", "Chinese Cabbage", "Lettuce", "Cauliflower", "Snap beans", 
                              "Garden peas", "Sweet Pepper", "White Potato", "Carrots"];
                             var yValues = [55, 49, 44, 35, 24, 20, 17, 15, 13];
-                            var barColors = "gray";
+                            var barColors = ["blue", "yellow", "red", "green", "orange", "gray",
+                                            "pink", "white", "black"];
                             
                             new Chart("myChart", {
                               type: "bar",

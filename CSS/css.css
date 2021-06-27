@@ -12,8 +12,8 @@
     --BannerBG: url('../Images/Frog.jpg'); 
     --BannerTxtColor: #494949; 
 
-    --WeatherBG: url('../Images/Green.png'); 
-    --ChartBG: #fffdf6; 
+    --WeatherBG: url('../Images/Planting.jpg'); 
+    --ChartBG: url('../Images/Planting2.jpg'); 
     --MunicipalitiesBG: #ece8d9;
     --GISBG: #fffdf6;
     --DatasetsBG: #ece8d9;
@@ -153,13 +153,6 @@ body{
     height: 70vh;
     object-fit: cover;
 }
-/*.Banner img{
-    margin-top: 70px;
-    margin-bottom: 20px;
-    margin-right: 200px;
-    width: 500px;
-    height: 500px;
-}*/
 @media (max-width:1000px){
     .brand-title{
         padding-left: 0rem;
@@ -172,7 +165,7 @@ body{
 
 /*Weather*/
 .Contents .WeatherSection{
-	background: white;
+	background:var(--WeatherBG);
     height: 500px;
     font-family: poppins;
 	letter-spacing: 2px;
@@ -180,10 +173,6 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-top-style: dotted;
-    border-bottom-style: dotted;
-    border-width: 5px;
-    border-color: black;
 }
 .Contents .WeatherSection .card{
     background: #000000d0;
@@ -251,10 +240,23 @@ input.search-bar:hover{
     }
 }
 
+/*Feeler Chart*/
+.feeler-chart{
+    background:#005580;
+    height: 10vh;
+    font-family: poppins;
+}
+.feeler-chart h1{
+    padding-top: 25px;
+    text-align: center;
+    color: white;
+    letter-spacing: 10px;
+    font-size: 1.5vw;
+}
 
 /*Chart*/
 .Contents .Chart{
-    background: white;
+    background: var(--ChartBG);
     height: 500px;
     font-family: poppins;
     display: flex;
