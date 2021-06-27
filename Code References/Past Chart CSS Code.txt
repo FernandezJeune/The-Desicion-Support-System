@@ -1,0 +1,41 @@
+/*Chart*/
+.Contents .Chart{
+    background: var(--ChartBG);
+    height: 500px;
+    font-family: poppins;
+    display: flex;
+    width: 100% ;
+    justify-content:space-between ;
+    align-items: center;
+    padding-right: 100px;
+}
+.Contents .Chart .item2{
+    padding-left: 200px;
+}
+.Contents .Chart .item3{
+    background: #000000d0;
+    border-radius: 30px;
+    padding-top: 1em;
+    padding-left: 1.5em;
+    padding-right: 3em;
+    color: white;
+    width: 630px;
+    height: 450px;
+}
+.Contents .Chart .item3-inside{
+    margin-top: 1em;
+    font-size: 1.5vw;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    font-size: 1.3vw;
+}
+@media (max-width: 960px){
+    .item3{
+        display: none;
+        width: 100%;
+    }
+    .item3.active{
+        display: flex;
+    }   
+}

@@ -1,0 +1,44 @@
+ <div class="feeler-chart">
+                <h1>CHARTS & RATIO OF CROPS</h1>
+            </div>
+            <!--Chart-->
+            <div class="Chart" id="ChartID">
+                <!--Grid-->
+                    <div class="item2">
+                        <!--Bar Chart-->
+                        <canvas id="myChart" style="width:700px"></canvas>
+
+                        <script>
+                             var xValues = ["Cabbage", "Chinese Cabbage", "Lettuce", "Cauliflower", "Snap beans", 
+                             "Garden peas", "Sweet Pepper", "White Potato", "Carrots"];
+                            var yValues = [55, 49, 44, 35, 24, 20, 17, 15, 13];
+                            var barColors = ["blue", "yellow", "red", "green", "orange", "gray",
+                                            "pink", "white", "black"];
+                            
+                            new Chart("myChart", {
+                              type: "bar",
+                              data: {
+                                labels: xValues,
+                                datasets: [{
+                                  backgroundColor: barColors,
+                                  data: yValues
+                                }]
+                              },
+                              options: {
+                                legend: {display: false},
+                                title: {
+                                  display: true,
+                                  text: "Top 10 HIGHLAND CROPS"
+                                }
+                              }
+
+                            });
+                            </script>
+                    </div>
+                    <div class="item3">
+                        <div class="item3-inside">
+                        Description
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tristique et egestas quis ipsum suspendisse ultrices gravida dictum. Volutpat commodo sed egestas egestas.</p>
+                        </div>
+                    </div> 
+            </div>

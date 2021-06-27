@@ -64,7 +64,7 @@
      <div class="navbar-links">
         <ul>
             <li><a href="#HomeID" class="MMlist">Home</a></li>
-            <li><a href="#ChartID" class="MMlist">Charts</a></li>
+            <li><a href="#WeatherID" class="MMlist">Weather</a></li>
             <li><a href="#CropsID" class="MMlist">Crops</a></li>
             <li><a href="#SeasonsID" class="MMlist">Seasons</a></li>
             <li><a href="#MunicipalitiesID" class="MMlist">Municipalities</a></li>
@@ -85,7 +85,7 @@
 
     <div class="Contents">
         <div class="HomeContents">
-            <div class="feeler-weather">
+            <div class="feeler-weather" id="WeatherID">
                 <h1>WEATHER FORECAST</h1>
             </div>
             <!--Weather Widget-->
@@ -113,118 +113,159 @@
                 <div class="right">
                     <img src="Images/Forecast.png" width="460px" height="450px">
                 </div>
-            </div>
-            <div class="feeler-chart">
-                <h1>CHARTS & RATIO OF CROPS</h1>
-            </div>
-            <!--Chart-->
-            <div class="Chart" id="ChartID">
-                <!--Grid-->
-                    <div class="item2">
-                    <img src="Images/PolarChart.png" width="460px" height=  "450px">
-                    </div>  
-                    <div class="item3">
-                        <!--Bar Chart-->
-                        <canvas id="myChart" style="width:750px"></canvas>
-
-                        <script>
-                             var xValues = ["Cabbage", "Chinese Cabbage", "Lettuce", "Cauliflower", "Snap beans", 
-                             "Garden peas", "Sweet Pepper", "White Potato", "Carrots"];
-                            var yValues = [55, 49, 44, 35, 24, 20, 17, 15, 13];
-                            var barColors = ["blue", "yellow", "red", "green", "orange", "gray",
-                                            "pink", "white", "black"];
-                            
-                            new Chart("myChart", {
-                              type: "bar",
-                              data: {
-                                labels: xValues,
-                                datasets: [{
-                                  backgroundColor: barColors,
-                                  data: yValues
-                                }]
-                              },
-                              options: {
-                                legend: {display: false},
-                                title: {
-                                  display: true,
-                                  text: "Top 10 HIGHLAND CROPS"
-                                }
-                              }
-
-                            });
-                            </script>
-                    </div>
-            </div>
         </div>
 
-        <div class="feeler-crops">
-            <h1>HIGHLAND CROPS</h1>
+        <!--Crops-->
+        <div class="feeler-crops" id="CropsID">
+            <h1>Top 10 Highland Crops</h1>
         </div>
-        <div class="CropsContent" id="CropsID">
-            <div class="HighlandCrops">
-                <div class='VegsMenu'>
-                    <ul id="VegsList">
-                        <li><a href="#CropsID"><span class="Vlist">Cabbage</span></a></li>
-                        <li><a href="#CropsID"><span class="Vlist">Chinese Cabbage</span></a></li>
-                        <li><a href="#CropsID"><span class="Vlist">Lettuce</span></a></li>
-                        <li><a href="#CropsID"><span class="Vlist">Cauliflower</span></a></li>
-                        <li><a href="#CropsID"><span class="Vlist">Snap Beans</span></a></li>
-                        <li><a href="#CropsID"><span class="Vlist">Garden Peas</span></a></li>
-                        <li><a href="#CropsID"><span class="Vlist">Sweet Pepper</span></a></li>
-                        <li><a href="#CropsID"><span class="Vlist">White Potato</span></a></li>
-                        <li><a href="#CropsID"><span class="Vlist">Carrots</span></a></li>
-                    </ul>
-                </div>  
-            </div>
-            <div class="OuterBox">
-                <div id="VegtableInfoID" class="VegtableInfo"></div>
-            </div>
-        </div>
+        <div class="Crop-Section">
+            <div class="row1">
+                <button class="veggy"><img src="Images/cabbage1.png" width="150vw" height="130vh">
+                <h2>Cabbage</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </button>
 
-        <div class="SeasonsContent" id="SeasonsID">
-            <div class="Months">
-                <h2>Months</h2>
+                <button class="veggy"><img src="Images/chinese-cabbage.png" width="150vw" height="130vh">
+                <h2>Chinese Cabbage</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </button>
 
-                <div class='MonthsMenu'>
-                    <ul id="MonthsList">
-                        <li><a href="#SeasonsID"><span class="Mlist">January</span></a></li>
-                        <li><a href="#SeasonsID"><span class="Mlist">February</span></a></li>
-                        <li><a href="#SeasonsID"><span class="Mlist">March</span></a></li>
-                        <li><a href="#SeasonsID"><span class="Mlist">April</span></a></li>
-                        <li><a href="#SeasonsID"><span class="Mlist">May</span></a></li>
-                        <li><a href="#SeasonsID"><span class="Mlist">June</span></a></li>
-                        <li><a href="#SeasonsID"><span class="Mlist">July</span></a></li>
-                        <li><a href="#SeasonsID"><span class="Mlist">August</span></a></li>
-                        <li><a href="#SeasonsID"><span class="Mlist">September</span></a></li>
-                        <li><a href="#SeasonsID"><span class="Mlist">October</span></a></li>
-                        <li><a href="#SeasonsID"><span class="Mlist">November</span></a></li>
-                        <li><a href="#SeasonsID"><span class="Mlist">December</span></a></li>
-                    </ul>
-                </div>
+                <button class="veggy"><img src="Images/lettuce.png" width="150vw" height="130vh">
+                <h2>Lettuce</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </button>
+
+                <button class="veggy"><img src="Images/cauliflower.png" width="150vw" height="130vh">
+                <h2>Cauliflower</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </button>
+
+                <button class="veggy"><img src="Images/snapbeans.png" width="150vw" height="130vh">
+                <h2>Snap Beans</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </button>
             </div>
 
-            <div id="MonthsInfoID" class="MonthInfo"></div>
+            <div class="row2">
+                <button class="veggy"><img src="Images/gardenpeas.png" width="150vw" height="130vh">
+                <h2>Garden Peas</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </button>
+    
+                <button class="veggy"><img src="Images/bell-pepper.png" width="150vw" height="130vh">
+                <h2>Sweet Pepper</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </button>
+    
+                <button class="veggy"><img src="Images/potato.png" width="150vw" height="130vh">
+                <h2>White Potato</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </button>
+
+                <button class="veggy"><img src="Images/carrots.png" width="150vw" height="130vh">
+                <h2>Carrots</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </button>
+            </div>
+
         </div>
-        <div class="Municipalities" id="MunicipalitiesID">
-            <h2>Municipalities</h2>
+
+        <!--Season-->
+        <div class="feeler-season" id="SeasonsID">
+            <h1>Season</h1>
+        </div>
+        <div class="Season-Section">
+            <div class="row1">
+                <button class="months"><img src="Images/january.png" width="150vw" height="130vh">
+                <h2>January</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </button>
+
+                <button class="months"><img src="Images/february.png" width="150vw" height="130vh">
+                <h2>February</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </button>
+
+                <button class="months"><img src="Images/march.png" width="150vw" height="130vh">
+                <h2>March</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </button>
+
+                <button class="months"><img src="Images/april.png" width="150vw" height="130vh">
+                <h2>April</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </button>
+
+                <button class="months"><img src="Images/may.png" width="150vw" height="130vh">
+                <h2>May</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </button>
+
+                <button class="months"><img src="Images/june.png" width="150vw" height="130vh">
+                <h2>June</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </button>
+            </div>
+
+            <div class="row2">
+                <button class="months"><img src="Images/july.png" width="150vw" height="130vh">
+                <h2>July</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </button>
+
+                <button class="months"><img src="Images/august.png" width="150vw" height="130vh">
+                <h2>August</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </button>
+
+                <button class="months"><img src="Images/september.png" width="150vw" height="130vh">
+                <h2>September</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </button>
+
+                <button class="months"><img src="Images/october.png" width="150vw" height="130vh">
+                <h2>October</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </button>
+
+                <button class="months"><img src="Images/november.png" width="150vw" height="130vh">
+                <h2>November</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </button>
+
+                <button class="months"><img src="Images/december.png" width="150vw" height="130vh">
+                <h2>December</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </button>
+            </div>
+            
+        </div>
+
+
+        <!--Municipalities-->
+        <div class="feeler-municipalities" id="MunicipalitiesID">
+            <h1>Municipalities</h1>
+        </div>
+        <div class="Municipalities">
             <!--Google map Location-->
             <div class="map-wrapper">
                 <iframe class ="googlemap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12874.095960023275!2d120.58756668150106!3d16.399839369352506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3391a16879def13f%3A0x8edef534be3a75c0!2sBaguio%2C%20Benguet!5e0!3m2!1sen!2sph!4v1623908317700!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
         </div>
 
-        <div class="GIS" id="GISID">
-            <h2>GIS</h2>
-            <div class="gisInfo">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero aliquid iste repudiandae non repellendus, tempora modi nulla praesentium eos debitis, minus optio nobis vel impedit hic! Pariatur aliquam sequi voluptas.</p>
-            </div>
-            <div class="gisImage">
-                <img src="Images/Temp.png" alt="">
-            </div>
+        <div class="feeler-gis" id="GISID">
+            <h1>Geographic Information System</h1>
+        </div>
+        <div class="GIS">
         </div>
 
+
+        <!--Dataset-->
+        <div class="feeler-dataset" id="DatasetsID">
+            <h1>Dataset</h1>
+        </div>
         <div class="Datasets" id="DatasetsID">
-            <h2>Datasets</h2>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero aliquid iste repudiandae non repellendus, tempora modi nulla praesentium eos debitis, minus optio nobis vel impedit hic! Pariatur aliquam sequi voluptas.</p>
             <!--Search Bar Dataset-->
             <div class="search">
@@ -239,7 +280,7 @@
                 <p id="demo"></p>
                 <script>
                 function myFunction() {
-                 document.getElementById("demo").innerHTML = "Sample Data: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Viverra tellus in hac habitasse. Sit amet cursus sit amet dictum. Sapien pellentesque habitant morbi tristique. Faucibus et molestie ac feugiat sed lectus vestibulum mattis ullamcorper. Amet purus gravida quis blandit turpis cursus in. Feugiat scelerisque varius morbi enim. Feugiat vivamus at augue eget arcu dictum varius duis. Enim diam vulputate ut pharetra sit amet aliquam id diam. Quam id leo in vitae turpis massa sed. Vulputate odio ut enim blandit volutpat maecenas volutpat blandit aliquam. Enim nunc faucibus a pellentesque sit. Amet aliquam id diam maecenas ultricies mi eget. Velit euismod in pellentesque massa. Dictum non consectetur a erat nam at lectus. Massa eget egestas purus viverra accumsan in nisl nisi scelerisque. Ut enim blandit volutpat maecenas volutpat blandit aliquam. Velit egestas dui id ornare arcu odio ut. Ornare arcu odio ut sem nulla.";
+                 document.getElementById("demo").innerHTML = "Sample Data: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Viverra tellus in hac habitasse. Sit amet cursus sit amet dictum. Sapien pellentesque habitant morbi tristique. Faucibus et molestie ac feugiat sed lectus vestibulum mattis ullamcorper.";
                 }
                 </script>
         </div>

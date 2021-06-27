@@ -1,0 +1,135 @@
+/*Highland Crops*/
+.Contents .HighlandCrops{
+    background: var(--HighlandCropsBG);
+    text-align: center;
+}
+.Contents .HighlandCrops .VegsMenu{
+    margin-top:1px;
+}
+.Contents .HighlandCrops .VegsMenu ul
+{
+    display: block;
+}
+.Contents .HighlandCrops .VegsMenu ul li
+{
+    list-style-type: none;
+    display: inline-block;
+}
+.Contents .HighlandCrops .VegsMenu ul li a
+{
+    text-decoration: none;
+    font-family: var(--VegsMenuFont);
+    letter-spacing: 4px;
+    font-size: 20px;
+    margin: 20px;
+    color: var(--VegsMenuTxtColor);
+}
+.Contents .HighlandCrops .VegsMenu ul li a .VegsList
+{
+    position: relative;
+    display: block;
+    padding: 7%;
+    height: 15%;
+    line-height: 15%;
+    text-align: center;
+    white-space: nowrap;
+}
+.Contents .HighlandCrops .VegsMenu ul li a ::after {
+    content:'';
+    display: block;
+    width: 0;
+    height: 3px;
+    background: #494949;
+    transition: width .3s;
+    margin-left: 15%;
+}
+.Contents .HighlandCrops .VegsMenu ul li a :hover::after {
+    width: 80%;
+    transition: width .3s;
+    margin-left: 15%;
+}
+.Contents .OuterBox .VegtableInfo{
+    background: black;
+    border-radius: 30px;
+}
+.Contents .VegtableInfo h1 {
+	font-family: poppins;
+	letter-spacing: 4px;
+	font-size: 20px;
+    text-align: left;
+    text-indent: 50px;
+	margin: 1rem;
+    color: white;
+}
+
+
+
+/*Season*/
+.Contents .Months{
+    background: var(--SeasonsContentBG);
+    text-align: center;
+}
+.Contents .Months h2 {
+	font-family: poppins;
+	letter-spacing: 4px;
+	padding-top: 30px;
+	font-size: 40px;
+	margin: 0;
+}
+.Contents .Months .MonthsMenu{
+    margin-top:30px;
+}
+.Contents .Months .MonthsMenu ul
+{
+    display: block;
+}
+.Contents .Months .MonthsMenu ul li
+{
+    list-style-type: none;
+    display: inline-block;
+}
+.Contents .Months .MonthsMenu ul li a
+{
+    text-decoration: none;
+    font-family: var(--MonthsMenuFont);
+    letter-spacing: 4px;
+    font-size: 20px;
+    margin: 20px;
+    color: var(--MonthsMenuTxtColor);
+}
+.Contents .Months .MonthsMenu ul li a .MonthsList
+{
+    position: relative;
+    display: block;
+    padding: 7%;
+    height: 15%;
+    line-height: 15%;
+    text-align: center;
+    white-space: nowrap;
+}
+.Contents .Months .MonthsMenu ul li a ::after {
+    content:'';
+    display: block;
+    width: 0;
+    height: 3px;
+    background: #494949;
+    transition: width .3s;
+    margin-left: 15%;
+}
+.Contents .Months .MonthsMenu ul li a :hover::after {
+    width: 80%;
+    transition: width .3s;
+    margin-left: 15%;
+}
+
+.Contents .MonthInfo{
+    background: var(--SeasonsContentBG);
+}
+.Contents .MonthInfo h1 {
+	font-family: poppins;
+	letter-spacing: 4px;
+	padding-top: 20px;
+	font-size: 20px;
+	margin: 0;
+    float: center;
+}

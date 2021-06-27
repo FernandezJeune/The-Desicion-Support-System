@@ -1,0 +1,31 @@
+/*GIS*/
+.Contents .GIS{
+    background: var(--GISBG);
+    text-align: center;
+}
+.Contents .GIS h2 {
+	font-family: poppins;
+	letter-spacing: 4px;
+	padding-top: 30px;
+	font-size: 40px;
+	margin: 0;
+}
+.Contents .GIS .gisInfo {
+    width: 50%;
+    float: left;
+    line-height: 100px;
+}
+.Contents .GIS .gisInfo p {
+	padding: 2% 0px;
+	font-family: poppins;   
+	line-height: 30px;
+    font-size: 20px;
+}
+.Contents .GIS .gisImage {
+    float: right;
+    line-height: 100px;
+    width: 50%;
+}
+.Contents .GIS .gisImage img{
+    display: inline-block;
+}
