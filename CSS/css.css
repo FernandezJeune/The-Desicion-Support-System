@@ -162,6 +162,19 @@ body{
     }
 }
 
+/*Feeler Weather*/
+.feeler-weather{
+    background:#00334d;
+    height: 9vh;
+    font-family: poppins;
+}
+.feeler-weather h1{
+    padding-top: 25px;
+    text-align: center;
+    color: lightgray;
+    letter-spacing: 10px;
+    font-size: 1.5vw;
+}
 
 /*Weather*/
 .Contents .WeatherSection{
@@ -242,14 +255,14 @@ input.search-bar:hover{
 
 /*Feeler Chart*/
 .feeler-chart{
-    background:#005580;
-    height: 10vh;
+    background:#00334d;
+    height: 9vh;
     font-family: poppins;
 }
 .feeler-chart h1{
     padding-top: 25px;
     text-align: center;
-    color: white;
+    color: lightgray;
     letter-spacing: 10px;
     font-size: 1.5vw;
 }
@@ -263,9 +276,6 @@ input.search-bar:hover{
     width: 100% ;
     justify-content:space-between ;
     align-items: center;
-    border-bottom-style: dotted;
-    border-width: 5px;
-    border-color: black;
 }
 .Contents .Chart .item2{
     padding-left: 230px;
@@ -285,21 +295,27 @@ input.search-bar:hover{
     }   
 }
 
+/*Feeler Crops*/
+.feeler-crops{
+    background:#00334d;
+    height: 9vh;
+    font-family: poppins;
+}
+.feeler-crops h1{
+    padding-top: 25px;
+    text-align: center;
+    color: lightgray;
+    letter-spacing: 10px;
+    font-size: 1.5vw;
+}
 
 /*Highland Crops*/
 .Contents .HighlandCrops{
     background: var(--HighlandCropsBG);
     text-align: center;
 }
-.Contents .HighlandCrops h2 {
-	font-family: poppins;
-	letter-spacing: 4px;
-	padding-top: 30px;
-	font-size: 40px;
-	margin: 0;
-}
 .Contents .HighlandCrops .VegsMenu{
-    margin-top:30px;
+    margin-top:1px;
 }
 .Contents .HighlandCrops .VegsMenu ul
 {
