@@ -1,0 +1,22 @@
+<div class="feeler-dataset" id="DatasetsID">
+            <h1>Dataset</h1>
+        </div>
+        <div class="Datasets" id="DatasetsID">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero aliquid iste repudiandae non repellendus, tempora modi nulla praesentium eos debitis, minus optio nobis vel impedit hic! Pariatur aliquam sequi voluptas.</p>
+            <!--Search Bar Dataset-->
+            <div class="search">
+                <input type="text" class="search-bar" placeholder="Enter Municipality: ">
+                <input type="text" class="search-bar" placeholder="Enter Crop: ">
+                <input type="text" class="search-bar" placeholder="Enter Year: ">
+                <input type="text" class="search-bar" placeholder="Enter Yearly rain: ">
+                <input type="text" class="search-bar" placeholder="Enter Area: ">
+            </div>
+            <!--On click showing prediction data-->
+                <button onclick="myFunction()">Search</button>
+                <p id="demo"></p>
+                <script>
+                function myFunction() {
+                 document.getElementById("demo").innerHTML = "Sample Data: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Viverra tellus in hac habitasse. Sit amet cursus sit amet dictum. Sapien pellentesque habitant morbi tristique. Faucibus et molestie ac feugiat sed lectus vestibulum mattis ullamcorper.";
+                }
+                </script>
+        </div>

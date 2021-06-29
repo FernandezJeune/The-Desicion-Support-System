@@ -1,0 +1,34 @@
+/*Feeler Dataset*/
+.feeler-dataset{
+    background:#00334d;
+    height: 9vh;
+    font-family: poppins;
+}
+.feeler-dataset h1{
+    padding-top: 25px;
+    text-align: center;
+    color: lightgray;
+    letter-spacing: 10px;
+    font-size: 1.5vw;
+}
+/*Datasets*/
+.Contents .Datasets{
+    background: var(--DatasetsBG);
+    text-align: center;
+}
+.Contents .Datasets h2 {
+	font-family: poppins;
+	letter-spacing: 4px;
+	padding-top: 30px;
+	font-size: 40px;
+	margin: 0;
+}
+.Contents .Datasets p {
+	padding: 2% 0px;
+	font-family: poppins;
+	line-height: 30px;
+}
+
+.Datasets .search{
+    padding-bottom: 30px;
+}
