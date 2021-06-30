@@ -430,6 +430,7 @@ input[type=text], input[type=password] {
   }  
   /* Set a style for all buttons */
 .footer button{
+    font-family: poppins;
     background-color: #04AA6D;
     color: white;
     padding: 14px 20px;
@@ -462,6 +463,8 @@ input[type=text], input[type=password] {
   
 .footer .container{
     padding: 16px;
+    color: black;
+    text-align: left;
 }
   
 .footer span.psw{
@@ -489,7 +492,7 @@ input[type=text], input[type=password] {
     background-color: #fefefe;
     margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
     border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
+    width: 40%; /* Could be more or less, depending on screen size */
 } 
   /* The Close Button (x) */
 .footer .close{
