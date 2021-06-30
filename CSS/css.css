@@ -294,16 +294,6 @@ input.search-bar:hover{
     display: flex;
     justify-content:space-between ;
 }
-.Crop-Section .veggy{
-    text-align: center;
-    font-size: 0.9vw;
-    width: 15vw;
-    height: 35vh;
-    border-radius: 15px;
-}
-.veggy:hover{
-    background-color: lightgreen;
-}
 /*Crops Modals*/
 .Crop-Section .myBtn{
     text-align: center;
