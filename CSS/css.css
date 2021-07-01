@@ -444,7 +444,7 @@ input.search-bar:hover{
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
   }
   
-  /* Modal Content */
+  /* Modal Content Season */
   .modal-content-season {
     font-family: poppins;
     position: relative;
@@ -460,7 +460,7 @@ input.search-bar:hover{
     animation-duration: 0.4s
   }
   
-  /* Add Animation */
+  /* Add Animation Season*/
   @-webkit-keyframes animatetop {
     from {top:-300px; opacity:0} 
     to {top:0; opacity:1}
@@ -471,7 +471,7 @@ input.search-bar:hover{
     to {top:0; opacity:1}
   }
   
-  /* The Close Button */
+  /* The Close Button Season*/
   .close-season {
     color: white;
     float: right;
@@ -486,17 +486,17 @@ input.search-bar:hover{
     cursor: pointer;
   }
   
-  .modal-header {
+  .modal-header-season {
     padding: 2px 16px;
-    background-color: #5cb85c;
+    background-color: rgb(87, 160, 206);
     color: white;
   }
   
-  .modal-body {padding: 2px 16px;}
+  .modal-body-season {padding: 2px 16px;}
   
-  .modal-footer {
+  .modal-footer-season {
     padding: 2px 16px;
-    background-color: #5cb85c;
+    background-color: rgb(87, 160, 206);
     color: white;
   }
 
