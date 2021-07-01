@@ -42,6 +42,7 @@ body{
     color: white;
     font-family: poppins;
     font-size: 1rem;
+    z-index: 2;
 }
 .brand-title{
     font-size: 1.5rem;
@@ -256,7 +257,7 @@ body{
 }
 /*Crops*/
 .Crop-Section{
-    background: var(--ChartBG);
+    background: #ece8d9;
     height: 85vh;
 }
 .Crop-Section .row1{
@@ -281,10 +282,6 @@ body{
     width: 15vw;
     height: 35vh;
     border-radius: 15px;
-    background: #000000d0;
-    color: white;
-    border-color: lightgray;
-    border-style: solid;
 }
 .myBtn:hover{
     background-color: lightgreen;
@@ -494,19 +491,19 @@ body{
 .Contents .Municipalities{
     background: var(--MunicipalitiesBG);
     text-align: center;
-    height: 55vh;
+    height: 65vh;
+    padding-top: 25px;
 }
-.Municipalities .map-wrapper{
-    display: block;
-    padding-top: 20px;
+.Municipalities #map{
+    border-style: solid;
+    border-radius: 15px;
+    border-color: black;
     margin-left: auto;
     margin-right: auto;
-    max-width: 1700px;
+    height:60vh;
+    width: 90vw;
+    z-index: 1;
 }
-.Municipalities .googlemap{
-    width: 100%;
-}
-
 
 /*Feeler GIS*/
 .feeler-gis{
