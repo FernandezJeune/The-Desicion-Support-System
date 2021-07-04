@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*Navigation Bar*/
+.navbar{
+    display: flex;
+    position: fixed;
+    width: 100% ;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(8, 8, 8, 0.897);
+    color: white;
+    font-family: poppins;
+    font-size: 1rem;
+    z-index: 2;
+}
+.brand-title{
+    font-size: 1.5rem;
+    padding-left: 5rem;
+    margin: .5rem;
+    display: flex;
+    align-items: center;
+}
+.brand-title a:link{
+    color: white;
+    text-decoration: none;
+}
+.brand-title a:visited{
+    color: white;
+}
+.brand-title img{
+    width: 5rem;
+    height: 3.5rem;
+}
+.navbar-links{
+    height: 100%;
+    padding-right: 5rem;
+}
+.navbar-links ul{
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.navbar-links li{
+    list-style: none;
+}
+.navbar-links li a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+}
+.navbar-links li:hover{
+    background-color: #555;
+}
+.toggle-button{
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+.toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+@media (max-width: 960px){
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .toggle-button{
+        display: flex;
+        margin: .7rem;
+    }
+    .navbar-links{
+        display: none;
+        width: 100%;
+        background-color:#666;
+        padding-right: 0rem;
+    }
+    .navbar-links ul{
+        width: 100%;
+        flex-direction: column;
+    }
+    .navbar-links ul li{
+        text-align: center;
+    }
+    .navbar-links ul li a{
+        padding: .5rem 1rem;
+    }
+    .navbar-links.active{
+        display: flex;
+    }
+}
+
+
+/*Project ANI - Description*/
+.Banner{
+    height: 40vh;
+    text-align: center;
+    background: #ece8d9;
+}
+.Banner h2 {
+	padding-top: 7%;
+	font-size: 4.5vw;
+	font-family: poppins;
+	text-transform: uppercase;
+	color: black;
+}
+.Banner p {
+    padding-bottom: 70px;
+	font-family: poppins;
+    font-size: 1vw;
+    color:black;
+}
+@media (max-width:1000px){
+    .brand-title{
+        padding-left: 0rem;
+    }
+    .Banner1{
+        text-align: center;
+    }
+}
+
+
+/*Filler Dataset*/
+.filler-dataset{
+    background:#00334d;
+    font-family: poppins;
+}
+.filler-dataset h1{
+    padding-top: 25px;
+    text-align: center;
+    color: lightgray;
+    letter-spacing: 10px;
+    font-size: 1.5vw;
+}
+/*Dataset*/
+.Dataset{
+    background: #ece8d9;
+    text-align: center;
+    line-height: 1.5;
+    height: 55vh;
+    font-family: poppins;
+}
+
+.Dataset #demo{
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.Dataset select{
+    font-family: poppins;
+    width: 9vw;
+}
+.Dataset button{
+    font-family: poppins;
+    background-color: #04AA6D;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 10px;
+    height: 5vh;
+    width: 9vw;
+}
+
+
+/*Footer*/
+.footer{
+    background-color: black;
+    font-family: poppins;
+    color: white;
+    text-align: center;
+    font-size: 0.7vw;
+    height: 10vh;
+    padding-top: 18px;
+    line-height: 2.5;
+}
+.footer a{
+    color: orange;
+    font-size: 0.8vw;
+}

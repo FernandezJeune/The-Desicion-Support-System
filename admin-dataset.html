@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+	<link href="CSS/admin.css" rel="stylesheet">
+    <script src="JS/admin-dataset.js" defer></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="brand-title">
+           <img src="images/SampleLogo.png">
+            <a href="Index.html">Project ANI</a>
+           </div>
+        <a href="#" class="toggle-button">
+           <span class="bar"></span>
+           <span class="bar"></span>
+           <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+           <ul>
+               <li><a href="#" class="MMlist">Edit</a></li>
+               <li><a href="#" class="MMlist">Dataset</a></li>
+               <li><a href="#" class="MMlist">Forum</a></li>
+           </ul>
+        </div>
+       </nav>
+
+    <div class="Banner" id="HomeID">
+        <div class="Banner1">
+            <h2>Project ANI</h2>
+            <p>Agri Natin Ito : A Decision Support System for Benguet's Crop Prediction</p>
+        </div>
+    </div>
+
+    <div class="filler-dataset">
+        <h1>Prediction / Datasets</h1>
+    </div>
+
+    <div class="Dataset">
+        <form action="#">
+            <label for="Municipality">Choose a Municipality:</label><br>
+            <select id="Municipality" name="Municipality">
+                <option value="Atok">Atok</option>
+                <option value="Bakuin">Bakuin</option>
+                <option value="Bokod">Bokod</option>
+                <option value="Bguias">Bguias</option>
+                <option value="Itogon">Itogon</option>
+                <option value="Kabayan">Kabayan</option>
+                <option value="Kapangan">Kapangan</option>
+                <option value="Kibungan">Kibungan</option>
+                <option value="La trinidad">La trinidad</option>
+                <option value="Mankayan">Mankayan</option>
+                <option value="Sablan">Sablan</option>
+                <option value="Tuba">Tuba</option>
+                <option value="Tublay">Tublay</option>
+            </select>
+            <br>
+            <label for="Crop">Choose a Crop:</label><br>
+            <select id="Crop" name="Crop">
+                <option value="Cabbage">Cabbage</option>
+                <option value="Chinese Cabbage">Chinese Cabbage</option>
+                <option value="Lettuce">Lettuce</option>
+                <option value="Cauliflower">Cauliflower</option>
+                <option value="Snap Beans">Snap Beans</option>
+                <option value="Garden Peas">Garden Peas</option>
+                <option value="Sweet Pepper">Sweet Pepper</option>
+                <option value="White Potato">White Potato</option>
+                <option value="Carrots">Carrots</option>
+            </select>
+            <br>
+            <label for="Year">Enter year:</label><br>
+            <select id="Year" name="Year">
+                <option value="2015">2015</option>
+                <option value="2016">2016</option>
+                <option value="2017">2017</option>
+                <option value="2018">2018</option>
+                <option value="2019">2019</option>
+                <option value="2020">2020</option>
+            </select>
+            <br>
+            <label for="yearly-rain">Enter Yearly Rain:</label><br>
+            <input type="text" id="yearly-rain" name="yearly-rain">
+            <br>
+            <label for="area">Enter Area:</label><br>
+            <input type="text" id="area" name="area">
+            <br>
+            <button onclick="myFunction()">Search</button>
+            <p id="demo"></p>
+          </form> 
+    </div>
+
+    <div class="footer">
+        <p>© Project ANI 2021</p>
+        <p>Made by the CITCS team</p>
+    </div>  
+</body>
+</html>
