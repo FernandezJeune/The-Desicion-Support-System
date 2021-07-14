@@ -305,7 +305,7 @@ body{
     font-family: poppins;
     position: relative;
     background-color: #fefefe;
-    margin: 15% auto;
+    margin: 5% auto;
     padding: 0;
     border: 1px solid #888;
     width: 80%;
@@ -348,7 +348,17 @@ body{
     color: white;
   }
   
-  .modal-body {padding: 2px 16px;}
+  .modal-body {
+      padding: 2px 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .modal-body .modal-picture img{
+        width: 30vw;
+        height: 40vh;
+    }
   
   .modal-footer {
     padding: 2px 16px;
@@ -533,8 +543,8 @@ body{
     text-align: center;
     font-size: 0.7vw;
     height: 20vh;
-    padding-top: 18px;
-    line-height: 2.5;
+    padding-top: 15px;
+    line-height: 2;
 }
 .footer a{
     color: orange;
