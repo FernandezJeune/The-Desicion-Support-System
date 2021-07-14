@@ -104,12 +104,12 @@
 
 /*Project ANI - Description*/
 .Banner{
-    height: 40vh;
+    height: 35vh;
     text-align: center;
     background: #ece8d9;
 }
 .Banner h2 {
-	padding-top: 7%;
+	padding-top: 5%;  
 	font-size: 4.5vw;
 	font-family: poppins;
 	text-transform: uppercase;
@@ -135,6 +135,7 @@
 .filler-dataset{
     background:#00334d;
     font-family: poppins;
+    height: 10vh;
 }
 .filler-dataset h1{
     padding-top: 25px;
@@ -150,6 +151,7 @@
     line-height: 1.5;
     height: 55vh;
     font-family: poppins;
+    padding-top: 20px   ;
 }
 
 .Dataset #demo{
