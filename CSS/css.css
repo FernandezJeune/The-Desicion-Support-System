@@ -143,7 +143,7 @@ body{
 	text-transform: uppercase;
 	color: black;
 }
-.Banner p {
+.Banner o {
     padding-bottom: 70px;
 	font-family: poppins;
     font-size: 1vw;
@@ -278,10 +278,22 @@ body{
 /*Crops Modals*/
 .Crop-Section .myBtn{
     text-align: center;
-    font-size: 0.9vw;
     width: 15vw;
     height: 35vh;
     border-radius: 15px;
+}
+.Crop-Section .myBtn h2, p{
+    font-family: poppins;
+    text-align: left;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.Crop-Section .myBtn h2{
+    font-size: 1.3vw;
+    margin-top: 10px;
+}
+.Crop-Section .myBtn p{
+    font-size: 0.7vw;
 }
 .myBtn:hover{
     background-color: lightgreen;
@@ -397,7 +409,7 @@ body{
     padding-left: 50px;
     padding-right: 50px;
     display: flex;
-    justify-content:space-between ;
+    justify-content:space-between;
 }
 
 .Season-Section .row2{
@@ -412,8 +424,22 @@ body{
     text-align: center;
     font-size: 0.9vw;
     width: 13.5vw;
-    height: 35vh;
+    height: 35vh;   
     border-radius: 15px;
+}
+.Season-Section .myBtn-season h2, p{
+    font-family: poppins;
+    text-align: left;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.Season-Section .myBtn-season h2{
+    font-size: 1.3vw;
+    margin-top: 10px;
+}
+.Season-Section .myBtn-season p{
+    margin-top: 5px;
+    font-size: 0.7vw;
 }
 .Season-Section .myBtn-season:hover{
     background-color: lightblue;
@@ -552,6 +578,9 @@ body{
     height: 20vh;
     padding-top: 15px;
     line-height: 2;
+}
+.footer p{
+    text-align: center;
 }
 .footer a{
     color: orange;
