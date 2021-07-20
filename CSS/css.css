@@ -532,21 +532,113 @@ body{
 }
 /*Municipalities*/
 .Contents .Municipalities{
-    background: var(--MunicipalitiesBG);
+    background-color: #ece8d9;
+    height: 85vh;
+}
+.Municipalities .row1{
+    padding-top: 40px;
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;
+    justify-content:space-between;
+}
+.Municipalities .row2{
+    padding-top: 40px;
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;
+    justify-content:space-between ;
+}
+/*Municipality Modal*/
+.Municipalities .myBtn-municipality{
     text-align: center;
-    height: 65vh;
-    padding-top: 25px;
-}
-.Municipalities #map{
-    border-style: solid;
+    font-size: 0.9vw;
+    width: 13.5vw;
+    height: 35vh;   
     border-radius: 15px;
-    border-color: black;
-    margin-left: auto;
-    margin-right: auto;
-    height:60vh;
-    width: 90vw;
-    z-index: 1;
 }
+.Municipalities .myBtn-municipality h2{
+    font-family: poppins;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 1.3vw;
+}
+.Municipalities .myBtn-municipality:hover{
+    background-color: lightcoral;
+}
+.modal-municipality {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content Municipality */
+  .modal-content-municipality {
+    font-family: poppins;
+    position: relative;
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+  
+  /* Add Animation Municipality*/
+  @-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+  }
+  
+  @keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+  }
+  
+  /* The Close Button Municipality*/
+  .close-municipality {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close-municipality:hover,
+  .close-municipality:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .modal-header-municipality {
+    padding: 2px 16px;
+    background-color: lightcoral;
+    color: white;
+  }
+  
+  .modal-body-municipality {padding: 2px 16px;}
+  
+  .modal-footer-municipality {
+    padding: 2px 16px;
+    background-color: lightcoral;
+    color: white;
+  }
+
+
 
 /*Feeler GIS*/
 .feeler-gis{
