@@ -13,7 +13,7 @@
     --BannerTxtColor: #494949; 
 
     --WeatherBG: url('../Images/Baguio.jpg'); 
-    --ChartBG:url('../Images/forest.jpg '); 
+    --ChartBG:url('../Images/forest.png'); 
     --MunicipalitiesBG: #ece8d9;
     --GISBG: #fffdf6;
     --DatasetsBG: #ece8d9;
@@ -245,7 +245,7 @@ body{
 /*Feeler Crops*/
 .feeler-crops{
     background:#00334d;
-    height: 18vh;
+    height: 17vh;
     font-family: poppins;
 }
 .feeler-crops h1{
@@ -256,11 +256,11 @@ body{
     font-size: 2vw;
 }
 .feeler-crops p{
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 12%;
+    margin-right: 12%;
     text-align: center;
-    letter-spacing: 5px;
-    font-size: 0.8vw;
+    letter-spacing: 4px;
+    font-size: 0.7vw;
     color: white;
 }
 /*Crops*/
@@ -288,11 +288,11 @@ body{
     text-align: center;
     width: 15vw;
     height: 35vh;
-    background:#000000d0;
-    color:white;
+    background:#ccccccdc;
+    color:black;
     border-radius: 15px;
     border-style: solid;
-    border-color: white;
+    border-color: black;
 }
 .Crop-Section .myBtn h2, p{
     font-family: poppins;
@@ -308,7 +308,7 @@ body{
     font-size: 0.7vw;
 }
 .myBtn:hover{
-    background-color: green;
+    background-color: lightgreen;
 }
 .modal {
     display: none; /* Hidden by default */
@@ -401,7 +401,7 @@ body{
 /*Feeler Season*/
 .feeler-season{
     background:#00334d;
-    height: 18vh;
+    height: 15vh;
     font-family: poppins;
 }
 .feeler-season h1{
@@ -412,11 +412,11 @@ body{
     font-size: 2vw;
 }
 .feeler-season p{
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 15%;
+    margin-right: 15%;
     text-align: center;
-    letter-spacing: 5px;
-    font-size: 0.8vw;
+    letter-spacing: 4px;
+    font-size: 0.7vw;
     color: white;
 }
 /*Season*/
