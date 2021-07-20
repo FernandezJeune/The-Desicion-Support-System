@@ -13,7 +13,7 @@
     --BannerTxtColor: #494949; 
 
     --WeatherBG: url('../Images/Baguio.jpg'); 
-    --ChartBG:url('../Images/forest1.png'); 
+    --ChartBG:url('../Images/forest.jpg '); 
     --MunicipalitiesBG: #ece8d9;
     --GISBG: #fffdf6;
     --DatasetsBG: #ece8d9;
@@ -288,9 +288,11 @@ body{
     text-align: center;
     width: 15vw;
     height: 35vh;
+    background:#000000d0;
+    color:white;
     border-radius: 15px;
     border-style: solid;
-    border-color: black;
+    border-color: white;
 }
 .Crop-Section .myBtn h2, p{
     font-family: poppins;
@@ -306,7 +308,7 @@ body{
     font-size: 0.7vw;
 }
 .myBtn:hover{
-    background-color: lightgreen;
+    background-color: green;
 }
 .modal {
     display: none; /* Hidden by default */
