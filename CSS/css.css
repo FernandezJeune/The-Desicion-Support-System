@@ -245,15 +245,23 @@ body{
 /*Feeler Crops*/
 .feeler-crops{
     background:#00334d;
-    height: 9vh;
+    height: 18vh;
     font-family: poppins;
 }
 .feeler-crops h1{
-    padding-top: 25px;
+    padding-top: 15px;
     text-align: center;
-    color: lightgray;
+    color: orange;
     letter-spacing: 10px;
-    font-size: 1.5vw;
+    font-size: 2vw;
+}
+.feeler-crops p{
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+    letter-spacing: 5px;
+    font-size: 0.8vw;
+    color: white;
 }
 /*Crops*/
 .Crop-Section{
@@ -281,6 +289,8 @@ body{
     width: 15vw;
     height: 35vh;
     border-radius: 15px;
+    border-style: solid;
+    border-color: black;
 }
 .Crop-Section .myBtn h2, p{
     font-family: poppins;
@@ -426,6 +436,8 @@ body{
     width: 13.5vw;
     height: 35vh;   
     border-radius: 15px;
+    border-style: solid;
+    border-color: black;
 }
 .Season-Section .myBtn-season h2, p{
     font-family: poppins;
@@ -440,6 +452,11 @@ body{
 .Season-Section .myBtn-season p{
     margin-top: 5px;
     font-size: 0.7vw;
+}
+.Season-Section .myBtn-season img{
+    width: 13.3vw;
+    height: 17vh;
+    object-fit: fill;
 }
 .Season-Section .myBtn-season:hover{
     background-color: lightblue;
@@ -556,6 +573,8 @@ body{
     width: 13.5vw;
     height: 35vh;   
     border-radius: 15px;
+    border-style: solid;
+    border-color: black;
 }
 .Municipalities .myBtn-municipality h2{
     font-family: poppins;
@@ -564,6 +583,11 @@ body{
     margin-left: 10px;
     margin-right: 10px;
     font-size: 1.3vw;
+}
+
+.Municipalities .myBtn-municipality img{
+    width: 10vw;
+    height: 10vh;
 }
 .Municipalities .myBtn-municipality:hover{
     background-color: lightcoral;
