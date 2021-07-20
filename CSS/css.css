@@ -13,10 +13,10 @@
     --BannerTxtColor: #494949; 
 
     --WeatherBG: url('../Images/Baguio.jpg'); 
-    --ChartBG:url('../Images/forest.png'); 
+    --ChartBG:url('../Images/barn.png'); 
+    --SeasonBG:url('../Images/forest.png');
     --MunicipalitiesBG: #ece8d9;
     --GISBG: #fffdf6;
-    --DatasetsBG: #ece8d9;
 
     --HighlandCropsBG: #ece8d9;
     --SampleCabbage: url('../Images/Cabbage.png'); 
@@ -421,7 +421,7 @@ body{
 }
 /*Season*/
 .Season-Section{
-    background-color: #ece8d9;
+    background:var(--SeasonBG);
     height: 85vh;
 }
 .Season-Section .row1{
@@ -442,10 +442,11 @@ body{
 /*Season Modals*/
 .Season-Section .myBtn-season{
     text-align: center;
+    background:#ccccccdc;
     font-size: 0.9vw;
     width: 13.5vw;
     height: 35vh;   
-    border-radius: 15px;
+    border-radius: 15px;    
     border-style: solid;
     border-color: black;
 }
@@ -461,12 +462,11 @@ body{
 }
 .Season-Section .myBtn-season p{
     margin-top: 5px;
-    font-size: 0.7vw;
+    font-size: 0.8vw;
 }
 .Season-Section .myBtn-season img{
-    width: 13.3vw;
-    height: 17vh;
-    object-fit: fill;
+    width: 7vw;
+    height: 13vh;
 }
 .Season-Section .myBtn-season:hover{
     background-color: lightblue;
