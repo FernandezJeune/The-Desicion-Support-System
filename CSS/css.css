@@ -399,15 +399,23 @@ body{
 /*Feeler Season*/
 .feeler-season{
     background:#00334d;
-    height: 9vh;
+    height: 18vh;
     font-family: poppins;
 }
 .feeler-season h1{
-    padding-top: 25px;
+    padding-top: 15px;
     text-align: center;
-    color: lightgray;
+    color: orange;
     letter-spacing: 10px;
-    font-size: 1.5vw;
+    font-size: 2vw;
+}
+.feeler-season p{
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+    letter-spacing: 5px;
+    font-size: 0.8vw;
+    color: white;
 }
 /*Season*/
 .Season-Section{
