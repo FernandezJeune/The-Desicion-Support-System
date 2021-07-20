@@ -13,7 +13,7 @@
     --BannerTxtColor: #494949; 
 
     --WeatherBG: url('../Images/Baguio.jpg'); 
-    --ChartBG:url('../Images/rice-terraces.jpg'); 
+    --ChartBG:url('../Images/forest1.png'); 
     --MunicipalitiesBG: #ece8d9;
     --GISBG: #fffdf6;
     --DatasetsBG: #ece8d9;
@@ -265,7 +265,7 @@ body{
 }
 /*Crops*/
 .Crop-Section{
-    background: #ece8d9;
+    background: var(--ChartBG);
     height: 85vh;
 }
 .Crop-Section .row1{
