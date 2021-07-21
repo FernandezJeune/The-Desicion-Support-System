@@ -15,7 +15,7 @@
     --WeatherBG: url('../Images/Baguio.jpg'); 
     --ChartBG:url('../Images/barn.png'); 
     --SeasonBG:url('../Images/forest.png');
-    --MunicipalitiesBG: #ece8d9;
+    --MunicipalitiesBG:url('../Images/mountain.png');
     --GISBG: #fffdf6;
 
     --HighlandCropsBG: #ece8d9;
@@ -559,7 +559,7 @@ body{
 }
 /*Municipalities*/
 .Contents .Municipalities{
-    background-color: #ece8d9;
+    background: var(--MunicipalitiesBG);
     height: 85vh;
 }
 .Municipalities .row1{
@@ -578,6 +578,7 @@ body{
 }
 /*Municipality Modal*/
 .Municipalities .myBtn-municipality{
+    background-color: #ccccccdc;
     text-align: center;
     font-size: 0.9vw;
     width: 13.5vw;
@@ -596,8 +597,8 @@ body{
 }
 
 .Municipalities .myBtn-municipality img{
-    width: 10vw;
-    height: 10vh;
+    width: 13.2vw;
+    height: 16vh;
 }
 .Municipalities .myBtn-municipality:hover{
     background-color: lightcoral;
