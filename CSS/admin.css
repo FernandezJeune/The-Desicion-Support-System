@@ -31,8 +31,10 @@
     color: white;
 }
 .brand-title img{
-    width: 5rem;
+    width: 3.8rem;
     height: 3.5rem;
+    margin-right: 5px;
+}
 }
 .navbar-links{
     height: 100%;
