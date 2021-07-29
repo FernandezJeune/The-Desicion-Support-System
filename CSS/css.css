@@ -133,12 +133,14 @@ body{
 
 /*Project ANI - Description*/
 .Banner{
-    height: 40vh;
-    text-align: center;
+    height: 30vh;
     background: #ece8d9;
 }
+.Banner1{
+    text-align: center;
+}
 .Banner h2 {
-	padding-top: 7%;
+	padding-top: 4.5%;
 	font-size: 4.5vw;
 	font-family: poppins;
 	text-transform: uppercase;
@@ -149,6 +151,13 @@ body{
 	font-family: poppins;
     font-size: 1vw;
     color:black;
+}
+.Banner img{
+    width: 15%;
+    height: 25%;
+    position: absolute;
+    top: 2.8%;
+    left: 16%;
 }
 @media (max-width:1000px){
     .brand-title{
