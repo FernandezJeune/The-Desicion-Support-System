@@ -7,11 +7,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 	<link href="CSS/css.css" rel="stylesheet">
-    <!--Mapbox-->
-    <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
-    <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
-    <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.0/mapbox-gl-directions.js"></script>
-    <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.0/mapbox-gl-directions.css" type="text/css">
     <!--Weather Javascript-->
     <script src="JS/script.js" defer></script>
     <!--Donut Chart-->
@@ -50,8 +45,6 @@
         </script>
 <style>
 </style>
-    <!--Map box-->
-    <script src="JS/location.js" defer></script>
     <!--Admin Login-->
     <script src="JS/adminlogin.js" defer></script>
 </head>
@@ -88,8 +81,9 @@
     
     <div class="Contents">
         <div class="HomeContents">
-            <div class="feeler-weather" id="WeatherID">
+            <div class="filler-weather" id="WeatherID">
                 <h1>WEATHER FORECAST</h1>
+                <p> Weather forecasters are primarily responsible for analyzing weather data and formulating weather reports based on their analysis. These reports can include forecasts of temperature, precipitation, and wind speed, as well as the time these conditions are supposed to occur.</p>
             </div>
             <!--Weather Widget-->
             <div class="WeatherSection">
@@ -119,7 +113,7 @@
  
 
         <!--Crops-->
-        <div class="feeler-crops" id="CropsID">
+        <div class="filler-crops" id="CropsID">
             <h1>Top 10 Highland Crops</h1>
             <p>Project ANI aims to help Benguet farmers optimize crop production and limit the adverse impacts of climate variability and other production factors through the implementation of a Decision Support System (DSS) that employs Data Mining and Machine Learning techniques. These are the top 10 crops in the different municipalities of Baguio City</p>
         </div>
@@ -404,6 +398,37 @@
                         </div>
                     </div>
                 </div> 
+
+                <!--Sayote Trigger/Open The Modal -->
+                <button class="myBtn"><img src="Images/sayote.png" width="60%" height="40%">
+                    <h2>Sayote</h2>
+                    <p>Sayote are rich in B-Vitamins and antioxidants so essential for brain health ,Sayote have long been used to make a tea to dissolve kidney stones and reduce high blood pressure. </p>
+                </button>
+                <!-- The Modal -->
+                <div id="myModal5" class="modal">
+                <!-- Modal content -->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <span class="close">×</span>
+                            <h2>Sayote</h2>
+                        </div>
+                        <div class="modal-body">
+                            <div class="modal-information">
+                                <h1>ⓘ What is Carrots?</h1>
+                                <p>The carrot is a root vegetable, most commonly observed as orange in color, though purple, black, red, white, and yellow cultivars exist, all of which are domesticated forms of the wild carrot, Daucus carota, native to Europe and Southwestern Asia.</p>
+                                <br>
+                                <h1>💡 Tips</h1>
+                                <p>Plant your carrots in rows that are 1 to 2 feet apart. Seeds should be planted about a ½ inch deep and 1 to 2 inches apart. When growing carrots in the garden, you’ll wait for your carrot plants to appear. When the plants are 4 inches high, thin the plants to 2 inches  apart. You may find that some of the carrots are actually large enough to eat. When growing carrots in the garden, make sure to plant, per person, 5 to 10 feet of row to have enough carrots for table use. You will get about 1 pound 0.5 kg. of carrots in a 1 foot row. You want to keep your carrots free of weeds. This is especially important when they are small. The weeds will take nutrients away from the carrots and will cause poor carrot development.
+                                </p>
+                            </div>
+                            <div class="modal-picture">
+                             <img src="Images/planting-carrots.jpg">
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                        </div>
+                    </div>
+                </div> 
             </div>
              <script>
                 // Get the modal crops
@@ -503,7 +528,7 @@
         </div>
 
         <!--Season-->
-        <div class="feeler-season" id="SeasonsID">
+        <div class="filler-season" id="SeasonsID">
             <h1>Season</h1>
             <p>Project ANI aims to help reduce crop waste and loss through crop yield prediction, and help promote sustainable agriculture and economic growth. These section contains information about trending crops in each month. </p>
         </div>
@@ -904,8 +929,9 @@
 
 
         <!--Municipalities-->
-        <div class="feeler-municipalities" id="MunicipalitiesID">
+        <div class="filler-municipalities" id="MunicipalitiesID">
             <h1>Municipalities</h1>
+            <p>A municipality is a political subdivision of a state within which a municipal corporation has been established to provide general local government for a specific population concentration in a defined area.</p>
         </div>
         <div class="Municipalities">
             <!--MUNICIPALITY ROW 1-->
@@ -913,7 +939,7 @@
                 <!--Atok Trigger/Open The Modal -->
                 <button class="myBtn-municipality"><img src="Images/atok.png">
                     <h2>Atok</h2>
-                    <o>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</o>
+                    <o>Atok, officially the Municipality of Atok, is a 4th class municipality in the province of Benguet, Philippines. According to the 2015 census, it has a population of 19,668 people.</o>
                 </button>
                 <!-- The Modal -->
                 <div id="myModal20" class="modal-municipality">
@@ -935,8 +961,8 @@
                 
                 <!--Bakuin Trigger/Open The Modal -->
                 <button class="myBtn-municipality"><img src="Images/bakuin.jpg">
-                    <h2>Bakuin</h2>
-                    <o>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</o>
+                    <h2>Bakun</h2>
+                    <o>Bakun, officially the Municipality of Bakun, is a 3rd class municipality in the province of Benguet, Philippines. According to the 2015 census, it has a population of 15,357 people.</o>
                 </button>
                 <!-- The Modal -->
                 <div id="myModal20" class="modal-municipality">
@@ -959,7 +985,7 @@
                 <!--Bokod Trigger/Open The Modal -->
                 <button class="myBtn-municipality"><img src="Images/bokod.jpg.crdownload">
                     <h2>Bokod</h2>
-                    <o>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</o>
+                    <o>Bokod, officially the Municipality of Bokod, is a 4th class municipality in the province of Benguet, Philippines. According to the 2015 census, it has a population of 13,756 people.</o>
                 </button>
                 <!-- The Modal -->
                 <div id="myModal20" class="modal-municipality">
@@ -982,7 +1008,7 @@
                 <!--Buguias Trigger/Open The Modal -->
                 <button class="myBtn-municipality"><img src="Images/buguias.jpg">
                     <h2>Buguias</h2>
-                    <o>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</o>
+                    <o>Buguias, officially the Municipality of Buguias, is a 3rd class municipality in the province of Benguet, Philippines. According to the 2015 census, it has a population of 43,627 people.</o>
                 </button>
                 <!-- The Modal -->
                 <div id="myModal20" class="modal-municipality">
@@ -1005,7 +1031,7 @@
                 <!--Itogon Trigger/Open The Modal -->
                 <button class="myBtn-municipality"><img src="Images/itogon.jpg.crdownload">
                     <h2>Itogon</h2>
-                    <o>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</o>
+                    <o>Itogon, officially the Municipality of Itogon, is a 1st class municipality in the province of Benguet, Philippines. According to the 2015 census, it has a population of 59,820 people.</o>
                 </button>
                 <!-- The Modal -->
                 <div id="myModal20" class="modal-municipality">
@@ -1028,7 +1054,7 @@
                 <!--Kabayan Trigger/Open The Modal -->
                 <button class="myBtn-municipality"><img src="Images/kabayan.jpg">
                     <h2>Kabayan</h2>
-                    <o>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</o>
+                    <o>Kabayan, officially the Municipality of Kabayan, is a 4th class municipality in the province of Benguet, Philippines. According to the 2015 census, it has a population of 15,260 people.</o>
                 </button>
                 <!-- The Modal -->
                 <div id="myModal20" class="modal-municipality">
@@ -1055,7 +1081,7 @@
                 <!--Kapangan Trigger/Open The Modal -->
                 <button class="myBtn-municipality"><img src="Images/kapangan.jpg">
                     <h2>Kapangan</h2>
-                    <o>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</o>
+                    <o>Kapangan, officially the Municipality of Kapangan, is a 4th class municipality in the province of Benguet, Philippines. According to the 2015 census, it has a population of 19,361 people.</o>
                 </button>
                 <!-- The Modal -->
                 <div id="myModal20" class="modal-municipality">
@@ -1078,7 +1104,7 @@
                 <!--Kibungan Trigger/Open The Modal -->
                 <button class="myBtn-municipality"><img src="Images/kibungan.jpg">
                     <h2>Kibungan</h2>
-                    <o>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</o>
+                    <o>Kibungan, officially the Municipality of Kibungan, is a 4th class municipality in the province of Benguet, Philippines. According to the 2015 census, it has a population of 17,292 people.</o>
                 </button>
                 <!-- The Modal -->
                 <div id="myModal20" class="modal-municipality">
@@ -1101,7 +1127,7 @@
                 <!--La trinidad Trigger/Open The Modal -->
                 <button class="myBtn-municipality"><img src="Images/la trinidad.jpg">
                     <h2>La trinidad</h2>
-                    <o>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</o>
+                    <o>La Trinidad, officially the Municipality of La Trinidad, is a 1st class municipality and capital of the province of Benguet, Philippines. According to the 2015 census, it has a population of 129,133 people.</o>
                 </button>
                 <!-- The Modal -->
                 <div id="myModal20" class="modal-municipality">
@@ -1124,7 +1150,7 @@
                 <!--Mankayan Trigger/Open The Modal -->
                 <button class="myBtn-municipality"><img src="Images/mankayan.jpg">
                     <h2>Mankayan</h2>
-                    <o>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</o>
+                    <o>Mankayan, officially the Municipality of Mankayan, is a 1st class municipality in the province of Benguet, Philippines. According to the 2015 census, it has a population of 35,953 people.</o>
                 </button>
                 <!-- The Modal -->
                 <div id="myModal20" class="modal-municipality">
@@ -1147,7 +1173,7 @@
                 <!--sablan Trigger/Open The Modal -->
                 <button class="myBtn-municipality"><img src="Images/sablan.jpg">
                     <h2>Sablan</h2>
-                    <o>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</o>
+                    <o>Sablan, officially the Municipality of Sablan, is a 5th class municipality in the province of Benguet, Philippines. According to the 2015 census, it has a population of 11,457 people.</o>
                 </button>
                 <!-- The Modal -->
                 <div id="myModal20" class="modal-municipality">
@@ -1170,7 +1196,7 @@
                 <!--Tuba Trigger/Open The Modal -->
                 <button class="myBtn-municipality"><img src="Images/tuba.jpg">
                     <h2>Tuba</h2>
-                    <o>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</o>
+                    <o>Tuba, officially the Municipality of Tuba, is a 1st class municipality in the province of Benguet, Philippines. According to the 2015 census, it has a population of 47,648 people.</o>
                 </button>
                 <!-- The Modal -->
                 <div id="myModal20" class="modal-municipality">
@@ -1312,11 +1338,18 @@
         </div>
 
         <!--GIS-->
-        <div class="feeler-gis" id="GISID">
+        <div class="filler-gis" id="GISID">
             <h1>Geographic Information System</h1>
+            <p>A geographic information system is a conceptualized framework that provides the ability to capture and analyze spatial and geographic data.</p>
         </div>
         <div class="GIS">
-            <div id='map'></div>   
+            <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9013.044285363652!2d120.57811831632358!3d16.453578333389707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3391a3b3e667eef5%3A0x6776533345991a8d!2sBAPTC!5e1!3m2!1sen!2sph!4v1627560796435!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+         
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9264.73332248757!2d123.86527601631757!3d9.656547281499323!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33aa4c375c76910b%3A0x4e24945afc2bc99!2sOffice%20of%20the%20Provincial%20Agriculturist%20-%20Bohol!5e1!3m2!1sen!2sph!4v1627560827824!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9014.439440736598!2d120.58587691632333!3d16.423521134204382!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3391a16251e3746d%3A0x83f13b59d910047c!2sDepartment%20of%20Agriculture-%20Cordillera%20Administrative%20Region!5e1!3m2!1sen!2sph!4v1627560864627!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>     
+            </div>
         </div>
 
 

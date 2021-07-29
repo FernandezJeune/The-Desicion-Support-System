@@ -160,17 +160,25 @@ body{
 }
 
 /*Feeler Weather*/
-.feeler-weather{
+.filler-weather{
     background:#00334d;
-    height: 9vh;
+    height: 15vh;
     font-family: poppins;
 }
-.feeler-weather h1{
-    padding-top: 25px;
+.filler-weather h1{
+    padding-top: 15px;
     text-align: center;
-    color: lightgray;
+    color: orange;
     letter-spacing: 10px;
-    font-size: 1.5vw;
+    font-size: 2vw;
+}
+.filler-weather p{
+    margin-left: 12%;
+    margin-right: 12%;
+    text-align: center;
+    letter-spacing: 4px;
+    font-size: 0.7vw;
+    color: white;
 }
 
 /*Weather*/
@@ -244,19 +252,19 @@ body{
 }
 
 /*Feeler Crops*/
-.feeler-crops{
+.filler-crops{
     background:#00334d;
-    height: 17vh;
+    height: 16vh;
     font-family: poppins;
 }
-.feeler-crops h1{
+.filler-crops h1{
     padding-top: 15px;
     text-align: center;
     color: orange;
     letter-spacing: 10px;
     font-size: 2vw;
 }
-.feeler-crops p{
+.filler-crops p{
     margin-left: 12%;
     margin-right: 12%;
     text-align: center;
@@ -266,7 +274,7 @@ body{
 }
 /*Crops*/
 .Crop-Section{
-    background: var(--ChartBG);
+    background: #ece8d9;
     height: 85vh;
 }
 .Crop-Section .row1{
@@ -279,8 +287,8 @@ body{
 
 .Crop-Section .row2{
     padding-top: 40px;
-    padding-left: 250px;
-    padding-right: 250px;
+    padding-left: 100px;
+    padding-right: 100px;
     display: flex;
     justify-content:space-between ;
 }
@@ -399,20 +407,20 @@ body{
   }
 
 
-/*Feeler Season*/
-.feeler-season{
+/*Filler Season*/
+.filler-season{
     background:#00334d;
-    height: 15vh;
+    height: 14vh;
     font-family: poppins;
 }
-.feeler-season h1{
+.filler-season h1{
     padding-top: 15px;
     text-align: center;
     color: orange;
     letter-spacing: 10px;
     font-size: 2vw;
 }
-.feeler-season p{
+.filler-season p{
     margin-left: 15%;
     margin-right: 15%;
     text-align: center;
@@ -422,7 +430,7 @@ body{
 }
 /*Season*/
 .Season-Section{
-    background:var(--SeasonBG);
+    background:#ece8d9;
     height: 85vh;
 }
 .Season-Section .row1{
@@ -545,22 +553,30 @@ body{
 
 
 
-/*Feeler Municipalities*/
-.feeler-municipalities{
+/*Filler Municipalities*/
+.filler-municipalities{
     background:#00334d;
-    height: 9vh;
+    height: 15vh;
     font-family: poppins;
 }
-.feeler-municipalities h1{
-    padding-top: 25px;
+.filler-municipalities h1{
+    padding-top: 15px;
     text-align: center;
-    color: lightgray;
+    color: orange;
     letter-spacing: 10px;
-    font-size: 1.5vw;
+    font-size: 2vw;
+}
+.filler-municipalities p{
+    margin-left: 12%;
+    margin-right: 12%;
+    text-align: center;
+    letter-spacing: 4px;
+    font-size: 0.7vw;
+    color: white;
 }
 /*Municipalities*/
 .Contents .Municipalities{
-    background: var(--MunicipalitiesBG);
+    background: #ece8d9;
     height: 85vh;
 }
 .Municipalities .row1{
@@ -594,7 +610,11 @@ body{
     margin-top: 10px;
     margin-left: 10px;
     margin-right: 10px;
-    font-size: 1.3vw;
+    font-size: 1.1vw;
+}
+.Municipalities .myBtn-municipality o{
+    font-family: poppins;
+    font-size: 0.6vw;
 }
 
 .Municipalities .myBtn-municipality img{
@@ -677,35 +697,42 @@ body{
 
 
 /*Feeler GIS*/
-.feeler-gis{
+.filler-gis{
     background:#00334d;
-    height: 9vh;
+    height: 14vh;
     font-family: poppins;
 }
-.feeler-gis h1{
-    padding-top: 25px;
+.filler-gis h1{
+    padding-top: 15px;
     text-align: center;
-    color: lightgray;
+    color: orange;
     letter-spacing: 10px;
-    font-size: 1.5vw;
+    font-size: 2vw;
+}
+.filler-gis p{
+    margin-left: 15%;
+    margin-right: 15%;
+    text-align: center;
+    letter-spacing: 4px;
+    font-size: 0.7vw;
+    color: white;
 }
 /*GIS*/
 .GIS{
     background-color: #ece8d9;
-    height: 65vh;
-    padding-top: 25px;
+    height: 59vh;
 }
-.GIS #map{
+.GIS .map{
+    padding-top: 35px;
+    display: flex;
+    justify-content:space-between;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.GIS .map iframe{
+    height: 50vh;
     border-radius: 30px;
-    border-style: solid;
-    border-color: black;
-    margin-left: auto;
-    margin-right: auto;
-    height:60vh;
-    width: 90vw;
-    z-index: 1;
 }
-
 
 /*Footer*/
 .footer{
