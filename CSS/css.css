@@ -437,6 +437,37 @@ body{
     font-size: 0.7vw;
     color: white;
 }
+
+
+
+
+/*Options*/
+.Season-Options{
+    background:#ece8d9;
+    padding-top: 15px;
+    text-align: center;
+    justify-content:space-between;
+}
+.Season-Options button{
+    text-align: center;
+    background:#ccccccdc;
+    font-size: 0.9vw;
+    width: 20vw;
+    height: 10vh;   
+    border-radius: 15px;
+
+     /*
+    border-style: solid;
+    border-color: black;
+    */
+}
+.Season-Options button:hover{
+    background-color: lightblue;
+}
+
+
+
+
 /*Season*/
 .Season-Section{
     background:#ece8d9;
