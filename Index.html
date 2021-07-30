@@ -544,16 +544,16 @@
 
 
         <div class="Season-Options">
-            <button class="all-season"><h2>All Seasons</h2></button>
-            <button class="dry-season"><h2>Dry Seasons</h2></button>
-            <button class="wet-season"><h2>Wet Seasons</h2></button>
+            <button class="all-season" onclick="allSeasonBT()"><h2>All Seasons</h2></button>
+            <button class="dry-season" onclick="drySeasonBT()"><h2>Dry Seasons</h2></button>
+            <button class="wet-season" onclick="wetSeasonBT()"><h2>Wet Seasons</h2></button>
         </div>
-
+        <script src="JS/Seasons.js"></script>
 
         <div class="Season-Section">
             <div class="row1">
                 <!--January Trigger/Open The Modal -->
-                <button class="myBtn-season"><img src="Images/january.png">
+                <button id="januaryID" class="myBtn-season"><img src="Images/january.png">
                     <h2>January</h2>
                     <p>New Year's Day</p>
                 </button>
@@ -576,7 +576,7 @@
                 </div> 
 
                 <!--February Trigger/Open The Modal -->
-                <button class="myBtn-season"><img src="Images/february.png">
+                <button id="februaryID" class="myBtn-season"><img src="Images/february.png">
                     <h2>February</h2>
                     <p>Valentine's Day</p>
                 </button>
@@ -599,7 +599,7 @@
                 </div>
 
                  <!--March Trigger/Open The Modal -->
-                 <button class="myBtn-season"><img src="Images/march.png">
+                 <button id="marchID" class="myBtn-season"><img src="Images/march.png">
                     <h2>March</h2>
                     <p>Panagbenga</p>
                 </button>
@@ -622,7 +622,7 @@
                 </div>
 
                  <!--April Trigger/Open The Modal -->
-                 <button class="myBtn-season"><img src="Images/april.png">
+                 <button id="aprilID" class="myBtn-season"><img src="Images/april.png">
                     <h2>April</h2>
                     <p>Good Friday</p>
                 </button>    
@@ -645,7 +645,7 @@
                 </div>
 
                 <!--May Trigger/Open The Modal -->
-                <button class="myBtn-season"><img src="Images/may.png">
+                <button id="mayID" class="myBtn-season"><img src="Images/may.png">
                     <h2>May</h2>
                     <p>Labour Day</p>
                 </button>
@@ -668,7 +668,7 @@
                 </div>
 
                 <!--June Trigger/Open The Modal -->
-                <button class="myBtn-season"><img src="Images/june.png">
+                <button id="juneID" class="myBtn-season"><img src="Images/june.png">
                     <h2>June</h2>
                     <p>Independence Day</p>
                 </button>
@@ -693,7 +693,7 @@
 
             <div class="row2">
                 <!--July Trigger/Open The Modal -->
-                <button class="myBtn-season"><img src="Images/july.png">
+                <button id="julyID" class="myBtn-season"><img src="Images/july.png">
                     <h2>July</h2>
                     <p>Eid al-Adha</p>
                 </button>
@@ -716,7 +716,7 @@
                 </div>
 
                 <!--August Trigger/Open The Modal -->
-                <button class="myBtn-season"><img src="Images/august.png">
+                <button id="augustID" class="myBtn-season"><img src="Images/august.png">
                     <h2>August</h2>
                     <p>National Heroes' Day</p>
                 </button>
@@ -739,7 +739,7 @@
                 </div>
 
                  <!--September Trigger/Open The Modal -->
-                 <button class="myBtn-season"><img src="Images/september.png">
+                 <button id="septemberID" class="myBtn-season"><img src="Images/september.png">
                     <h2>September</h2>
                     <p>Feast of the Nativity of the Blessed Virgin Mary</p>
                 </button>
@@ -762,7 +762,7 @@
                 </div>
 
                 <!--October Trigger/Open The Modal -->
-                <button class="myBtn-season"><img src="Images/october.png">
+                <button id="octoberID" class="myBtn-season"><img src="Images/october.png">
                     <h2>October</h2>
                     <p>National Teacher's Day</p>
                 </button>
@@ -785,7 +785,7 @@
                 </div>
 
                 <!--November Trigger/Open The Modal -->
-                <button class="myBtn-season"><img src="Images/november.png">
+                <button id="novemberID" class="myBtn-season"><img src="Images/november.png">
                     <h2>November</h2>
                     <p>All Saints' Day and All Souls' Day</p>
                 </button>
@@ -808,7 +808,7 @@
                 </div>
 
                 <!--December Trigger/Open The Modal -->
-                <button class="myBtn-season"><img src="Images/december.png">
+                <button id="decemberID" class="myBtn-season"><img src="Images/december.png">
                     <h2>December</h2>
                     <p>Christmas Day</p>
                 </button>

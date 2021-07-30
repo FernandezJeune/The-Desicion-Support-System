@@ -477,7 +477,12 @@ body{
     padding-top: 40px;
     padding-left: 50px;
     padding-right: 50px;
-    display: flex;
+
+    text-align: center;
+    /*display: flex;*/
+    /*----------------------------ginawa ko munang comment yung display flex para 
+    medyo maayus tignan pero pag gusto mo makita bakit ko ginawang comment i comment 
+    mo muna yung "text-align: center;" tapus tanggalin yung comment nd display flex ----------------------------*/
     justify-content:space-between;
 }
 
@@ -485,7 +490,9 @@ body{
     padding-top: 40px;
     padding-left: 50px;
     padding-right: 50px;
-    display: flex;
+    
+    text-align: center;
+    /*display: flex;*/
     justify-content:space-between ;
 }
 /*Season Modals*/

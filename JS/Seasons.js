@@ -1,54 +1,44 @@
-var items = document.querySelectorAll("#MonthsList li"),
-     tab = [], sindex;
-
-// add values to the array
-for(var j = 0; j < items.length; j++){
-    tab.push(items[j].innerHTML);
+function allSeasonBT(){
+    document.getElementById("januaryID").style.display="inline";
+    document.getElementById("februaryID").style.display="inline";
+    document.getElementById("marchID").style.display="inline";
+    document.getElementById("aprilID").style.display="inline";
+    document.getElementById("mayID").style.display="inline";
+    document.getElementById("juneID").style.display="inline";
+    document.getElementById("julyID").style.display="inline";
+    document.getElementById("augustID").style.display="inline";
+    document.getElementById("septemberID").style.display="inline";
+    document.getElementById("octoberID").style.display="inline";
+    document.getElementById("novemberID").style.display="inline";
+    document.getElementById("decemberID").style.display="inline";
 }
 
-// get selected element index
-for(var j = 0; j < items.length; j++){
-    items[j].onclick = function(){
+function drySeasonBT(){
+    document.getElementById("januaryID").style.display="inline";
+    document.getElementById("februaryID").style.display="inline";
+    document.getElementById("marchID").style.display="inline";
+    document.getElementById("aprilID").style.display="none";
+    document.getElementById("mayID").style.display="none";
+    document.getElementById("juneID").style.display="none";
+    document.getElementById("julyID").style.display="none";
+    document.getElementById("augustID").style.display="none";
+    document.getElementById("septemberID").style.display="none";
+    document.getElementById("octoberID").style.display="none";
+    document.getElementById("novemberID").style.display="none";
+    document.getElementById("decemberID").style.display="inline";
+}
 
-        index = tab.indexOf(this.innerHTML);
-        console.log(" Index = " + index);
-
-
-        if(index == 0  ){
-            document.getElementById("MonthsInfoID").innerHTML="<h1>JANUAAAAAAAAAAAAARRRRRRRRRRRRRRRYYYYYYYYYYYYYY.</h1>";
-        }
-        if(index == 1  ){
-            document.getElementById("MonthsInfoID").innerHTML="<h1>FEBBBBBBBBBBB RUAAAAAAAAAAAAAAAARRYYYY </h1>";
-        }
-        if(index == 2  ){
-            document.getElementById("MonthsInfoID").innerHTML="<h1>Carrot info . . . . </h1>";
-        }
-        if(index == 3  ){
-            document.getElementById("MonthsInfoID").innerHTML="<h1>Chinese Cabbage info . . . . </h1>";
-        }
-        if(index == 4  ){
-            document.getElementById("MonthsInfoID").innerHTML="<h1>Sweat Peas info . . . . </h1>";
-        }
-        if(index == 5  ){
-            document.getElementById("MonthsInfoID").innerHTML="<h1>Lettuce info . . . . </h1>";
-        }
-        if(index == 6  ){
-            document.getElementById("MonthsInfoID").innerHTML="<h1>Bell Pepper info . . . . </h1>";
-        }
-        if(index == 7  ){
-            document.getElementById("MonthsInfoID").innerHTML="<h1>Broccoli info . . . . </h1>";
-        }
-        if(index == 8  ){
-            document.getElementById("MonthsInfoID").innerHTML="<h1>Cauli Flower info . . . . </h1>";
-        }
-        if(index == 9  ){
-            document.getElementById("MonthsInfoID").innerHTML="<h1>Tomato info . . . . </h1>";
-        }
-        if(index == 10  ){
-            document.getElementById("MonthsInfoID").innerHTML="<h1>Tomato info . . . . </h1>";
-        }
-        if(index == 11  ){
-            document.getElementById("MonthsInfoID").innerHTML="<h1>Tomato info . . . . </h1>";
-        }
-    };
+function wetSeasonBT(){
+    document.getElementById("januaryID").style.display="none";
+    document.getElementById("februaryID").style.display="none";
+    document.getElementById("marchID").style.display="none";
+    document.getElementById("aprilID").style.display="none";
+    document.getElementById("mayID").style.display="inline";
+    document.getElementById("juneID").style.display="inline";
+    document.getElementById("julyID").style.display="inline";
+    document.getElementById("augustID").style.display="inline";
+    document.getElementById("septemberID").style.display="inline";
+    document.getElementById("octoberID").style.display="inline";
+    document.getElementById("novemberID").style.display="none";
+    document.getElementById("decemberID").style.display="none";
 }
