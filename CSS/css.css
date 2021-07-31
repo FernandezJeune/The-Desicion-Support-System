@@ -439,14 +439,13 @@ body{
 }
 
 
-
-
-/*Options*/
+/* Season Options*/
 .Season-Options{
     background:#ece8d9;
     padding-top: 15px;
     text-align: center;
-    justify-content:space-between;
+    display: flex;
+    justify-content:space-evenly;
 }
 .Season-Options button{
     text-align: center;
@@ -455,11 +454,6 @@ body{
     width: 20vw;
     height: 10vh;   
     border-radius: 15px;
-
-     /*
-    border-style: solid;
-    border-color: black;
-    */
 }
 .Season-Options button:hover{
     background-color: lightblue;
@@ -471,29 +465,25 @@ body{
 /*Season*/
 .Season-Section{
     background:#ece8d9;
-    height: 85vh;
+    height: 95vh;
 }
 .Season-Section .row1{
     padding-top: 40px;
     padding-left: 50px;
     padding-right: 50px;
-
-    text-align: center;
-    /*display: flex;*/
+    display: flex;
     /*----------------------------ginawa ko munang comment yung display flex para 
     medyo maayus tignan pero pag gusto mo makita bakit ko ginawang comment i comment 
     mo muna yung "text-align: center;" tapus tanggalin yung comment nd display flex ----------------------------*/
-    justify-content:space-between;
+    justify-content:space-evenly;
 }
 
 .Season-Section .row2{
     padding-top: 40px;
     padding-left: 50px;
     padding-right: 50px;
-    
-    text-align: center;
-    /*display: flex;*/
-    justify-content:space-between ;
+    display: flex;
+    justify-content:space-evenly ;
 }
 /*Season Modals*/
 .Season-Section .myBtn-season{
