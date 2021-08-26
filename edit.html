@@ -275,6 +275,42 @@
             })
         }
 
+        function deleteCrop() {
+            var id = document.getElementById('delete_Crops').value;
+            firestore.collection('crops').where('id', '==', id).get()
+            .then((querySnapshot) => {
+                docID = querySnapshot.docs[0].id;
+                firestore.collection('crops').doc(docID).delete().then(()=>{
+                    console.log(id + ' deleted');
+                });
+
+            });
+        }
+
+        function deleteSeason() {
+            var id = document.getElementById('delete_Season').value;
+            firestore.collection('seasons').where('id', '==', id).get()
+            .then((querySnapshot) => {
+                docID = querySnapshot.docs[0].id;
+                firestore.collection('seasons').doc(docID).delete().then(()=>{
+                    console.log(id + ' deleted');
+                });
+
+            });
+        }
+
+        function deleteMunicipality() {
+            var id = document.getElementById('delete_Muncipality').value;
+            firestore.collection('municipalities').where('id', '==', id).get()
+            .then((querySnapshot) => {
+                docID = querySnapshot.docs[0].id;
+                firestore.collection('municipalities').doc(docID).delete().then(()=>{
+                    console.log(id + ' deleted');
+                });
+
+            });
+        }
+
 
 
     </script>
