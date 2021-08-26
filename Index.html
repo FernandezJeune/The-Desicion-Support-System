@@ -1449,71 +1449,189 @@
     var firstCropDesc = document.getElementById('first_crop_desc');
     var firstCropTitleModal = document.getElementById('first_crop_title_modal');
     var firstCropModalTips = document.getElementById('first_crop_modal_tips');
+    var firstCropInfo = document.getElementById('first_crop_info');
 
     // SecondCard
     var secondCropTitle = document.getElementById('second_crop_title');
     var secondCropDesc = document.getElementById('second_crop_desc');
     var secondCropTitleModal = document.getElementById('second_crop_title_modal');
     var secondCropModalTips = document.getElementById('second_crop_modal_tips');
+    var secondCropInfo = document.getElementById('second_crop_info');
 
     // ThirdCard
     var thirdCropTitle = document.getElementById('third_crop_title');
     var thirdCropDesc = document.getElementById('third_crop_desc');
     var thirdCropTitleModal = document.getElementById('third_crop_title_modal');
     var thirdCropModalTips = document.getElementById('third_crop_modal_tips');
+    var thirdCropInfo = document.getElementById('third_crop_info');
 
     // FourthCard
     var fourthCropTitle = document.getElementById('fourth_crop_title');
     var fourthCropDesc = document.getElementById('fourth_crop_desc');
     var fourthCropTitleModal = document.getElementById('fourth_crop_title_modal');
     var fourthCropModalTips = document.getElementById('fourth_crop_modal_tips');
+    var fourthCropInfo = document.getElementById('fourth_crop_info');
 
     // FifthCard
     var fifthCropTitle = document.getElementById('fifth_crop_title');
     var fifthCropDesc = document.getElementById('fifth_crop_desc');
     var fifthCropTitleModal = document.getElementById('fifth_crop_title_modal');
     var fifthCropModalTips = document.getElementById('fifth_crop_modal_tips');
+    var fifthCropInfo = document.getElementById('fifth_crop_info');
 
     // SixthCard
     var sixthCropTitle = document.getElementById('sixth_crop_title');
     var sixthCropDesc = document.getElementById('sixth_crop_desc');
     var sixthCropTitleModal = document.getElementById('sixth_crop_title_modal');
     var sixthCropModalTips = document.getElementById('sixth_crop_modal_tips');
+    var sixthCropInfo = document.getElementById('sixth_crop_info');
 
     // SeventhCard
     var seventhCropTitle = document.getElementById('seventh_crop_title');
     var seventhCropDesc = document.getElementById('seventh_crop_desc');
     var seventhCropTitleModal = document.getElementById('seventh_crop_title_modal');
     var seventhCropModalTips = document.getElementById('seventh_crop_modal_tips');
+    var seventhCropInfo = document.getElementById('seventh_crop_info');
 
     // EightCard
     var eightCropTitle = document.getElementById('eight_crop_title');
     var eightCropDesc = document.getElementById('eight_crop_desc');
     var eightCropTitleModal = document.getElementById('eight_crop_title_modal');
     var eightCropModalTips = document.getElementById('eight_crop_modal_tips');
+    var eightCropInfo = document.getElementById('eight_crop_info');
 
     // NinthCard
     var ninthCropTitle = document.getElementById('ninth_crop_title');
     var ninthCropDesc = document.getElementById('ninth_crop_desc');
     var ninthCropTitleModal = document.getElementById('ninth_crop_title_modal');
     var ninthCropModalTips = document.getElementById('ninth_crop_modal_tips');
+    var ninthCropInfo = document.getElementById('ninth_crop_info');
 
     // TenthCard
     var tenthCropTitle = document.getElementById('tenth_crop_title');
     var tenthCropDesc = document.getElementById('tenth_crop_desc');
     var tenthCropTitleModal = document.getElementById('tenth_crop_title_modal');
     var tenthCropModalTips = document.getElementById('tenth_crop_modal_tips');
+    var tenthCropInfo = document.getElementById('tenth_crop_info');
 
 
     // Fetching First Data in Crops
     firestore.collection('crops').where('id', '==', '1st').get()
     .then( (querySnapshot) => {
         if(querySnapshot.docs[0].exists){
-            console.log(querySnapshot.docs[0].data());
             firstCropTitle.innerHTML = querySnapshot.docs[0].data().name;
-            firstCropDesc.innerHTML = querySnapshot.docs[0].data().information;
+            firstCropDesc.innerHTML = querySnapshot.docs[0].data().benefit;
+            firstCropInfo.innerHTML = querySnapshot.docs[0].data().information;
             firstCropTitleModal.innerHTML = querySnapshot.docs[0].data().name;
             firstCropModalTips.innerHTML = querySnapshot.docs[0].data().tips;
+        }
+    })
+
+    firestore.collection('crops').where('id', '==', '2nd').get()
+    .then( (querySnapshot) => {
+        if(querySnapshot.docs[0].exists){
+            console.log(querySnapshot.docs[0].data());
+            secondCropTitle.innerHTML = querySnapshot.docs[0].data().name;
+            secondCropDesc.innerHTML = querySnapshot.docs[0].data().benefit;
+            secondCropInfo.innerHTML = querySnapshot.docs[0].data().information;
+            secondCropTitleModal.innerHTML = querySnapshot.docs[0].data().name;
+            secondCropModalTips.innerHTML = querySnapshot.docs[0].data().tips;
+        }
+    })
+
+    firestore.collection('crops').where('id', '==', '3rd').get()
+    .then( (querySnapshot) => {
+        if(querySnapshot.docs[0].exists){
+            console.log(querySnapshot.docs[0].data());
+            thirdCropTitle.innerHTML = querySnapshot.docs[0].data().name;
+            thirdCropDesc.innerHTML = querySnapshot.docs[0].data().benefit;
+            thirdCropInfo.innerHTML = querySnapshot.docs[0].data().information;
+            thirdCropTitleModal.innerHTML = querySnapshot.docs[0].data().name;
+            thirdCropModalTips.innerHTML = querySnapshot.docs[0].data().tips;
+        }
+    })
+
+    firestore.collection('crops').where('id', '==', '4th').get()
+    .then( (querySnapshot) => {
+        if(querySnapshot.docs[0].exists){
+            console.log(querySnapshot.docs[0].data());
+            fourthCropTitle.innerHTML = querySnapshot.docs[0].data().name;
+            fourthCropDesc.innerHTML = querySnapshot.docs[0].data().benefit;
+            fourthCropInfo.innerHTML = querySnapshot.docs[0].data().information;
+            fourthCropTitleModal.innerHTML = querySnapshot.docs[0].data().name;
+            fourthCropModalTips.innerHTML = querySnapshot.docs[0].data().tips;
+        }
+    })
+
+    firestore.collection('crops').where('id', '==', '5th').get()
+    .then( (querySnapshot) => {
+        if(querySnapshot.docs[0].exists){
+            console.log(querySnapshot.docs[0].data());
+            fifthCropTitle.innerHTML = querySnapshot.docs[0].data().name;
+            fifthCropDesc.innerHTML = querySnapshot.docs[0].data().benefit;
+            fifthCropInfo.innerHTML = querySnapshot.docs[0].data().information;
+            fifthCropTitleModal.innerHTML = querySnapshot.docs[0].data().name;
+            fifthCropModalTips.innerHTML = querySnapshot.docs[0].data().tips;
+        }
+    })
+
+    firestore.collection('crops').where('id', '==', '6th').get()
+    .then( (querySnapshot) => {
+        if(querySnapshot.docs[0].exists){
+            console.log(querySnapshot.docs[0].data());
+            sixthCropTitle.innerHTML = querySnapshot.docs[0].data().name;
+            sixthCropDesc.innerHTML = querySnapshot.docs[0].data().benefit;
+            sixthCropInfo.innerHTML = querySnapshot.docs[0].data().information;
+            sixthCropTitleModal.innerHTML = querySnapshot.docs[0].data().name;
+            sixthCropModalTips.innerHTML = querySnapshot.docs[0].data().tips;
+        }
+    })
+
+    firestore.collection('crops').where('id', '==', '7th').get()
+    .then( (querySnapshot) => {
+        if(querySnapshot.docs[0].exists){
+            console.log(querySnapshot.docs[0].data());
+            seventhCropTitle.innerHTML = querySnapshot.docs[0].data().name;
+            seventhCropDesc.innerHTML = querySnapshot.docs[0].data().benefit;
+            seventhCropInfo.innerHTML = querySnapshot.docs[0].data().information;
+            seventhCropTitleModal.innerHTML = querySnapshot.docs[0].data().name;
+            seventhCropModalTips.innerHTML = querySnapshot.docs[0].data().tips;
+        }
+    })
+
+    firestore.collection('crops').where('id', '==', '8th').get()
+    .then( (querySnapshot) => {
+        if(querySnapshot.docs[0].exists){
+            console.log(querySnapshot.docs[0].data());
+            eightCropTitle.innerHTML = querySnapshot.docs[0].data().name;
+            eightCropDesc.innerHTML = querySnapshot.docs[0].data().benefit;
+            eightCropInfo.innerHTML = querySnapshot.docs[0].data().information;
+            eightCropTitleModal.innerHTML = querySnapshot.docs[0].data().name;
+            eightCropModalTips.innerHTML = querySnapshot.docs[0].data().tips;
+        }
+    })
+
+    firestore.collection('crops').where('id', '==', '9th').get()
+    .then( (querySnapshot) => {
+        if(querySnapshot.docs[0].exists){
+            console.log(querySnapshot.docs[0].data());
+            ninthCropTitle.innerHTML = querySnapshot.docs[0].data().name;
+            ninthCropDesc.innerHTML = querySnapshot.docs[0].data().benefit;
+            ninthCropInfo.innerHTML = querySnapshot.docs[0].data().information;
+            ninthCropTitleModal.innerHTML = querySnapshot.docs[0].data().name;
+            ninthCropModalTips.innerHTML = querySnapshot.docs[0].data().tips;
+        }
+    })
+
+    firestore.collection('crops').where('id', '==', '10th').get()
+    .then( (querySnapshot) => {
+        if(querySnapshot.docs[0].exists){
+            console.log(querySnapshot.docs[0].data());
+            tenthCropTitle.innerHTML = querySnapshot.docs[0].data().name;
+            tenthCropDesc.innerHTML = querySnapshot.docs[0].data().benefit;
+            tenthCropInfo.innerHTML = querySnapshot.docs[0].data().information;
+            tenthCropTitleModal.innerHTML = querySnapshot.docs[0].data().name;
+            tenthCropModalTips.innerHTML = querySnapshot.docs[0].data().tips;
         }
     })
 
