@@ -149,13 +149,20 @@
 
 /*Edit*/
 .edit{
+    padding-left: 15%;
     background: #ece8d9;
-    text-align: center;
     line-height: 1.5;
     height: 55vh;
     font-family: poppins;
-    padding-top: 20px   ;
+    padding-top: 20px;
 }
+
+.edit input{
+    height: 3vh;
+    display: flex;
+    justify-content: space-between;
+}
+
 
 
 
