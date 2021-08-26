@@ -1566,6 +1566,43 @@
     var S12thInfo = document.getElementById('12th_info');
 
 
+    // ## Municipalities Variables ## //
+
+    var atokDesc = document.getElementById('atok_desc');
+    var atokInfo = document.getElementById('atok_info');
+
+    var bakunDesc = document.getElementById('bakun_desc');
+    var bakunInfo = document.getElementById('bakun_info');
+
+    var bokodDesc = document.getElementById('bokod_desc');
+    var bokodInfo = document.getElementById('bokod_info');
+
+    var buguiasDesc = document.getElementById('buguias_desc');
+    var buguiasInfo = document.getElementById('buguias_info');
+
+    var itogonDesc = document.getElementById('itogon_desc');
+    var itogonInfo = document.getElementById('itogon_info');
+
+    var kabayanDesc = document.getElementById('kabayan_desc');
+    var kabayanInfo = document.getElementById('kabayan_info');
+
+    var kapanganDesc = document.getElementById('kapangan_desc');
+    var kapanganInfo = document.getElementById('kapangan_info');
+
+    var kibunganDesc = document.getElementById('kibungan_desc');
+    var kibunganInfo = document.getElementById('kibungan_info');
+
+    var latDesc = document.getElementById('latrinidad_desc');
+    var latInfo = document.getElementById('latrinidad_info');
+
+    var mankayanDesc = document.getElementById('mankayan_desc');
+    var mankayanInfo = document.getElementById('mankayan_info');
+
+    var sablanDesc = document.getElementById('sablan_desc');
+    var sablanInfo = document.getElementById('sablan_info');
+
+    var tubaDesc = document.getElementById('tuba_desc');
+    var tubaInfo = document.getElementById('tuba_info');
 
 
     // Fetching First Data in Crops
@@ -1781,6 +1818,102 @@
         if(querySnapshot.docs[0].exists){
             S12thDesc.innerHTML = querySnapshot.docs[0].data().description;
             S12thInfo.innerHTML = querySnapshot.docs[0].data().information;
+        }
+    });
+
+    firestore.collection('municipalities').where('id', '==', '1st').get()
+    .then( (querySnapshot) => {
+        if(querySnapshot.docs[0].exists){
+            atokDesc.innerHTML = querySnapshot.docs[0].data().description;
+            atokInfo.innerHTML = querySnapshot.docs[0].data().information;
+        }
+    });
+
+    firestore.collection('municipalities').where('id', '==', '2nd').get()
+    .then( (querySnapshot) => {
+        if(querySnapshot.docs[0].exists){
+            bakunDesc.innerHTML = querySnapshot.docs[0].data().description;
+            bakunInfo.innerHTML = querySnapshot.docs[0].data().information;
+        }
+    });
+
+    firestore.collection('municipalities').where('id', '==', '3rd').get()
+    .then( (querySnapshot) => {
+        if(querySnapshot.docs[0].exists){
+            bokodDesc.innerHTML = querySnapshot.docs[0].data().description;
+            bokodInfo.innerHTML = querySnapshot.docs[0].data().information;
+        }
+    });
+
+    firestore.collection('municipalities').where('id', '==', '4th').get()
+    .then( (querySnapshot) => {
+        if(querySnapshot.docs[0].exists){
+            buguiasDesc.innerHTML = querySnapshot.docs[0].data().description;
+            buguiasInfo.innerHTML = querySnapshot.docs[0].data().information;
+        }
+    });
+
+    firestore.collection('municipalities').where('id', '==', '5th').get()
+    .then( (querySnapshot) => {
+        if(querySnapshot.docs[0].exists){
+            itogonDesc.innerHTML = querySnapshot.docs[0].data().description;
+            itogonInfo.innerHTML = querySnapshot.docs[0].data().information;
+        }
+    });
+
+    firestore.collection('municipalities').where('id', '==', '6th').get()
+    .then( (querySnapshot) => {
+        if(querySnapshot.docs[0].exists){
+            kabayanDesc.innerHTML = querySnapshot.docs[0].data().description;
+            kabayanInfo.innerHTML = querySnapshot.docs[0].data().information;
+        }
+    });
+
+    firestore.collection('municipalities').where('id', '==', '7th').get()
+    .then( (querySnapshot) => {
+        if(querySnapshot.docs[0].exists){
+            kapanganDesc.innerHTML = querySnapshot.docs[0].data().description;
+            kapanganInfo.innerHTML = querySnapshot.docs[0].data().information;
+        }
+    });
+
+    firestore.collection('municipalities').where('id', '==', '8th').get()
+    .then( (querySnapshot) => {
+        if(querySnapshot.docs[0].exists){
+            kibunganDesc.innerHTML = querySnapshot.docs[0].data().description;
+            kibunganInfo.innerHTML = querySnapshot.docs[0].data().information;
+        }
+    });
+
+    firestore.collection('municipalities').where('id', '==', '9th').get()
+    .then( (querySnapshot) => {
+        if(querySnapshot.docs[0].exists){
+            latDesc.innerHTML = querySnapshot.docs[0].data().description;
+            latInfo.innerHTML = querySnapshot.docs[0].data().information;
+        }
+    });
+
+    firestore.collection('municipalities').where('id', '==', '10th').get()
+    .then( (querySnapshot) => {
+        if(querySnapshot.docs[0].exists){
+            mankayanDesc.innerHTML = querySnapshot.docs[0].data().description;
+            mankayanInfo.innerHTML = querySnapshot.docs[0].data().information;
+        }
+    });
+
+    firestore.collection('municipalities').where('id', '==', '11th').get()
+    .then( (querySnapshot) => {
+        if(querySnapshot.docs[0].exists){
+            sablanDesc.innerHTML = querySnapshot.docs[0].data().description;
+            sablanInfo.innerHTML = querySnapshot.docs[0].data().information;
+        }
+    });
+
+    firestore.collection('municipalities').where('id', '==', '12th').get()
+    .then( (querySnapshot) => {
+        if(querySnapshot.docs[0].exists){
+            tubaDesc.innerHTML = querySnapshot.docs[0].data().description;
+            tubaInfo.innerHTML = querySnapshot.docs[0].data().information;
         }
     });
 
