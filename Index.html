@@ -1508,9 +1508,14 @@
     // Fetching First Data in Crops
     firestore.collection('crops').where('id', '==', '1st').get()
     .then( (querySnapshot) => {
-        console.log(querySnapshot.docs[0].data());
+        if(querySnapshot.docs[0].exists){
+            console.log(querySnapshot.docs[0].data());
+            firstCropTitle.innerHTML = querySnapshot.docs[0].data().name;
+            firstCropDesc.innerHTML = querySnapshot.docs[0].data().information;
+            firstCropTitleModal.innerHTML = querySnapshot.docs[0].data().name;
+            firstCropModalTips.innerHTML = querySnapshot.docs[0].data().tips;
+        }
     })
-    .catch();
 
 
 </script>
