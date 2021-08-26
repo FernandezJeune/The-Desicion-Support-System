@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="JS/admin-dataset.js" defer></script>
+    <link rel="stylesheet" href="CSS/edit.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="brand-title">
+           <img src="images/SampleLogo.png">
+            <a href="Index.html">Project ANI</a>
+           </div>
+        <a href="#" class="toggle-button">
+           <span class="bar"></span>
+           <span class="bar"></span>
+           <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+           <ul>
+               <li><a href="edit.html" class="MMlist">Edit</a></li>
+               <li><a href="admin-dataset.html" class="MMlist">Dataset</a></li>
+               <li><a href="#" class="MMlist">Forum</a></li>
+           </ul>
+        </div>
+       </nav>
+
+    <div class="Banner" id="HomeID">
+        <div class="Banner1">
+            <h2>Project ANI</h2>
+            <p>Agri Natin Ito : A Decision Support System for Benguet's Crop Prediction</p>
+        </div>
+    </div>
+
+    <div class="filler-edit">
+        <h1>Prediction / Datasets</h1>
+    </div>
+    <div class="edit">
+        <div class="edit-crops">
+            <form>
+                <input type="input" id="cropName" placeholder="Crop Name"/>
+                <input type="input" id="cropBenefit" placeholder="Crop Benefit"/>
+                <input type="input" id="cropInformation" placeholder="Crop Information"/>
+                <input type="input" id="cropTips" placeholder="Crop Tips"/>
+            </form>
+        </div>
+        <div class="edit-season">
+            <form>
+                <input type="input" id="seasonName" placeholder="Season Name"/>
+                <input type="input" id="seasonDescription" placeholder="Season Description"/>
+                <input type="input" id="seasonInformation" placeholder="Season information"/>
+            </form>
+        </div>
+        <div class="edit-municipality">
+            <form>
+                <input type="input" id="municipalityName" placeholder="Muncipality Name"/>
+                <input type="input" id="municipalityDescription" placeholder="Muncipality Description"/>
+                <input type="input" id="municipalityInformation" placeholder="Muncipality Information"/>
+            </form>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>© Project ANI 2021</p>
+        <p>Made by the CITCS team</p>
+    </div> 
+    
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-analytics.js"></script>
+
+    <script src ="JS/firebase.js">
+    </script>
+</body>
+</html>
