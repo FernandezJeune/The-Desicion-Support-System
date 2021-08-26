@@ -209,11 +209,13 @@
         
         function createCrop(){
             console.log('Creating Record from firestore')
+            var CropID = document.getElementById('Crops').value
             var cropName = document.getElementById('cropName').value
             var cropBenefit = document.getElementById('cropBenefit').value
             var cropInformation = document.getElementById('cropInformation').value
             var cropTips = document.getElementById('cropTips').value
             firestore.collection('crops').add({
+                id: CropID,
                 name: cropName,
                 benefit: cropBenefit,
                 information: cropInformation,
@@ -228,6 +230,52 @@
                 console.log(error)
             })
         }
+
+        function createSeason(){
+            console.log('Creating Record from firestore')
+            var SeasonID = document.getElementById('Season').value
+            var seasonName = document.getElementById('seasonName').value
+            var seasonDescription = document.getElementById('seasonDescription').value
+            var seasonInformation = document.getElementById('seasonInformation').value
+            firestore.collection('seasons').add({
+                id: SeasonID,
+                name: seasonName,
+                description: seasonDescription,
+                information: seasonInformation,
+                timestamp: new Date()
+            })
+            .then((docRef) => {
+                console.log('Record Successfuly Created ' + docRef.id)
+            })
+            .catch((error)=> {
+                document.getElementById('errorMsgCreate').innerHTML = "Error: " + error.message
+                console.log(error)
+            })
+        }
+
+        function createMunicipality(){
+            console.log('Creating Record from firestore')
+            var MunID = document.getElementById('Muncipality').value
+            var municipalityName = document.getElementById('municipalityName').value
+            var municipalityDescription = document.getElementById('municipalityDescription').value
+            var municipalityInformation = document.getElementById('municipalityInformation').value
+            firestore.collection('municipalities').add({
+                id: MunID,
+                name: municipalityName,
+                description: municipalityDescription,
+                information: municipalityInformation,
+                timestamp: new Date()
+            })
+            .then((docRef) => {
+                console.log('Record Successfuly Created ' + docRef.id)
+            })
+            .catch((error)=> {
+                document.getElementById('errorMsgCreate').innerHTML = "Error: " + error.message
+                console.log(error)
+            })
+        }
+
+
 
     </script>
 </body>
