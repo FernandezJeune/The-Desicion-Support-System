@@ -1515,6 +1515,59 @@
     var tenthCropInfo = document.getElementById('tenth_crop_info');
 
 
+    // ## SEASONS VARIABLES ## //
+
+    // January
+    var S1stDesc = document.getElementById('1st_desc');
+    var S1stInfo = document.getElementById('1st_info');
+
+    // February
+    var S2ndDesc = document.getElementById('2nd_desc');
+    var S2ndInfo = document.getElementById('2nd_info');
+
+    // March
+    var S3rdDesc = document.getElementById('3rd_desc');
+    var S3rdInfo = document.getElementById('3rd_info');
+
+    // April
+    var S4thDesc = document.getElementById('4th_desc');
+    var S4thInfo = document.getElementById('4th_info');
+
+    // May
+    var S5thDesc = document.getElementById('5th_desc');
+    var S5thInfo = document.getElementById('5th_info');
+
+    // June
+    var S6thDesc = document.getElementById('6th_desc');
+    var S6thInfo = document.getElementById('6th_info');
+
+    // July
+    var S7thDesc = document.getElementById('7th_desc');
+    var S7thInfo = document.getElementById('7th_info');
+
+    // August
+    var S8thDesc = document.getElementById('8th_desc');
+    var S8thInfo = document.getElementById('8th_info');
+
+    // September
+    var S9thDesc = document.getElementById('9th_desc');
+    var S9thInfo = document.getElementById('9th_info');
+
+    // October
+    var S10thDesc = document.getElementById('10th_desc');
+    var S10thInfo = document.getElementById('10th_info');
+
+    // November
+    var S11thDesc = document.getElementById('11th_desc');
+    var S11thInfo = document.getElementById('11th_info');
+
+    // December
+    var S12thDesc = document.getElementById('12th_desc');
+    var S12thInfo = document.getElementById('12th_info');
+
+
+
+
     // Fetching First Data in Crops
     firestore.collection('crops').where('id', '==', '1st').get()
     .then( (querySnapshot) => {
@@ -1530,7 +1583,6 @@
     firestore.collection('crops').where('id', '==', '2nd').get()
     .then( (querySnapshot) => {
         if(querySnapshot.docs[0].exists){
-            console.log(querySnapshot.docs[0].data());
             secondCropTitle.innerHTML = querySnapshot.docs[0].data().name;
             secondCropDesc.innerHTML = querySnapshot.docs[0].data().benefit;
             secondCropInfo.innerHTML = querySnapshot.docs[0].data().information;
@@ -1542,7 +1594,6 @@
     firestore.collection('crops').where('id', '==', '3rd').get()
     .then( (querySnapshot) => {
         if(querySnapshot.docs[0].exists){
-            console.log(querySnapshot.docs[0].data());
             thirdCropTitle.innerHTML = querySnapshot.docs[0].data().name;
             thirdCropDesc.innerHTML = querySnapshot.docs[0].data().benefit;
             thirdCropInfo.innerHTML = querySnapshot.docs[0].data().information;
@@ -1554,7 +1605,6 @@
     firestore.collection('crops').where('id', '==', '4th').get()
     .then( (querySnapshot) => {
         if(querySnapshot.docs[0].exists){
-            console.log(querySnapshot.docs[0].data());
             fourthCropTitle.innerHTML = querySnapshot.docs[0].data().name;
             fourthCropDesc.innerHTML = querySnapshot.docs[0].data().benefit;
             fourthCropInfo.innerHTML = querySnapshot.docs[0].data().information;
@@ -1578,7 +1628,6 @@
     firestore.collection('crops').where('id', '==', '6th').get()
     .then( (querySnapshot) => {
         if(querySnapshot.docs[0].exists){
-            console.log(querySnapshot.docs[0].data());
             sixthCropTitle.innerHTML = querySnapshot.docs[0].data().name;
             sixthCropDesc.innerHTML = querySnapshot.docs[0].data().benefit;
             sixthCropInfo.innerHTML = querySnapshot.docs[0].data().information;
@@ -1590,7 +1639,6 @@
     firestore.collection('crops').where('id', '==', '7th').get()
     .then( (querySnapshot) => {
         if(querySnapshot.docs[0].exists){
-            console.log(querySnapshot.docs[0].data());
             seventhCropTitle.innerHTML = querySnapshot.docs[0].data().name;
             seventhCropDesc.innerHTML = querySnapshot.docs[0].data().benefit;
             seventhCropInfo.innerHTML = querySnapshot.docs[0].data().information;
@@ -1602,7 +1650,6 @@
     firestore.collection('crops').where('id', '==', '8th').get()
     .then( (querySnapshot) => {
         if(querySnapshot.docs[0].exists){
-            console.log(querySnapshot.docs[0].data());
             eightCropTitle.innerHTML = querySnapshot.docs[0].data().name;
             eightCropDesc.innerHTML = querySnapshot.docs[0].data().benefit;
             eightCropInfo.innerHTML = querySnapshot.docs[0].data().information;
@@ -1614,7 +1661,6 @@
     firestore.collection('crops').where('id', '==', '9th').get()
     .then( (querySnapshot) => {
         if(querySnapshot.docs[0].exists){
-            console.log(querySnapshot.docs[0].data());
             ninthCropTitle.innerHTML = querySnapshot.docs[0].data().name;
             ninthCropDesc.innerHTML = querySnapshot.docs[0].data().benefit;
             ninthCropInfo.innerHTML = querySnapshot.docs[0].data().information;
@@ -1626,7 +1672,6 @@
     firestore.collection('crops').where('id', '==', '10th').get()
     .then( (querySnapshot) => {
         if(querySnapshot.docs[0].exists){
-            console.log(querySnapshot.docs[0].data());
             tenthCropTitle.innerHTML = querySnapshot.docs[0].data().name;
             tenthCropDesc.innerHTML = querySnapshot.docs[0].data().benefit;
             tenthCropInfo.innerHTML = querySnapshot.docs[0].data().information;
@@ -1634,6 +1679,110 @@
             tenthCropModalTips.innerHTML = querySnapshot.docs[0].data().tips;
         }
     })
+
+    firestore.collection('seasons').where('id', '==', '1st').get()
+    .then( (querySnapshot) => {
+        if(querySnapshot.docs[0].exists){
+            S1stDesc.innerHTML = querySnapshot.docs[0].data().description;
+            S1stInfo.innerHTML = querySnapshot.docs[0].data().information;
+        }
+    });
+
+    firestore.collection('seasons').where('id', '==', '1st').get()
+    .then( (querySnapshot) => {
+        if(querySnapshot.docs[0].exists){
+            S1stDesc.innerHTML = querySnapshot.docs[0].data().description;
+            S1stInfo.innerHTML = querySnapshot.docs[0].data().information;
+        }
+    });
+
+    firestore.collection('seasons').where('id', '==', '2nd').get()
+    .then( (querySnapshot) => {
+        if(querySnapshot.docs[0].exists){
+            S2ndDesc.innerHTML = querySnapshot.docs[0].data().description;
+            S2ndInfo.innerHTML = querySnapshot.docs[0].data().information;
+        }
+    });
+
+    firestore.collection('seasons').where('id', '==', '3rd').get()
+    .then( (querySnapshot) => {
+        if(querySnapshot.docs[0].exists){
+            S3rdDesc.innerHTML = querySnapshot.docs[0].data().description;
+            S3rdInfo.innerHTML = querySnapshot.docs[0].data().information;
+        }
+    });
+
+    firestore.collection('seasons').where('id', '==', '4th').get()
+    .then( (querySnapshot) => {
+        if(querySnapshot.docs[0].exists){
+            S4thDesc.innerHTML = querySnapshot.docs[0].data().description;
+            S4thInfo.innerHTML = querySnapshot.docs[0].data().information;
+        }
+    });
+
+    firestore.collection('seasons').where('id', '==', '5th').get()
+    .then( (querySnapshot) => {
+        if(querySnapshot.docs[0].exists){
+            S5thDesc.innerHTML = querySnapshot.docs[0].data().description;
+            S5thInfo.innerHTML = querySnapshot.docs[0].data().information;
+        }
+    });
+
+    firestore.collection('seasons').where('id', '==', '6th').get()
+    .then( (querySnapshot) => {
+        if(querySnapshot.docs[0].exists){
+            S6thDesc.innerHTML = querySnapshot.docs[0].data().description;
+            S6thInfo.innerHTML = querySnapshot.docs[0].data().information;
+        }
+    });
+
+    firestore.collection('seasons').where('id', '==', '7th').get()
+    .then( (querySnapshot) => {
+        if(querySnapshot.docs[0].exists){
+            S7thDesc.innerHTML = querySnapshot.docs[0].data().description;
+            S7thInfo.innerHTML = querySnapshot.docs[0].data().information;
+        }
+    });
+
+    firestore.collection('seasons').where('id', '==', '8th').get()
+    .then( (querySnapshot) => {
+        if(querySnapshot.docs[0].exists){
+            S8thDesc.innerHTML = querySnapshot.docs[0].data().description;
+            S8thInfo.innerHTML = querySnapshot.docs[0].data().information;
+        }
+    });
+
+    firestore.collection('seasons').where('id', '==', '9th').get()
+    .then( (querySnapshot) => {
+        if(querySnapshot.docs[0].exists){
+            S9thDesc.innerHTML = querySnapshot.docs[0].data().description;
+            S9thInfo.innerHTML = querySnapshot.docs[0].data().information;
+        }
+    });
+
+    firestore.collection('seasons').where('id', '==', '10th').get()
+    .then( (querySnapshot) => {
+        if(querySnapshot.docs[0].exists){
+            S10thDesc.innerHTML = querySnapshot.docs[0].data().description;
+            S10thInfo.innerHTML = querySnapshot.docs[0].data().information;
+        }
+    });
+
+    firestore.collection('seasons').where('id', '==', '11th').get()
+    .then( (querySnapshot) => {
+        if(querySnapshot.docs[0].exists){
+            S11thDesc.innerHTML = querySnapshot.docs[0].data().description;
+            S11thInfo.innerHTML = querySnapshot.docs[0].data().information;
+        }
+    });
+
+    firestore.collection('seasons').where('id', '==', '12th').get()
+    .then( (querySnapshot) => {
+        if(querySnapshot.docs[0].exists){
+            S12thDesc.innerHTML = querySnapshot.docs[0].data().description;
+            S12thInfo.innerHTML = querySnapshot.docs[0].data().information;
+        }
+    });
 
 
 </script>
