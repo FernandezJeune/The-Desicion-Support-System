@@ -151,11 +151,10 @@
 .edit{
     background: #ece8d9;
     line-height: 1.5;
-    height: 300vh;
+    height: 165vh;
     font-family: poppins;
     padding-top: 20px;
     padding-left: 30%;
-
 }
 
 .edit input{
@@ -164,6 +163,15 @@
     width: 30vw;
     text-indent: 15px;
     display: block;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.edit select{
+    font-family: poppins;
+    height: 4vh;
+    width: 5vw;
+    text-indent: 15px;
     margin: 10px;
     border-radius: 5px;
 }
@@ -199,11 +207,47 @@
     height: 10vh;
 }
 
-
-
-
 .edit button{
     display: block;
+    font-family: poppins;
+    background-color: #04AA6D;
+    color: white;
+    cursor: pointer;
+    margin: 10px;
+    border-radius: 10px;
+    height: 5vh;
+    width: 9vw;
+}
+
+.edit select{
+    font-family: poppins;
+    height: 4vh;
+    width: 5vw;
+    text-indent: 15px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+/*Delete*/
+.delete{
+    background: #ece8d9;
+    line-height: 1.5;
+    height: 50vh;
+    font-family: poppins;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.delete select{
+    font-family: poppins;
+    height: 4vh;
+    width: 5vw;
+    text-indent: 15px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.delete button{
     font-family: poppins;
     background-color: #04AA6D;
     color: white;

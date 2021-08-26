@@ -31,11 +31,13 @@
 
     <div class="Banner" id="HomeID">
         <div class="Banner1">
-            <h2>Project ANI</h2>
+            <h2>Project ANI</h2>    
             <p>Agri Natin Ito : A Decision Support System for Benguet's Crop Prediction</p>
         </div>
     </div>
 
+
+    <!--CREATE-->
     <div class="filler-edit">
         <h1>Edit</h1>
     </div>
@@ -43,6 +45,19 @@
         <div class="edit-crops">
             <form>
                 <h1>Crops (Create)</h1>
+                <label for="Crops">Choose Order:</label><br>
+                <select id="Crops" name="cropOrder">
+                    <option value="1st">1st</option>
+                    <option value="2nd">2nd</option>
+                    <option value="3rd">3rd</option>
+                    <option value="4th">4th</option>
+                    <option value="5th">5th</option>
+                    <option value="6th">6th</option>
+                    <option value="7th">7th</option>
+                    <option value="8th">8th</option>
+                    <option value="9th">9th</option>
+                    <option value="10th">10th</option>
+                </select>
                 <input type="input" id="cropName" placeholder="Enter Crop Name"/>
                 <input type="input" id="cropBenefit" placeholder="Enter Crop Benefit"/>
                 <input type="input" id="cropInformation" placeholder="Enter Crop Information"/>
@@ -53,6 +68,21 @@
         <div class="edit-season">
             <form>
                 <h1> Season (Create)</h1>
+                <label for="Season">Choose Order:</label><br>
+                <select id="Season" name="seasonOrder">
+                    <option value="1st">1st</option>
+                    <option value="2nd">2nd</option>
+                    <option value="3rd">3rd</option>
+                    <option value="4th">4th</option>
+                    <option value="5th">5th</option>
+                    <option value="6th">6th</option>
+                    <option value="7th">7th</option>
+                    <option value="8th">8th</option>
+                    <option value="9th">9th</option>
+                    <option value="10th">10th</option>
+                    <option value="11th">11th</option>
+                    <option value="12th">12th</option>
+                </select>
                 <input type="input" id="seasonName" placeholder="Enter Season Name"/>
                 <input type="input" id="seasonDescription" placeholder="Enter Season Description"/>
                 <input type="input" id="seasonInformation" placeholder="Enter Season information"/>
@@ -62,12 +92,96 @@
         <div class="edit-municipality">
             <form>
                 <h1>Municipality (Create)</h1>
+                <label for="Muncipality">Choose Order:</label><br>
+                <select id="Muncipality" name="municipalityOrder">
+                    <option value="1st">1st</option>
+                    <option value="2nd">2nd</option>
+                    <option value="3rd">3rd</option>
+                    <option value="4th">4th</option>
+                    <option value="5th">5th</option>
+                    <option value="6th">6th</option>
+                    <option value="7th">7th</option>
+                    <option value="8th">8th</option>
+                    <option value="9th">9th</option>
+                    <option value="10th">10th</option>
+                    <option value="11th">11th</option>
+                    <option value="12th">12th</option>
+                </select>
                 <input type="input" id="municipalityName" placeholder="Enter Muncipality Name"/>
                 <input type="input" id="municipalityDescription" placeholder="Enter Muncipality Description"/>
                 <input type="input" id="municipalityInformation" placeholder="Enter Muncipality Information"/>
                 <button type="button" onclick="createMunicipality()">Create</button>
             </form>
         </div>
+    </div>
+    <!--DELETE-->
+    <div class="filler-edit">
+        <h1>Delete</h1>
+    </div>
+    <div class="delete">
+            <div class="delete-crops">
+                <form>
+                    <h1>Crops (Delete)</h1>
+                    <label for="delete_Crops">Choose Order:</label><br>
+                    <select id="delete_Crops" name="cropOrder">
+                        <option value="1st">1st</option>
+                        <option value="2nd">2nd</option>
+                        <option value="3rd">3rd</option>
+                        <option value="4th">4th</option>
+                        <option value="5th">5th</option>
+                        <option value="6th">6th</option>
+                        <option value="7th">7th</option>
+                        <option value="8th">8th</option>
+                        <option value="9th">9th</option>
+                        <option value="10th">10th</option>
+                    </select>
+                    <button type="button" onclick="deleteCrop()">Delete</button>
+                </form>
+            </div>
+
+            <div class="delete-season">
+                <form>
+                    <h1> Season (Delete)</h1>
+                    <label for="delete_Season">Choose Order:</label><br>
+                    <select id="delete_Season" name="seasonOrder">
+                        <option value="1st">1st</option>
+                        <option value="2nd">2nd</option>
+                        <option value="3rd">3rd</option>
+                        <option value="4th">4th</option>
+                        <option value="5th">5th</option>
+                        <option value="6th">6th</option>
+                        <option value="7th">7th</option>
+                        <option value="8th">8th</option>
+                        <option value="9th">9th</option>
+                        <option value="10th">10th</option>
+                        <option value="11th">11th</option>
+                        <option value="12th">12th</option>
+                    </select>
+                    <button type="button" onclick="deleteSeason()">Delete</button>
+                </form>
+            </div>
+            
+            <div class="delete-municipality">
+                <form>
+                    <h1>Municipality (Delete)</h1>
+                    <label for="delete_Muncipality">Choose Order:</label><br>
+                    <select id="delete_Muncipality" name="municipalityOrder">
+                        <option value="1st">1st</option>
+                        <option value="2nd">2nd</option>
+                        <option value="3rd">3rd</option>
+                        <option value="4th">4th</option>
+                        <option value="5th">5th</option>
+                        <option value="6th">6th</option>
+                        <option value="7th">7th</option>
+                        <option value="8th">8th</option>
+                        <option value="9th">9th</option>
+                        <option value="10th">10th</option>
+                        <option value="11th">11th</option>
+                        <option value="12th">12th</option>
+                    </select>
+                    <button type="button" onclick="deleteMunicipality()">Delete</button>
+                </form>
+            </div>
     </div>
 
     <div class="footer">
