@@ -62,7 +62,8 @@
                 <input type="input" id="cropBenefit" placeholder="Enter Crop Benefit"/>
                 <input type="input" id="cropInformation" placeholder="Enter Crop Information"/>
                 <input type="input" id="cropTips" placeholder="Enter Crop Tips"/>
-                <button type="button" onclick="createCrop()">Create</button>
+                <button type="button" onclick="createCrop(); cropnewChanges();">Create</button>
+                <p id = "cropChanges">No Changes</p>
             </form>
         </div>
         <div class="edit-season">
@@ -86,7 +87,8 @@
                 <input type="input" id="seasonName" placeholder="Enter Season Name"/>
                 <input type="input" id="seasonDescription" placeholder="Enter Season Description"/>
                 <input type="input" id="seasonInformation" placeholder="Enter Season information"/>
-                <button type="button" onclick="createSeason()">Create</button>
+                <button type="button" onclick="createSeason(); seasonnewChanges();">Create</button>
+                <p id = "seasonChanges">No Changes</p>
             </form>
         </div>
         <div class="edit-municipality">
@@ -110,7 +112,8 @@
                 <input type="input" id="municipalityName" placeholder="Enter Muncipality Name"/>
                 <input type="input" id="municipalityDescription" placeholder="Enter Muncipality Description"/>
                 <input type="input" id="municipalityInformation" placeholder="Enter Muncipality Information"/>
-                <button type="button" onclick="createMunicipality()">Create</button>
+                <button type="button" onclick="createMunicipality(); municipalitynewChanges();">Create</button>
+                <p id = "municipalityChanges">No Changes</p>
             </form>
         </div>
     </div>
@@ -135,7 +138,8 @@
                         <option value="9th">9th</option>
                         <option value="10th">10th</option>
                     </select>
-                    <button type="button" onclick="deleteCrop()">Delete</button>
+                    <button type="button" onclick="deleteCrop(); cropdeleteChanges();">Delete</button>
+                    <p id = "cropremoveChanges">No Changes</p>
                 </form>
             </div>
 
@@ -157,7 +161,8 @@
                         <option value="11th">11th</option>
                         <option value="12th">12th</option>
                     </select>
-                    <button type="button" onclick="deleteSeason()">Delete</button>
+                    <button type="button" onclick="deleteSeason(); seasondeleteChanges();">Delete</button>
+                    <p id = "seasonremoveChanges">No Changes</p>
                 </form>
             </div>
             
@@ -179,7 +184,8 @@
                         <option value="11th">11th</option>
                         <option value="12th">12th</option>
                     </select>
-                    <button type="button" onclick="deleteMunicipality()">Delete</button>
+                    <button type="button" onclick="deleteMunicipality(); municipalitydeleteChanges();">Delete</button>
+                    <p id = "municipalityremoveChanges">No Changes</p>
                 </form>
             </div>
     </div>
@@ -207,6 +213,38 @@
         const app = firebase.initializeApp(firebaseConfig);
         const firestore = firebase.firestore();
         
+        function cropnewChanges(){
+            let x = document.getElementById("cropChanges")
+            x.innerHTML = "New Changes were Saved"
+        }
+
+        function seasonnewChanges(){
+            let x = document.getElementById("seasonChanges")
+            x.innerHTML = "New Changes were Saved"
+        }
+
+        function municipalitynewChanges(){
+            let x = document.getElementById("municipalityChanges")
+            x.innerHTML = "New Changes were Saved"
+        }
+
+
+        function cropdeleteChanges(){
+            let x = document.getElementById("cropremoveChanges")
+            x.innerHTML = "New Changes were Saved"
+        }
+
+        function seasondeleteChanges(){
+            let x = document.getElementById("seasonremoveChanges")
+            x.innerHTML = "New Changes were Saved"
+        }
+
+        function municipalitydeleteChanges(){
+            let x = document.getElementById("municipalityremoveChanges")
+            x.innerHTML = "New Changes were Saved"
+        }
+
+
         function createCrop(){
             console.log('Creating Record from firestore')
             var CropID = document.getElementById('Crops').value
