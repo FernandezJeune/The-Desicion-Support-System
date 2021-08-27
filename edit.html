@@ -62,8 +62,17 @@
                 <input type="input" id="cropBenefit" placeholder="Enter Crop Benefit"/>
                 <input type="input" id="cropInformation" placeholder="Enter Crop Information"/>
                 <input type="input" id="cropTips" placeholder="Enter Crop Tips"/>
+                <!--Image Upload-->
+                    <p>Crop Description image (PNG or JPEG only)</p>
+                    <input type="file" id="crop-desc-pic" name="crop-desc-img">
+                    <p>Crop Information image (PNG or JPEG only)</p>
+                    <input type="file" id="crop-info-pic" name="crop-info-img">
+                    <input type="submit">
+                
                 <button type="button" onclick="createCrop(); cropnewChanges();">Create</button>
                 <p id = "cropChanges">No Changes</p>
+
+
             </form>
         </div>
         <div class="edit-season">
@@ -87,6 +96,13 @@
                 <input type="input" id="seasonName" placeholder="Enter Season Name"/>
                 <input type="input" id="seasonDescription" placeholder="Enter Season Description"/>
                 <input type="input" id="seasonInformation" placeholder="Enter Season information"/>
+                <!--Image Upload-->
+                    <p>Crop Description image (PNG or JPEG only)</p>
+                    <input type="file" id="season-desc-pic" name="season-desc-img">
+                    <p>Crop Information image (PNG or JPEG only)</p>
+                    <input type="file" id="season-info-pic" name="season-info-img">
+                    <input type="submit">
+                
                 <button type="button" onclick="createSeason(); seasonnewChanges();">Create</button>
                 <p id = "seasonChanges">No Changes</p>
             </form>
@@ -112,6 +128,13 @@
                 <input type="input" id="municipalityName" placeholder="Enter Muncipality Name"/>
                 <input type="input" id="municipalityDescription" placeholder="Enter Muncipality Description"/>
                 <input type="input" id="municipalityInformation" placeholder="Enter Muncipality Information"/>
+                <!--Image Upload-->
+                    <p>Crop Description image (PNG or JPEG only)</p>
+                    <input type="file" id="municipality-desc-pic" name="municipality-desc-img">
+                    <p>Crop Information image (PNG or JPEG only)</p>
+                    <input type="file" id="municipality-info-pic" name="municipality-info-img">
+                    <input type="submit">
+                
                 <button type="button" onclick="createMunicipality(); municipalitynewChanges();">Create</button>
                 <p id = "municipalityChanges">No Changes</p>
             </form>
@@ -192,7 +215,7 @@
 
     <div class="footer">
         <p>© Project ANI 2021</p>
-        <p>Made by the CITCS team</p>
+        <p>Developed by the CITCS team</p>
     </div> 
     
     <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
