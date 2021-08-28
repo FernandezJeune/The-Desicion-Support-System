@@ -268,8 +268,7 @@
             let x = document.getElementById("municipalityremoveChanges")
             x.innerHTML = "New Changes were Saved"
         }
-
-
+        
         function createCrop(){
             console.log('Creating Record from firestore')
             var CropID = document.getElementById('Crops').value
@@ -277,30 +276,36 @@
             var cropBenefit = document.getElementById('cropBenefit').value
             var cropInformation = document.getElementById('cropInformation').value
             var cropTips = document.getElementById('cropTips').value
-            var cropDescImg = document.getElementById('CropDesc').src
-            var cropInfoImg = document.getElementById('CropInfo').src
+            var cropDescImg = document.getElementById('crop-desc-pic').files[0]
+            var cropInfoImg = document.getElementById('crop-info-pic').files[0]
+            
+            storage.ref('CropDescImages/'+cropDescImg.name).put(cropDescImg).then(()=> {
+                storage.ref('CropDescImages/'+cropDescImg.name).getDownloadURL().then((url1) => {
+                    storage.ref('CropInfoImages/'+cropInfoImg.name).put(cropInfoImg).then(()=> {
+                        storage.ref('CropInfoImages/'+cropInfoImg.name).getDownloadURL().then((url2) => {
+                            firestore.collection('crops').add({
+                                id: CropID,
+                                name: cropName,
+                                benefit: cropBenefit,
+                                information: cropInformation,
+                                tips: cropTips,
+                                descIMG: url1,
+                                infoIMG: url2,
+                                timestamp: new Date()
 
-            console.log(cropDescImg)
+                            })
+                            .then((docRef) => {
+                                console.log("Record Successful Created " + docRef.id)
+                                alert(CropID + " Crop Successfuly Created");
+                            })
+                            .catch((error)=> {
+                                console.log(error)
+                            })
+                        })
+                    })
+                })
+            });
 
-            // storage.ref('CropDescImages/qweqweqeq.jpg').put(cropDescImg).then(console.log('Successfully Uploaded'));
-
-            // firestore.collection('crops').add({
-            //     id: CropID,
-            //     name: cropName,
-            //     benefit: cropBenefit,
-            //     information: cropInformation,
-            //     tips: cropTips,
-            //     timestamp: new Date()
-            // })
-            // .then((docRef) => {
-            //     console.log('Record Successfuly Created ' + docRef.id)
-            //     storage.ref('CropDescImages').put(cropDescImg).then(console.log('Successfully Uploaded'));
-                
-            // })
-            // .catch((error)=> {
-            //     document.getElementById('errorMsgCreate').innerHTML = "Error: " + error.message
-            //     console.log(error)
-            // })
         }
 
         function createSeason(){
@@ -309,20 +314,34 @@
             var seasonName = document.getElementById('seasonName').value
             var seasonDescription = document.getElementById('seasonDescription').value
             var seasonInformation = document.getElementById('seasonInformation').value
-            firestore.collection('seasons').add({
-                id: SeasonID,
-                name: seasonName,
-                description: seasonDescription,
-                information: seasonInformation,
-                timestamp: new Date()
-            })
-            .then((docRef) => {
-                console.log('Record Successfuly Created ' + docRef.id)
-            })
-            .catch((error)=> {
-                document.getElementById('errorMsgCreate').innerHTML = "Error: " + error.message
-                console.log(error)
-            })
+            var seasonDescIMG = document.getElementById('season-desc-pic').files[0]
+            var seasonInfoIMG = document.getElementById('season-info-pic').files[0]
+
+            storage.ref('SeasonDescImages/'+seasonDescIMG.name).put(seasonDescIMG).then(()=> {
+                storage.ref('SeasonDescImages/'+seasonDescIMG.name).getDownloadURL().then((url1) => {
+                    storage.ref('SeasonInfoImages/'+seasonInfoIMG.name).put(seasonInfoIMG).then(()=> {
+                        storage.ref('SeasonInfoImages/'+seasonInfoIMG.name).getDownloadURL().then((url2) => {
+                            firestore.collection('seasons').add({
+                                id: SeasonID,
+                                name: seasonName,
+                                description: seasonDescription,
+                                information: seasonInformation,
+                                descIMG: url1,
+                                infoIMG: url2,
+                                timestamp: new Date()
+
+                            })
+                            .then((docRef) => {
+                                console.log('Record Successfuly Created ' + docRef.id)
+                                alert(SeasonID + " Season successfuly createed")
+                            })
+                            .catch((error)=> {
+                                console.log(error)
+                            })
+                        })
+                    })
+                })
+            });
         }
 
         function createMunicipality(){
@@ -331,20 +350,34 @@
             var municipalityName = document.getElementById('municipalityName').value
             var municipalityDescription = document.getElementById('municipalityDescription').value
             var municipalityInformation = document.getElementById('municipalityInformation').value
-            firestore.collection('municipalities').add({
-                id: MunID,
-                name: municipalityName,
-                description: municipalityDescription,
-                information: municipalityInformation,
-                timestamp: new Date()
-            })
-            .then((docRef) => {
-                console.log('Record Successfuly Created ' + docRef.id)
-            })
-            .catch((error)=> {
-                document.getElementById('errorMsgCreate').innerHTML = "Error: " + error.message
-                console.log(error)
-            })
+            var municipalityDescIMG = document.getElementById('municipality-desc-pic').files[0]
+            var municipalityInfoIMG = document.getElementById('municipality-info-pic').files[0]
+
+
+            storage.ref('MunicipalityDescImages/'+municipalityDescIMG.name).put(municipalityDescIMG).then(()=> {
+                storage.ref('MunicipalityDescImages/'+municipalityDescIMG.name).getDownloadURL().then((url1) => {
+                    storage.ref('MunicipalityInfoImages/'+municipalityInfoIMG.name).put(municipalityInfoIMG).then(()=> {
+                        storage.ref('MunicipalityInfoImages/'+municipalityInfoIMG.name).getDownloadURL().then((url2) => {
+                            firestore.collection('seasons').add({
+                                id: MunID,
+                                name: municipalityName,
+                                description: municipalityDescription,
+                                information: municipalityInformation,
+                                descIMG: url1,
+                                infoIMG: url2,
+                                timestamp: new Date()
+                            })
+                            .then((docRef) => {
+                                console.log('Record Successfuly Created ' + docRef.id)
+                                alert(MunID + " Municipality successfuly createed")
+                            })
+                            .catch((error)=> {
+                                console.log(error)
+                            })
+                        })
+                    })
+                })
+            });
         }
 
         function deleteCrop() {
@@ -353,6 +386,7 @@
             .then((querySnapshot) => {
                 docID = querySnapshot.docs[0].id;
                 firestore.collection('crops').doc(docID).delete().then(()=>{
+                    alert(id + "Crop deleted successfuly")
                     console.log(id + ' deleted');
                 });
 
@@ -365,6 +399,7 @@
             .then((querySnapshot) => {
                 docID = querySnapshot.docs[0].id;
                 firestore.collection('seasons').doc(docID).delete().then(()=>{
+                    alert(id + "Season deleted successfuly")
                     console.log(id + ' deleted');
                 });
 
@@ -377,13 +412,11 @@
             .then((querySnapshot) => {
                 docID = querySnapshot.docs[0].id;
                 firestore.collection('municipalities').doc(docID).delete().then(()=>{
+                    alert(id + "Municipality deleted successfuly")
                     console.log(id + ' deleted');
                 });
-
             });
         }
-
-
 
     </script>
 </body>
