@@ -64,9 +64,9 @@
                 <input type="input" id="cropTips" placeholder="Enter Crop Tips"/>
                 <!--Image Upload-->
                     <p>Crop Description image (PNG or JPEG only)</p>
-                    <input type="file" id="crop-desc-pic" name="crop-desc-img">
+                    <input id="CropDesc" type="file" id="crop-desc-pic" name="crop-desc-img">
                     <p>Crop Information image (PNG or JPEG only)</p>
-                    <input type="file" id="crop-info-pic" name="crop-info-img">
+                    <input id="CropInfo" type="file" id="crop-info-pic" name="crop-info-img">
                     <input type="submit">
                 
                 <button type="button" onclick="createCrop(); cropnewChanges();">Update</button>
@@ -220,6 +220,7 @@
     
     <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-storage.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-analytics.js"></script>
     <script>
 
@@ -235,6 +236,7 @@
 
         const app = firebase.initializeApp(firebaseConfig);
         const firestore = firebase.firestore();
+        const storage = firebase.storage();
         
         function cropnewChanges(){
             let x = document.getElementById("cropChanges")
@@ -275,21 +277,30 @@
             var cropBenefit = document.getElementById('cropBenefit').value
             var cropInformation = document.getElementById('cropInformation').value
             var cropTips = document.getElementById('cropTips').value
-            firestore.collection('crops').add({
-                id: CropID,
-                name: cropName,
-                benefit: cropBenefit,
-                information: cropInformation,
-                tips: cropTips,
-                timestamp: new Date()
-            })
-            .then((docRef) => {
-                console.log('Record Successfuly Created ' + docRef.id)
-            })
-            .catch((error)=> {
-                document.getElementById('errorMsgCreate').innerHTML = "Error: " + error.message
-                console.log(error)
-            })
+            var cropDescImg = document.getElementById('CropDesc').src
+            var cropInfoImg = document.getElementById('CropInfo').src
+
+            console.log(cropDescImg)
+
+            // storage.ref('CropDescImages/qweqweqeq.jpg').put(cropDescImg).then(console.log('Successfully Uploaded'));
+
+            // firestore.collection('crops').add({
+            //     id: CropID,
+            //     name: cropName,
+            //     benefit: cropBenefit,
+            //     information: cropInformation,
+            //     tips: cropTips,
+            //     timestamp: new Date()
+            // })
+            // .then((docRef) => {
+            //     console.log('Record Successfuly Created ' + docRef.id)
+            //     storage.ref('CropDescImages').put(cropDescImg).then(console.log('Successfully Uploaded'));
+                
+            // })
+            // .catch((error)=> {
+            //     document.getElementById('errorMsgCreate').innerHTML = "Error: " + error.message
+            //     console.log(error)
+            // })
         }
 
         function createSeason(){
