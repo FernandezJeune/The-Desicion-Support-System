@@ -1653,6 +1653,8 @@
     firestore.collection('crops').where('id', '==', '1st').get()
     .then( (querySnapshot) => {
         if(querySnapshot.docs[0].exists){
+            firstCropImgDesc.src = querySnapshot.docs[0].data().descIMG;
+            firstCropImgInfo.src = querySnapshot.docs[0].data().infoIMG;
             firstCropTitle.innerHTML = querySnapshot.docs[0].data().name;
             firstCropDesc.innerHTML = querySnapshot.docs[0].data().benefit;
             firstCropInfo.innerHTML = querySnapshot.docs[0].data().information;
@@ -1664,17 +1666,21 @@
     firestore.collection('crops').where('id', '==', '2nd').get()
     .then( (querySnapshot) => {
         if(querySnapshot.docs[0].exists){
+            secondCropTitleModal.innerHTML = querySnapshot.docs[0].data().name;
+            secondCropModalTips.innerHTML = querySnapshot.docs[0].data().tips;
+            secondCropImgDesc.src = querySnapshot.docs[0].data().descIMG;
+            secondCropImgInfo.src = querySnapshot.docs[0].data().infoIMG;
             secondCropTitle.innerHTML = querySnapshot.docs[0].data().name;
             secondCropDesc.innerHTML = querySnapshot.docs[0].data().benefit;
             secondCropInfo.innerHTML = querySnapshot.docs[0].data().information;
-            secondCropTitleModal.innerHTML = querySnapshot.docs[0].data().name;
-            secondCropModalTips.innerHTML = querySnapshot.docs[0].data().tips;
         }
     })
 
     firestore.collection('crops').where('id', '==', '3rd').get()
     .then( (querySnapshot) => {
         if(querySnapshot.docs[0].exists){
+            thirdCropImgDesc.src = querySnapshot.docs[0].data().descIMG;
+            thirdCropImgInfo.src = querySnapshot.docs[0].data().infoIMG;
             thirdCropTitle.innerHTML = querySnapshot.docs[0].data().name;
             thirdCropDesc.innerHTML = querySnapshot.docs[0].data().benefit;
             thirdCropInfo.innerHTML = querySnapshot.docs[0].data().information;
@@ -1686,6 +1692,8 @@
     firestore.collection('crops').where('id', '==', '4th').get()
     .then( (querySnapshot) => {
         if(querySnapshot.docs[0].exists){
+            fourthCropImgDesc.src = querySnapshot.docs[0].data().descIMG;
+            fourthCropImgInfo.src = querySnapshot.docs[0].data().infoIMG;
             fourthCropTitle.innerHTML = querySnapshot.docs[0].data().name;
             fourthCropDesc.innerHTML = querySnapshot.docs[0].data().benefit;
             fourthCropInfo.innerHTML = querySnapshot.docs[0].data().information;
@@ -1697,7 +1705,8 @@
     firestore.collection('crops').where('id', '==', '5th').get()
     .then( (querySnapshot) => {
         if(querySnapshot.docs[0].exists){
-            console.log(querySnapshot.docs[0].data());
+            fifthCropImgDesc.src = querySnapshot.docs[0].data().descIMG;
+            fifthCropImgInfo.src = querySnapshot.docs[0].data().infoIMG;
             fifthCropTitle.innerHTML = querySnapshot.docs[0].data().name;
             fifthCropDesc.innerHTML = querySnapshot.docs[0].data().benefit;
             fifthCropInfo.innerHTML = querySnapshot.docs[0].data().information;
@@ -1709,6 +1718,8 @@
     firestore.collection('crops').where('id', '==', '6th').get()
     .then( (querySnapshot) => {
         if(querySnapshot.docs[0].exists){
+            sixthCropImgDesc.src = querySnapshot.docs[0].data().descIMG;
+            sixthCropImgInfo.src = querySnapshot.docs[0].data().infoIMG;
             sixthCropTitle.innerHTML = querySnapshot.docs[0].data().name;
             sixthCropDesc.innerHTML = querySnapshot.docs[0].data().benefit;
             sixthCropInfo.innerHTML = querySnapshot.docs[0].data().information;
@@ -1720,6 +1731,8 @@
     firestore.collection('crops').where('id', '==', '7th').get()
     .then( (querySnapshot) => {
         if(querySnapshot.docs[0].exists){
+            seventhCropImgDesc.src = querySnapshot.docs[0].data().descIMG;
+            seventhCropImgInfo.src = querySnapshot.docs[0].data().infoIMG;
             seventhCropTitle.innerHTML = querySnapshot.docs[0].data().name;
             seventhCropDesc.innerHTML = querySnapshot.docs[0].data().benefit;
             seventhCropInfo.innerHTML = querySnapshot.docs[0].data().information;
@@ -1731,6 +1744,8 @@
     firestore.collection('crops').where('id', '==', '8th').get()
     .then( (querySnapshot) => {
         if(querySnapshot.docs[0].exists){
+            eightCropImgDesc.src = querySnapshot.docs[0].data().descIMG;
+            eightCropImgInfo.src = querySnapshot.docs[0].data().infoIMG;
             eightCropTitle.innerHTML = querySnapshot.docs[0].data().name;
             eightCropDesc.innerHTML = querySnapshot.docs[0].data().benefit;
             eightCropInfo.innerHTML = querySnapshot.docs[0].data().information;
@@ -1747,12 +1762,16 @@
             ninthCropInfo.innerHTML = querySnapshot.docs[0].data().information;
             ninthCropTitleModal.innerHTML = querySnapshot.docs[0].data().name;
             ninthCropModalTips.innerHTML = querySnapshot.docs[0].data().tips;
+            ninthCropImgDesc.src = querySnapshot.docs[0].data().descIMG;
+            ninthCropImgInfo.src = querySnapshot.docs[0].data().infoIMG;
         }
     })
 
     firestore.collection('crops').where('id', '==', '10th').get()
     .then( (querySnapshot) => {
         if(querySnapshot.docs[0].exists){
+            tenthCropImgDesc.src = querySnapshot.docs[0].data().descIMG;
+            tenthCropImgInfo.src = querySnapshot.docs[0].data().infoIMG;
             tenthCropTitle.innerHTML = querySnapshot.docs[0].data().name;
             tenthCropDesc.innerHTML = querySnapshot.docs[0].data().benefit;
             tenthCropInfo.innerHTML = querySnapshot.docs[0].data().information;
@@ -1764,14 +1783,7 @@
     firestore.collection('seasons').where('id', '==', '1st').get()
     .then( (querySnapshot) => {
         if(querySnapshot.docs[0].exists){
-            S1stDesc.innerHTML = querySnapshot.docs[0].data().description;
-            S1stInfo.innerHTML = querySnapshot.docs[0].data().information;
-        }
-    });
-
-    firestore.collection('seasons').where('id', '==', '1st').get()
-    .then( (querySnapshot) => {
-        if(querySnapshot.docs[0].exists){
+            S1stImgDesc.src = querySnapshot.docs[0].data().descIMG;
             S1stDesc.innerHTML = querySnapshot.docs[0].data().description;
             S1stInfo.innerHTML = querySnapshot.docs[0].data().information;
         }
@@ -1780,6 +1792,7 @@
     firestore.collection('seasons').where('id', '==', '2nd').get()
     .then( (querySnapshot) => {
         if(querySnapshot.docs[0].exists){
+            S2stImgDesc.src = querySnapshot.docs[0].data().descIMG;
             S2ndDesc.innerHTML = querySnapshot.docs[0].data().description;
             S2ndInfo.innerHTML = querySnapshot.docs[0].data().information;
         }
@@ -1788,6 +1801,7 @@
     firestore.collection('seasons').where('id', '==', '3rd').get()
     .then( (querySnapshot) => {
         if(querySnapshot.docs[0].exists){
+            S3rdImgDesc.src = querySnapshot.docs[0].data().descIMG;
             S3rdDesc.innerHTML = querySnapshot.docs[0].data().description;
             S3rdInfo.innerHTML = querySnapshot.docs[0].data().information;
         }
@@ -1796,6 +1810,7 @@
     firestore.collection('seasons').where('id', '==', '4th').get()
     .then( (querySnapshot) => {
         if(querySnapshot.docs[0].exists){
+            S4thImgDesc.src = querySnapshot.docs[0].data().descIMG;
             S4thDesc.innerHTML = querySnapshot.docs[0].data().description;
             S4thInfo.innerHTML = querySnapshot.docs[0].data().information;
         }
@@ -1804,6 +1819,7 @@
     firestore.collection('seasons').where('id', '==', '5th').get()
     .then( (querySnapshot) => {
         if(querySnapshot.docs[0].exists){
+            S5thImgDesc.src = querySnapshot.docs[0].data().descIMG;
             S5thDesc.innerHTML = querySnapshot.docs[0].data().description;
             S5thInfo.innerHTML = querySnapshot.docs[0].data().information;
         }
@@ -1812,6 +1828,7 @@
     firestore.collection('seasons').where('id', '==', '6th').get()
     .then( (querySnapshot) => {
         if(querySnapshot.docs[0].exists){
+            S6thImgDesc.src = querySnapshot.docs[0].data().descIMG;
             S6thDesc.innerHTML = querySnapshot.docs[0].data().description;
             S6thInfo.innerHTML = querySnapshot.docs[0].data().information;
         }
@@ -1820,6 +1837,7 @@
     firestore.collection('seasons').where('id', '==', '7th').get()
     .then( (querySnapshot) => {
         if(querySnapshot.docs[0].exists){
+            S7thImgDesc.src = querySnapshot.docs[0].data().descIMG;
             S7thDesc.innerHTML = querySnapshot.docs[0].data().description;
             S7thInfo.innerHTML = querySnapshot.docs[0].data().information;
         }
@@ -1828,6 +1846,7 @@
     firestore.collection('seasons').where('id', '==', '8th').get()
     .then( (querySnapshot) => {
         if(querySnapshot.docs[0].exists){
+            S8thImgDesc.src = querySnapshot.docs[0].data().descIMG;
             S8thDesc.innerHTML = querySnapshot.docs[0].data().description;
             S8thInfo.innerHTML = querySnapshot.docs[0].data().information;
         }
@@ -1836,6 +1855,7 @@
     firestore.collection('seasons').where('id', '==', '9th').get()
     .then( (querySnapshot) => {
         if(querySnapshot.docs[0].exists){
+            S9thImgDesc.src = querySnapshot.docs[0].data().descIMG;
             S9thDesc.innerHTML = querySnapshot.docs[0].data().description;
             S9thInfo.innerHTML = querySnapshot.docs[0].data().information;
         }
@@ -1844,6 +1864,7 @@
     firestore.collection('seasons').where('id', '==', '10th').get()
     .then( (querySnapshot) => {
         if(querySnapshot.docs[0].exists){
+            S10thImgDesc.src = querySnapshot.docs[0].data().descIMG;
             S10thDesc.innerHTML = querySnapshot.docs[0].data().description;
             S10thInfo.innerHTML = querySnapshot.docs[0].data().information;
         }
@@ -1852,6 +1873,7 @@
     firestore.collection('seasons').where('id', '==', '11th').get()
     .then( (querySnapshot) => {
         if(querySnapshot.docs[0].exists){
+            S11thImgDesc.src = querySnapshot.docs[0].data().descIMG;
             S11thDesc.innerHTML = querySnapshot.docs[0].data().description;
             S11thInfo.innerHTML = querySnapshot.docs[0].data().information;
         }
@@ -1860,6 +1882,7 @@
     firestore.collection('seasons').where('id', '==', '12th').get()
     .then( (querySnapshot) => {
         if(querySnapshot.docs[0].exists){
+            S12thImgDesc.src = querySnapshot.docs[0].data().descIMG;
             S12thDesc.innerHTML = querySnapshot.docs[0].data().description;
             S12thInfo.innerHTML = querySnapshot.docs[0].data().information;
         }
@@ -1868,6 +1891,7 @@
     firestore.collection('municipalities').where('id', '==', '1st').get()
     .then( (querySnapshot) => {
         if(querySnapshot.docs[0].exists){
+            atokImgDesc.src = querySnapshot.docs[0].data().descIMG;
             atokDesc.innerHTML = querySnapshot.docs[0].data().description;
             atokInfo.innerHTML = querySnapshot.docs[0].data().information;
         }
@@ -1876,6 +1900,7 @@
     firestore.collection('municipalities').where('id', '==', '2nd').get()
     .then( (querySnapshot) => {
         if(querySnapshot.docs[0].exists){
+            bakunImgDesc.src = querySnapshot.docs[0].data().descIMG;
             bakunDesc.innerHTML = querySnapshot.docs[0].data().description;
             bakunInfo.innerHTML = querySnapshot.docs[0].data().information;
         }
@@ -1884,6 +1909,7 @@
     firestore.collection('municipalities').where('id', '==', '3rd').get()
     .then( (querySnapshot) => {
         if(querySnapshot.docs[0].exists){
+            bokodImgDesc.src = querySnapshot.docs[0].data().descIMG;
             bokodDesc.innerHTML = querySnapshot.docs[0].data().description;
             bokodInfo.innerHTML = querySnapshot.docs[0].data().information;
         }
@@ -1892,6 +1918,7 @@
     firestore.collection('municipalities').where('id', '==', '4th').get()
     .then( (querySnapshot) => {
         if(querySnapshot.docs[0].exists){
+            buguiasImgDesc.src = querySnapshot.docs[0].data().descIMG;
             buguiasDesc.innerHTML = querySnapshot.docs[0].data().description;
             buguiasInfo.innerHTML = querySnapshot.docs[0].data().information;
         }
@@ -1900,6 +1927,7 @@
     firestore.collection('municipalities').where('id', '==', '5th').get()
     .then( (querySnapshot) => {
         if(querySnapshot.docs[0].exists){
+            itogonImgDesc.src = querySnapshot.docs[0].data().descIMG;
             itogonDesc.innerHTML = querySnapshot.docs[0].data().description;
             itogonInfo.innerHTML = querySnapshot.docs[0].data().information;
         }
@@ -1908,6 +1936,7 @@
     firestore.collection('municipalities').where('id', '==', '6th').get()
     .then( (querySnapshot) => {
         if(querySnapshot.docs[0].exists){
+            kabayanImgDesc.src = querySnapshot.docs[0].data().descIMG;
             kabayanDesc.innerHTML = querySnapshot.docs[0].data().description;
             kabayanInfo.innerHTML = querySnapshot.docs[0].data().information;
         }
@@ -1916,6 +1945,7 @@
     firestore.collection('municipalities').where('id', '==', '7th').get()
     .then( (querySnapshot) => {
         if(querySnapshot.docs[0].exists){
+            kapanganImgDesc.src = querySnapshot.docs[0].data().descIMG;
             kapanganDesc.innerHTML = querySnapshot.docs[0].data().description;
             kapanganInfo.innerHTML = querySnapshot.docs[0].data().information;
         }
@@ -1924,6 +1954,7 @@
     firestore.collection('municipalities').where('id', '==', '8th').get()
     .then( (querySnapshot) => {
         if(querySnapshot.docs[0].exists){
+            kibunganImgDesc.src = querySnapshot.docs[0].data().descIMG;
             kibunganDesc.innerHTML = querySnapshot.docs[0].data().description;
             kibunganInfo.innerHTML = querySnapshot.docs[0].data().information;
         }
@@ -1932,6 +1963,7 @@
     firestore.collection('municipalities').where('id', '==', '9th').get()
     .then( (querySnapshot) => {
         if(querySnapshot.docs[0].exists){
+            latImgDesc.src = querySnapshot.docs[0].data().descIMG;
             latDesc.innerHTML = querySnapshot.docs[0].data().description;
             latInfo.innerHTML = querySnapshot.docs[0].data().information;
         }
@@ -1940,6 +1972,7 @@
     firestore.collection('municipalities').where('id', '==', '10th').get()
     .then( (querySnapshot) => {
         if(querySnapshot.docs[0].exists){
+            mankayanImgDesc.src = querySnapshot.docs[0].data().descIMG;
             mankayanDesc.innerHTML = querySnapshot.docs[0].data().description;
             mankayanInfo.innerHTML = querySnapshot.docs[0].data().information;
         }
@@ -1948,6 +1981,7 @@
     firestore.collection('municipalities').where('id', '==', '11th').get()
     .then( (querySnapshot) => {
         if(querySnapshot.docs[0].exists){
+            sablanImgDesc.src = querySnapshot.docs[0].data().descIMG;
             sablanDesc.innerHTML = querySnapshot.docs[0].data().description;
             sablanInfo.innerHTML = querySnapshot.docs[0].data().information;
         }
@@ -1956,6 +1990,7 @@
     firestore.collection('municipalities').where('id', '==', '12th').get()
     .then( (querySnapshot) => {
         if(querySnapshot.docs[0].exists){
+            tubaImgDesc.src = querySnapshot.docs[0].data().descIMG;
             tubaDesc.innerHTML = querySnapshot.docs[0].data().description;
             tubaInfo.innerHTML = querySnapshot.docs[0].data().information;
         }
