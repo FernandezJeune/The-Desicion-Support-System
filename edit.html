@@ -358,7 +358,7 @@
                 storage.ref('MunicipalityDescImages/'+municipalityDescIMG.name).getDownloadURL().then((url1) => {
                     storage.ref('MunicipalityInfoImages/'+municipalityInfoIMG.name).put(municipalityInfoIMG).then(()=> {
                         storage.ref('MunicipalityInfoImages/'+municipalityInfoIMG.name).getDownloadURL().then((url2) => {
-                            firestore.collection('seasons').add({
+                            firestore.collection('municipalities').add({
                                 id: MunID,
                                 name: municipalityName,
                                 description: municipalityDescription,
